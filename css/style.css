@@ -1,3 +1,6 @@
 body{
 	background-color:lightgreen;
 }
+.navbar-brand{
+	width:300px;
+}
