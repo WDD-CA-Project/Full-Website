@@ -1,3 +1,2 @@
-document.getElementById('myText').innerHTML = 
-	
+alert("ok");
 
