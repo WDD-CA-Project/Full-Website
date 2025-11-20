@@ -18,7 +18,7 @@ body{
 }
 
 .navbar-brand{
-	width:300px;
+	max-width:300px;
 }
 
 
@@ -45,9 +45,8 @@ body{
 	background-image: url("../img/mountain.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
+	background-position: top;
 	background-size: cover;
-	height: 55vh;
-	display: block-size;
 }
 
 .introTitle{
@@ -62,12 +61,52 @@ body{
 	width: 50%;
 	text-align: center;
 	border: 1px solid green;
-	padding: 2%;
+	
 	margin-left: 25%;
 	margin-right: 25%;
 	background-color: lightgrey;
+	padding: 2%;
 }
 
-footer{
-	clear: both;
+/*Content*/
+.pageContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 1px solid green;
 }
+
+
+
+.contentFloatLeft{
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 2%;
+	border: 1px solid red;
+	float: left;
+}
+
+.contentFloatRight{
+	width: 40%;
+	margin-left: 2%;
+	margin-right: 5%;
+	border: 1px solid red;
+	float: right;
+}
+
+
+
+/* Style the footer to sit at the bottom, with top margin auto */
+footer {
+	clear: both;
+	background-color: #f8f9fa;
+	text-align: center;
+	padding: 2%;
+	margin-top: auto;
+	width: 100%;
+	border-top: 1px solid black;
+}
+
+
+/*---------------------- END HOME -----------------------*/
+
