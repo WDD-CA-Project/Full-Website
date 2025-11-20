@@ -68,13 +68,26 @@ body{
 	padding: 2%;
 }
 
-
+/*Content*/
 .pageContent{
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
 	border: 1px solid green;
 }
+
+.contentFloatLeft{
+	width: 35%;
+	border: 1px solid red;
+}
+
+.contentText{
+	width: 35%;
+	border: 1px solid red;
+
+}
+
+
 
 
 /* Style the footer to sit at the bottom, with top margin auto */
