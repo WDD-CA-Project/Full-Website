@@ -18,7 +18,7 @@ body{
 }
 
 .navbar-brand{
-	width:300px;
+	max-width:300px;
 }
 
 
@@ -61,26 +61,11 @@ body{
 	width: 50%;
 	text-align: center;
 	border: 1px solid green;
-	margin: 2%;
+	
 	margin-left: 25%;
 	margin-right: 25%;
 	background-color: lightgrey;
-}
-
-/* Add bottom padding to prevent overlap */
-.main, .pageIntro, .pageContent {
-  padding-bottom: 40px;
-}
-
-
-/* Style the footer to sit at the bottom, with top margin auto */
-footer {
-  background-color: #f8f9fa;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: auto;
-  width: 100%;
-  border-top: 1px solid #ccc;
+	padding: 2%;
 }
 
 
@@ -91,6 +76,16 @@ footer {
 	border: 1px solid green;
 }
 
+
+/* Style the footer to sit at the bottom, with top margin auto */
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 2%;
+  margin-top: auto;
+  width: 100%;
+  border-top: 1px solid black;
+}
 
 
 /*---------------------- END HOME -----------------------*/
