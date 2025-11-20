@@ -39,13 +39,29 @@ body{
 	margin-right: 10%; */
 }
 
+
+
+.pageIntro{
+	background-image: url("../img/mountain.jpg");
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.introTitle{
+	padding: 3%;
+}
+
 #mainTitleStyle{
-	
+	padding: 6%;
 }
 
 .introDes{
 	width: 50%;
+	text-align: center;
 	border: 1px solid green;
-	padding: 5%;
-	
+	padding: 2%;
+	margin-left: 25%;
+	margin-right: 25%;
+	background-color: lightgrey;
 }
