@@ -47,8 +47,6 @@ body{
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
-	height: 55vh;
-	display: block-size;
 }
 
 .introTitle{
@@ -84,3 +82,16 @@ footer {
   width: 100%;
   border-top: 1px solid #ccc;
 }
+
+
+.pageContent{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 1px solid green;
+}
+
+
+
+/*---------------------- END HOME -----------------------*/
+
