@@ -41,11 +41,12 @@ body{
 
 
 
-.pageIntro{
+.introText{
 	background-image: url("../img/mountain.jpg");
-	background-position: center; 
+	/* background-position: center; */
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-position: top;
+	background-size: 100% 82%;
 }
 
 .introTitle{
