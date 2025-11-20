@@ -47,8 +47,6 @@ body{
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
-	height: 55vh;
-	display: block-size;
 }
 
 .introTitle{
@@ -71,4 +69,8 @@ body{
 
 footer{
 	clear: both;
+}
+
+#testing{
+	padding: 50%;
 }
