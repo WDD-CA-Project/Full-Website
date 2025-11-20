@@ -34,10 +34,18 @@ body{
 .main{
 	border: 1px solid red;
 	text-align: center;
-	width: 80%;
+	/* width: 80%;
 	margin-left: 10%;
-	margin-right: 10%;
-	padding-left: 3%;
-	padding-right: 3%;
+	margin-right: 10%; */
 }
 
+#mainTitleStyle{
+	
+}
+
+.introDes{
+	width: 50%;
+	border: 1px solid green;
+	padding: 5%;
+	
+}
