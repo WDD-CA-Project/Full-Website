@@ -36,6 +36,43 @@ body{
 .navbarCenter{
     margin-left: 10%;
 }
+
+
+/*SubMenu*/
+#subMenu{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	justify-content: flex-end;
+	position: absolute;
+}
+
+#listMenu{
+	display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+
+.buttonMenu{
+	padding-bottom: 0.4%;
+    padding-top: 0.4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    float: right;
+    background-color: #f8f9fa;
+}
+
+a.linkButtonMenu {
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+}
+
+
+
 /*-- End Navbar --*/
 
 
@@ -44,6 +81,7 @@ body{
 .main{
 	border: 1px solid red;
 	text-align: center;
+	float: clear;
 	/* width: 80%;
 	margin-left: 10%;
 	margin-right: 10%; */
