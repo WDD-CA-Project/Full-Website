@@ -68,6 +68,7 @@ body{
 a.linkButtonMenu {
 	text-decoration: none;
 	display: block;
+	text-transform: uppercase;
 }
 
 
