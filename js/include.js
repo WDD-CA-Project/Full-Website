@@ -18,4 +18,3 @@ fetch("components/navbar.html")
     link.setAttribute('aria-current','page');
   }
 });
-
