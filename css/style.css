@@ -84,7 +84,9 @@ a.linkButtonMenu {
     padding: 8px 24px;
     /* border: 2px solid #ffc400; */
 }
-
+.nav-link.active{
+	color: white;
+}
 
 /*-- End Navbar --*/
 
