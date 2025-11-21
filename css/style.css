@@ -77,7 +77,7 @@ a.linkButtonMenu {
 
 .nav-link.active, .nav-link[aria-current="page"] {
     font-weight: 600;
-    background-color: #01532670;
+    background-color: #015326d1;
     color: white;
     border-radius: 20px;
     padding: 8px 24px;
