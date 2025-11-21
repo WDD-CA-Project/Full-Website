@@ -117,6 +117,7 @@ footer {
 	border: 1px solid red;
 	float: left;
 	overflow: hidden;
+	margin-bottom: 5%;
 }
 
 .contentFloatRight{
@@ -126,6 +127,15 @@ footer {
 	border: 1px solid red;
 	float: right;
 	overflow: hidden;
+	margin-bottom: 5%;
 }
 /*---------------------- END HOME -----------------------*/
+
+
+
+
+
+
+
+/* //////////////// RESPONSIVE ///////////// */
 
