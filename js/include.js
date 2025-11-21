@@ -10,4 +10,12 @@ fetch("components/navbar.html")
 
 <script src="https://kit.fontawesome.com/57a310552d.js" crossorigin="anonymous"></script>
 
-//
+// Styling menu buttons, coloring, effects when accessing page
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+  if(link.href === window.location.href) {
+    link.classList.add('active');
+    link.setAttribute('aria-current','page');
+  }
+});
+
