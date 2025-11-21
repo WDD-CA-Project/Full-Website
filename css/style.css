@@ -12,17 +12,19 @@ Public Sans
 
 */
 
+/*---- All pages elements ----*/
 
 body{
 	background-color:lightgreen;
 }
 
+/*-- Navbar --*/
 .navbar-brand{
 	max-width:300px;
 }
 
 
-.navStyle{
+.navbarStyle{
 	text-align: center;
 	width: 80%;
 	margin-left: 10%;
@@ -32,10 +34,12 @@ body{
 }
 
 .navbarCenter{
-    width: 80%;
     margin-left: 10%;
-    margin-right: 10%
 }
+/*-- End Navbar --*/
+
+
+
 
 .main{
 	border: 1px solid red;
@@ -44,6 +48,21 @@ body{
 	margin-left: 10%;
 	margin-right: 10%; */
 }
+
+
+/* -- Footer -- */
+/* Style the footer to sit at the bottom, with top margin auto */
+footer {
+	clear: both;
+	background-color: #f8f9fa;
+	text-align: center;
+	padding: 2%;
+	margin-top: auto;
+	width: 100%;
+	border-top: 1px solid black;
+}
+/* -- End Footer -- */
+
 
 
 /* Home background image */
@@ -74,6 +93,8 @@ body{
 	padding: 2%;
 }
 
+
+/*---------------------- HOME -----------------------*/
 /*---HOME Content Section---*/
 .pageContent{
 	width: 80%;
@@ -106,20 +127,5 @@ body{
 	float: right;
 	overflow: hidden;
 }
-
-
-
-/* Style the footer to sit at the bottom, with top margin auto */
-footer {
-	clear: both;
-	background-color: #f8f9fa;
-	text-align: center;
-	padding: 2%;
-	margin-top: auto;
-	width: 100%;
-	border-top: 1px solid black;
-}
-
-
 /*---------------------- END HOME -----------------------*/
 
