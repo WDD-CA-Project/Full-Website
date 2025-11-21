@@ -68,7 +68,7 @@ body{
 	padding: 2%;
 }
 
-/*Content*/
+/*---HOME Content Section---*/
 .pageContent{
 	width: 80%;
 	margin-left: 10%;
@@ -81,6 +81,7 @@ body{
 .pageContent img{
 	object-fit: cover;
 }
+
 
 .contentFloatLeft{
 	width: 40%;
