@@ -24,6 +24,21 @@ document.addEventListener("DOMContentLoaded", () => {
 		.then(data => {
 		  // Insert footer 
 		  document.getElementById("submenuAdd").innerHTML = data;
+		  
+		document.querySelectorAll('.buttonMenu a').forEach(link => {
+			if (link.pathname === window.location.pathname) {
+			  // the tag a recibes: 
+			  link.parentElement.classList.add("buttonMenuActive");
+			}
+      });
+	  
+	  	document.querySelectorAll('.buttonMenu li').forEach(link => {
+        if (link.pathname === window.location.pathname) {
+          // the tag li recibes: 
+          link.parentElement.classList.add("buttonMenuActive");
+        }
+      });
+	  
     })
 	
 	
