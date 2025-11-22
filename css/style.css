@@ -39,13 +39,27 @@ body{
 	line-height: normal;
 }
 
+.nav-link.active, .nav-link[aria-current="page"] {
+    font-weight: 600;
+    /* background-color: #015326eb; */
+	background-color: #108245;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 24px;
+    /* border: 2px solid #ffc400; */
+}
 
-/*SubMenu*/
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show
+{
+    color: white !important;
+}
+
+
+/*--SubMenu--*/
 #subMenu{
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
-	justify-content: flex-end;
 	position: absolute;
 }
 
@@ -63,17 +77,9 @@ body{
     padding-right: 2%;
     margin-left: 3%;
     margin-right: 3%;
-    float: right;
     background-color: #f8f9fa;
 }
 
-.buttonMenu:hover{
-	background-color: #108245;
-}
-
-.buttonMenuActive{
-	color: white;
-}
 
 a.linkButtonMenu {
 	text-decoration: none;
@@ -82,20 +88,31 @@ a.linkButtonMenu {
 	color: black;
 }
 
-.nav-link.active, .nav-link[aria-current="page"] {
-    font-weight: 600;
-    /* background-color: #015326eb; */
+
+/* Active little arrow, background colour and font colour in selected page for SUBMENU */
+.buttonMenu:hover{
 	background-color: #108245;
-    color: white;
-    border-radius: 20px;
-    padding: 8px 24px;
-    /* border: 2px solid #ffc400; */
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show
-{
-    color: white !important;
+.buttonMenuActive::after {
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid #108245; /* mismo verde del botón */
+	bottom: 100%;
 }
+
+.buttonMenuActive{
+	background-color: #108245;
+}
+
+.buttonMenuActive a{
+	color: white;
+}
+
+
 /*-- End Navbar --*/
 
 
