@@ -25,17 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
 		  // Insert footer 
 		  document.getElementById("submenuAdd").innerHTML = data;
 		  
-		document.querySelectorAll(".buttonMenu").forEach(link => {
+		document.querySelectorAll('.buttonMenu a').forEach(link => {
 			if (link.pathname === window.location.pathname) {
 			  // the tag a recibes: 
-			  link.classList.add("buttonMenuActive");
+			  link.parentElement.classList.add("buttonMenuActive");
 			}
       });
 	  
-	  	document.querySelectorAll(".buttonMenu li").forEach(link => {
+	  	document.querySelectorAll('.buttonMenu li').forEach(link => {
         if (link.pathname === window.location.pathname) {
           // the tag li recibes: 
-          link.classList.add("buttonMenuActive");
+          link.parentElement.classList.add("buttonMenuActive");
         }
       });
 	  
@@ -58,6 +58,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+
+
+
+// Button Active in SUBMENU
+    document.querySelectorAll('.buttonMenu a').forEach(link => {
+        if (link.pathname === window.location.pathname) {
+          // the tag a recibes: 
+          link.parentElement.classList.add("buttonMenuActive");
+        }
+      });
+	  
+	document.querySelectorAll('.buttonMenu li').forEach(link => {
+        if (link.pathname === window.location.pathname) {
+          // the tag li recibes: 
+          link.parentElement.classList.add("buttonMenuActive");
+        }
+      });
 
 
 
