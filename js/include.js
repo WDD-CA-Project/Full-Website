@@ -1,6 +1,7 @@
 alert("ok");
 document.addEventListener("DOMContentLoaded", () => {
 
+//Add NavBar and Menu selection
   fetch("components/navbar.html")
     .then(response => response.text())
     .then(data => {
@@ -25,6 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => {
       console.error("Error cargando navbar:", err);
+    });
+
+});
+
+//Add Footer
+  fetch("components/footer.html")
+    .then(response => response.text())
+    .then(data => {
+      // Insertar el navbar en el div
+      document.getElementById("footerAdd").innerHTML = data;
+
+    })
+    .catch(err => {
+      console.error("Error cargando Footer:", err);
     });
 
 });
