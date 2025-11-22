@@ -116,14 +116,15 @@ a.linkButtonMenu {
 /*-- End Navbar --*/
 
 
-
+/* Main container */
 .main{
 	border: 1px solid red;
 	text-align: center;
 	float: clear;
-	/* width: 80%;
+	width: 80%;
 	margin-left: 10%;
-	margin-right: 10%; */
+	margin-right: 10%;
+	padding-top: 3%;
 }
 
 
@@ -177,6 +178,7 @@ ul.footerMenu{
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
+	text-align: center;
 }
 
 .introTitle{
