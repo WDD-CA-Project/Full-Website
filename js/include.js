@@ -1,41 +1,52 @@
 alert("ok");
 document.addEventListener("DOMContentLoaded", () => {
 
+// The fetch actions work only in GitHub. 
 //Add NavBar and Menu selection
   fetch("components/navbar.html")
     .then(response => response.text())
     .then(data => {
-      // Insertar el navbar en el div
+      // Insert navbar 
       document.getElementById("navbarAdd").innerHTML = data;
 
-      // 🔹 Marcar el link activo del NAV principal
-      document.querySelectorAll(".nav-link").forEach(link => {
+      // ACTIVE LINK on principal NAVBAR
+    document.querySelectorAll(".nav-link").forEach(link => {
         if (link.pathname === window.location.pathname) {
           link.classList.add("active");
           link.setAttribute("aria-current", "page");
         }
       });
-
-      // 🔹 Marcar los botones del sub-menú si querés (opcional)
-      document.querySelectorAll(".buttonMenu").forEach(link => {
-        if (link.pathname === window.location.pathname) {
-          link.classList.add("buttonMenuActive");
-          link.setAttribute("aria-current", "page");
-        }
-      });
     })
+	
     .catch(err => {
-      console.error("Error cargando navbar:", err);
+      console.error("Error loading navbar:", err);
     });
-  fetch("components/footer.html")
-    .then(response => response.text())
-    .then(data => {
-      // Insertar el navbar en el div
-      document.getElementById("footerAdd").innerHTML = data;
-
+	
+	
+	fetch("components/footer.html")
+		.then(response => response.text())
+		.then(data => {
+		  // Insert footer 
+		  document.getElementById("footerAdd").innerHTML = data;
     })
+	
 });
 
 
-//Add Footer
+// Button Active in SUBMENU
+    document.querySelectorAll('.buttonMenu a').forEach(link => {
+        if (link.pathname === window.location.pathname) {
+          // the tag a recibes: 
+          link.parentElement.classList.add("buttonMenuActive");
+        }
+      });
+	  
+	document.querySelectorAll('.buttonMenu li').forEach(link => {
+        if (link.pathname === window.location.pathname) {
+          // the tag li recibes: 
+          link.parentElement.classList.add("buttonMenuActive");
+        }
+      });
+
+
 
