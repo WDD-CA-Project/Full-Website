@@ -94,10 +94,9 @@ a.linkButtonMenu {
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show
 {
-	color: none;
+    color: white !important;
 }
 /*-- End Navbar --*/
-
 
 
 
@@ -122,6 +121,25 @@ footer {
 	width: 100%;
 	border-top: 1px solid black;
 }
+
+.footerWrapper{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+footer img {
+	max-width: 150px;
+}
+
+ul.footerMenu{
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+	margin: auto;
+    padding-left: 0;
+}
+
 /* -- End Footer -- */
 
 
