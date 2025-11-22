@@ -34,10 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("footerAdd").innerHTML = data;
 
     })
-    .catch(err => {
-      console.error("Error cargando Footer:", err);
-    });
-
 });
 
 
