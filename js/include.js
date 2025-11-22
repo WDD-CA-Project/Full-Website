@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
 //Add Footer
   fetch("components/footer.html")
     .then(response => response.text())
@@ -42,4 +43,3 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error cargando Footer:", err);
     });
 
-});
