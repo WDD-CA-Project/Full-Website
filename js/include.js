@@ -27,11 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(err => {
       console.error("Error cargando navbar:", err);
     });
-
-});
-
-
-//Add Footer
   fetch("components/footer.html")
     .then(response => response.text())
     .then(data => {
@@ -42,4 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(err => {
       console.error("Error cargando Footer:", err);
     });
+
+});
+
+
+//Add Footer
 
