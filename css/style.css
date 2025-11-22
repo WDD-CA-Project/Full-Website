@@ -132,6 +132,15 @@ footer img {
 	max-width: 150px;
 }
 
+footer a{
+	text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    color: #108245;
+}
+
 ul.footerMenu{
     justify-content: center;
     list-style: none;
@@ -184,27 +193,17 @@ ul.footerMenu{
 	padding-bottom: 5vh;
 }
 
+
 .pageContent img{
 	object-fit: cover;
 }
 
 
-.contentFloatLeft{
-	width: 40%;
-	margin-left: 5%;
+.contentCard{
+	width: 40%;	
 	margin-right: 2%;
-	border: 1px solid red;
-	float: left;
-	overflow: hidden;
-	margin-bottom: 5%;
-}
-
-.contentFloatRight{
-	width: 40%;
 	margin-left: 2%;
-	margin-right: 5%;
 	border: 1px solid red;
-	float: right;
 	overflow: hidden;
 	margin-bottom: 5%;
 }
