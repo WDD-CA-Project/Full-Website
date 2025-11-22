@@ -91,14 +91,11 @@ a.linkButtonMenu {
     padding: 8px 24px;
     /* border: 2px solid #ffc400; */
 }
-.nav-link.active{
-	color: white;
-}
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: white;
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show
+{
+	color: none;
 }
-
 /*-- End Navbar --*/
 
 
