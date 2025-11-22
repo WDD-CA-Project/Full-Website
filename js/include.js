@@ -10,9 +10,18 @@ fetch("components/navbar.html")
     link.classList.add('active');
     link.setAttribute('aria-current','page');
   }
+  
+
 });
 
 });
 
 // Styling menu buttons, coloring, effects when accessing page
 
+  	document.querySelectorAll('.buttonMenu').forEach(link => {
+	if(link.href === window.location.href) {
+    link.classList.add('.buttonMenuActive');
+    link.setAttribute('aria-current','page');
+  }
+  
+  
