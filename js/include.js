@@ -15,13 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // 🔹 Marcar los botones del sub-menú si querés (opcional)
-      document.querySelectorAll(".buttonMenu").forEach(link => {
-        if (link.pathname === window.location.pathname) {
-          link.classList.add("buttonMenuActive");
-          link.setAttribute("aria-current", "page");
-        }
-      });
+      
     })
     .catch(err => {
       console.error("Error cargando navbar:", err);
