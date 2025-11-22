@@ -16,7 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
           link.setAttribute("aria-current", "page");
         }
       });
+	  
     })
+	
+	fetch("components/submenu.html")
+		.then(response => response.text())
+		.then(data => {
+		  // Insert footer 
+		  document.getElementById("submenuAdd").innerHTML = data;
+    })
+	
+	
 	
     .catch(err => {
       console.error("Error loading navbar:", err);
@@ -31,6 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 	
 });
+
+
+
 
 
 // Button Active in SUBMENU
