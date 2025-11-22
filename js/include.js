@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	fetch("components/submenu.html")
 		.then(response => response.text())
 		.then(data => {
-		  // Insert footer 
+		  // Insert Submenu
 		  document.getElementById("submenuAdd").innerHTML = data;
 		  
 		document.querySelectorAll('.buttonMenu a').forEach(link => {
