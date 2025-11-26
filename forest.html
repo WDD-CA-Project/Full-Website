@@ -24,102 +24,36 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css" />
 
-	<!-- JS Conection-->
+	<!-- JS Conections-->
 	<script defer src="js/include.js"></script>
-	
+	<script src="https://kit.fontawesome.com/57a310552d.js" crossorigin="anonymous"></script> <!--Icons-->
+
 </head>
 
 <body>
-	<div id="container" >
+	<div id="container"> <!-- Container (Bootstrap) -->
+	
+		<!-- Add Navbar and Submenu with JS -->
 		<header>
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
-				<div class="container-fluid navbarStyle"> 
-				<!-- navbarStyle is a created class -->
-					<!-- Logo -->
-					<a class="navbar-brand" href="index.html"><img width=200px src="img/logo.png" alt="logo" /></a>
-
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbarCenter navbar-nav me-auto mb-2 mb-lg-0">
-						<!-- navbarCenter is a created class -->
-							<li class="nav-item">
-								<a class="nav-link" href="index.html">HOME</a>
-							</li> <!-- class = active and aria-current="page" for the current page -->
-							<li class="nav-item">
-								<a class="nav-link" href="goals.html">ABOUT 17 GOALS</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="take_action.html">TAKE ACTION</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="global.html">GLOBAL INTIATIVES</a>
-							</li>
-
-							<!-- Dropdown Menu -->
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> LIFE ON LAND </a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="forest.html">Forest</a></li>
-									
-									<li><a class="dropdown-item" href="biodiversity.html">Biodiversity</a></li>
-									
-									<!-- <li><hr class="dropdown-divider"></li> -->
-									
-									<li><a class="dropdown-item" href="land.html">Land</a></li>
-									
-									<li><a class="dropdown-item" href="ecosystem.htlm">Ecosystem</a></li>
-								</ul>
-							</li>
-						
-
-							<li class="nav-item">
-								<a class="nav-link" href="contact.html">CONTACT US</a>
-							</li>
-						</ul>
-
-					</div>
-				</div>
-			</nav>
-
-
-			<div id="subMenu"> 
-				
-				<ul id="listMenu">			
-					<li class="buttonMenu"> 
-						<a class="linkButtonMenu" href="forest.html">Forest</a> 
-					</li>
-					<li class="buttonMenu"> 
-						<a class="linkButtonMenu" href="biodiversity.html">Biodiversity</a> 
-					</li>
-					<li class="buttonMenu"> 
-						<a class="linkButtonMenu" href="land.html">Land</a> 
-					</li>
-					<li class="buttonMenu"> 
-						<a class="linkButtonMenu" href="ecosystem.html">Ecosystem</a> 
-					</li>
-				</ul>
-
-			</div>
-		
+			<div id="navbarAdd"></div>
+			<div id="submenuAdd"></div>
 		</header>
 		
 		<div class="main">
 		
-			<div>
-				<p>Interaction Section (In Progress)</p>
-				<a href="interaction_forest.html">HERE</a>
-			<div>
-			
+		<div>
+			<p>Interaction Section (In Progress)</p>
+			<a href="interaction_land.html">HERE</a>
+		<div>
+		
 		</div>
-
-
+		
+		<!-- Add Footer with JS -->
+		<footer id="footerAdd"></footer>
+		
+	</div> <!-- END Container -->
 	
-	</div>
+	
 </body>
 
 </html>
