@@ -280,6 +280,115 @@ p.sectionPresText{
 }
 
 
+/* Animated hero background */
+.hero-section {
+  background: linear-gradient(-45deg, #4caf5080, #81c78480, #a5d6a780, #4db6ac80);
+  background-size: 400% 400%;
+  animation: gradientBG 20s ease infinite;
+  min-height: 50vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes gradientBG {
+  0% {
+	background-position: 0% 50%;
+  }
+
+  50% {
+	background-position: 100% 50%;
+  }
+
+  100% {
+	background-position: 0% 50%;
+  }
+}
+
+/* Card motion on hover */
+.contentCard {
+  border-radius: 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  background-color: #fafafa;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+}
+
+.contentCard:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 12px 35px rgb(0 0 0 / 0.25);
+  background-color: #def7e1;
+  z-index: 10;
+  position: relative;
+}
+
+/* Animated icons */
+.icon-animate {
+  font-size: 3rem;
+  color: #4caf50;
+  animation: bounce 2s infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+	transform: translateY(0px);
+  }
+
+  50% {
+	transform: translateY(-10px);
+  }
+}
+
+/* Scroll fade-in */
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(30px);
+  animation-fill-mode: forwards;
+  animation-name: fadeInUpAnim;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+.fadeInUp.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.fadeInUp.delay-2 {
+  animation-delay: 0.6s;
+}
+
+.fadeInUp.delay-3 {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeInUpAnim {
+  to {
+	opacity: 1;
+	transform: none;
+  }
+}
+
+
+.sectionBTittle{
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.sectionBDes{
+	max-width: 700px;
+}
+
+
 /*---------------------- FOREST -----------------------*/
 
 .factsImg{
@@ -327,6 +436,7 @@ div.sectionMainPres {
 	margin-top: 5%;
 }
 	
+
 
 
 
