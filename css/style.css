@@ -444,6 +444,14 @@ p.sectionPresText{
 	border-radius: 4px; /* To check if maintain this border, more rounder or... */
 }
 
+.wireframe-img-box::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.wireframe-img-box::after{
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
 /*---------------------- END ECOSYSTEM -----------------------*/
 
 
