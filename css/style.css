@@ -415,14 +415,24 @@ p.sectionPresText{
 
 /*---------------------- ECOSYSTEM -----------------------*/
 
-	.fact-container
-		background-color: #fffff /*/ color to be checked /*/
-		border: 1px solid: #f0fff0 /*/ color to be checked /*/
-		padding: 1rem
-		border-radius: 80px
-		margin-bottom: 2rem
+.fact-container {
+	background-color: #fffff; /* color to be checked */
+	border: 1px solid: #f0fff0; /*/olor to be checked */
+	padding: 1rem;
+	border-radius: 80px;
+	margin-bottom: 2rem;
+	/*/ BOX SHADOW ? /*/ 
+	}
 
-		/*/ BOX SHADOW ? /*/ 
+.fact-title {
+	font-family: "Public Sans", sans-serif;
+	font-weight: 700;
+	color: #108245;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+
+
 
 /*---------------------- END ECOSYSTEM -----------------------*/
 
