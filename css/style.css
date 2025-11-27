@@ -202,11 +202,11 @@ ul.footerMenu{
 
 }
 
+/* Text in Home page */
 .introDes{
 	width: 50%;
 	text-align: center;
 	border: 1px solid green;
-	
 	margin-left: 25%;
 	margin-right: 25%;
 	background-color: lightgrey;
@@ -247,6 +247,9 @@ ul.footerMenu{
 /* Tittle */
 div.sectionTittle{
 	margin-top: 6%;
+	background-color: white;
+    padding-top: 1.5%;
+    padding-bottom: 1.2%;
 }
 
 .sectionLifeTittle {
@@ -269,7 +272,7 @@ div.sectionMainPres {
 	text-align: center;
 	margin-left: 20%;
 	margin-right: 20%;
-	margin-top: 5%;
+	margin-top: 4%;
 }
 
 p.sectionPresText{
@@ -308,7 +311,14 @@ X-Large ≥1200px min-width: 1200px
 /*Bootstrap Breapoint to Hambuger Menu */
 @media (max-width: 991px){
 	
-	
+/*Home Page*/
+.introDes{
+	width: 70%;
+	margin-left:15%;
+	margin-right: 15%;
+}	
+
+/*Sections*/
 div.sectionMainPres {
 	width: 80%;
 	text-align: center;
@@ -317,5 +327,8 @@ div.sectionMainPres {
 	margin-top: 5%;
 }
 	
-	
-}
+
+
+
+
+}/*END Media 991px */ 
