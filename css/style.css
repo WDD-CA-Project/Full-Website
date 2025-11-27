@@ -229,12 +229,24 @@ ul.footerMenu{
 /*---------------------- END HOME -----------------------*/
 
 
+/* COMMUN TO ALL SECTIONS */
+
+.sectionLifeTittle {
+	font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    color: red;
+    margin-bottom: 0;
+	font-weight: 200;
+}
+
 
 
 
 /*---------------------- FOREST -----------------------*/
 
-
+.factsImg{
+  clip-path: circle(30%);
+}
 
 
 
