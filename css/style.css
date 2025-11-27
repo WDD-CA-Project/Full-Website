@@ -244,11 +244,11 @@ ul.footerMenu{
 /* COMMUN TO ALL SECTIONS */
 
 /* Tittle */
-div.sectionTittle{
-	margin-top: 6%;
-	background-color: white;
-    padding-top: 1.5%;
-    padding-bottom: 1.2%;
+.sectionBTittle{
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 .sectionLifeTittle {
@@ -345,12 +345,7 @@ p.sectionPresText{
 }
 
 
-.sectionBTittle{
-	border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-}
+
 
 .sectionBDes{
 	max-width: 700px;
