@@ -139,6 +139,54 @@ a.linkButtonMenu {
 .contentCard:hover {
   background-color: #f0fff0; /* light green/white on hover */
 }
+/*four box hover*/
+.hoverBox {
+      width: 600px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: black; /* black background at start */
+      transition: background 0.6s ease;
+    }
+	
+	/* Remove underline and blue color from all links */
+a {
+  text-decoration: none;
+  color: inherit;   /* makes link text use the parent color */
+}
+
+/* Remove blue outline when link is clicked/focused */
+a:focus, a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+
+    .hoverBox h1	{
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+
+      /* image inside text effect */
+      background: url('forest_cover.jpg') no-repeat center center;
+      background-size: cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+
+      transition: color 0.6s ease, background 0.6s ease;
+    }
+
+    .hoverBox:hover {
+      background: url('forest_cover.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .hoverBox:hover h1	{
+      color: white;        /* text turns solid white */
+      background: none;    /* remove image fill from text */
+    }
 
 /* -- Footer -- */
 /* Style the footer to sit at the bottom, with top margin auto */
