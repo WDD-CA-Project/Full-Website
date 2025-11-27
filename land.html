@@ -2,152 +2,253 @@
 <html lang="en">
 
 <head>
-	<title>Land Degradation - Life In Land</title>
-	
-	<!-- Meta Tags -->
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Life on Land - Land Degradation and Desertification" />
-	<meta name="author" content="Shan Narayanan Sivakumar">
-	
-	<!-- Bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-	crossorigin="anonymous"></script>
-	
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Land Degradation - Life In Land</title>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/style.css" />
-	
-	<!-- JS Conections-->
-	<script defer src="js/include.js"></script>
-	<script src="https://kit.fontawesome.com/57a310552d.js" crossorigin="anonymous"></script> <!--Icons-->
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Life on Land - Land Degradation and Desertification" />
+  <meta name="author" content="Group" />
 
+  <!-- Bootstrap CSS + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JS -->
+  <script defer src="js/include.js"></script>
+  <script src="https://kit.fontawesome.com/57a310552d.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* Animated hero background */
+    .hero-section {
+      background: linear-gradient(-45deg, #4caf5080, #81c78480, #a5d6a780, #4db6ac80);
+      background-size: 400% 400%;
+      animation: gradientBG 20s ease infinite;
+      min-height: 50vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Card motion on hover */
+    .contentCard {
+      border-radius: 15px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      background-color: #fafafa;
+      box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+    }
+
+    .contentCard:hover {
+      transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 12px 35px rgb(0 0 0 / 0.25);
+      background-color: #def7e1;
+      z-index: 10;
+      position: relative;
+    }
+
+    /* Animated icons */
+    .icon-animate {
+      font-size: 3rem;
+      color: #4caf50;
+      animation: bounce 2s infinite;
+      margin-bottom: 1rem;
+    }
+
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Scroll fade-in */
+    .fadeInUp {
+      opacity: 0;
+      transform: translateY(30px);
+      animation-fill-mode: forwards;
+      animation-name: fadeInUpAnim;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+    }
+
+    .fadeInUp.delay-1 {
+      animation-delay: 0.3s;
+    }
+
+    .fadeInUp.delay-2 {
+      animation-delay: 0.6s;
+    }
+
+    .fadeInUp.delay-3 {
+      animation-delay: 0.9s;
+    }
+
+    @keyframes fadeInUpAnim {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
-	<div id="container"> <!-- Container (Bootstrap) -->
-	
-		<!-- Add Navbar and Submenu with JS -->
-		<header>
-			<div id="navbarAdd"></div>
-			<div id="submenuAdd"></div>
-		</header>
+  <div id="container" class="container my-4">
 
-		  <!-- Main content -->
-    <main class="main py-5">
+    <!-- Navbar + submenu -->
+    <header>
+      <div id="navbarAdd"></div>
+      <div id="submenuAdd"></div>
+    </header>
 
-      <!-- Hero / Intro -->
-      <section class="pageIntro mb-5">
-        <div class="introText text-white d-flex flex-column justify-content-center align-items-center" style="min-height: 40vh;">
-          <div class="introTitle">
-            <h1 id="mainTitleStyle">Land Degradation & Desertification</h1>
-          </div>
-          <div class="introDes mt-3">
-            <p>
-              Land degradation happens when land loses its ability to support crops, forests or natural ecosystems,
-              often due to deforestation, overgrazing, unsustainable farming and climate change. [web:66][web:88]
-            </p>
-            <p class="mt-2 mb-0">
-              Under SDG 15, countries have committed to combat desertification, restore degraded land and soil,
-              and strive for a land degradation‑neutral world by 2030. [web:1][web:61][web:72]
-            </p>
+    <!-- Hero with gradient animation -->
+    <section class="hero-section mb-5">
+      <h1 class="display-4 fw-bold">Land Degradation &amp; Desertification</h1>
+      <p class="lead mt-3 mx-auto" style="max-width: 700px;">
+        Tackling the loss of productive land globally to safeguard ecosystems, food security, and livelihoods. Join
+        us in restoring a healthier planet.
+      </p>
+    </section>
+
+    <!-- Key cards with bounce icons and fade-in -->
+    <section class="pageContent mb-5">
+      <h2 class="mb-4 text-center">Key Concepts</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-3 fadeInUp delay-1">
+          <div class="contentCard p-4 h-100 text-center shadow-sm">
+            <i class="bi bi-tree icon-animate"></i>
+            <h5>Land Degradation</h5>
+            <p>Long-term decline in soil health and land productivity threatening nature and farming.</p>
           </div>
         </div>
-      </section>
-
-      <!-- Key concepts cards -->
-      <section class="pageContent my-4">
-        <h2 class="mb-4">Key concepts</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-6 col-lg-3 text-center mb-4 contentCard p-3">
-            <h3 class="h5">What is land degradation?</h3>
-            <p class="mt-2 mb-0">
-              Long-term decline in soil health and land productivity, making it harder to grow food or support nature. [web:66][web:88]
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-3 text-center mb-4 contentCard p-3">
-            <h3 class="h5">What is desertification?</h3>
-            <p class="mt-2 mb-0">
-              Land in dry areas becoming less productive because of human activities and climate change, not just “sand deserts”. [web:72][web:75]
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-3 text-center mb-4 contentCard p-3">
-            <h3 class="h5">Why it matters</h3>
-            <p class="mt-2 mb-0">
-              It threatens food security, water resources, biodiversity and the livelihoods of millions of people. [web:9][web:65]
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-3 text-center mb-4 contentCard p-3">
-            <h3 class="h5">SDG 15.3 goal</h3>
-            <p class="mt-2 mb-0">
-              By 2030, countries aim to combat desertification, restore degraded land and strive for land degradation neutrality. [web:1][web:61][web:72]
-            </p>
+        <div class="col-md-6 col-lg-3 fadeInUp delay-2">
+          <div class="contentCard p-4 h-100 text-center shadow-sm">
+            <i class="bi bi-sun icon-animate"></i>
+            <h5>Desertification</h5>
+            <p>Drylands becoming less productive due to overuse, climate change, and poor land management.</p>
           </div>
         </div>
-      </section>
-
-      <!-- Causes and impacts -->
-      <section class="pageContent my-4">
-        <h2 class="mb-4">Causes and impacts</h2>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <h3 class="h5">Main causes</h3>
-            <ul class="text-start">
-              <li>Deforestation and removal of vegetation cover. [web:72][web:88]</li>
-              <li>Overgrazing and unsustainable farming practices. [web:72][web:88]</li>
-              <li>Urban expansion and infrastructure development on fertile land. [web:65][web:88]</li>
-              <li>Climate change, droughts and extreme weather events. [web:9][web:80]</li>
-            </ul>
-          </div>
-          <div class="col-md-6 mb-3">
-            <h3 class="h5">Key impacts</h3>
-            <ul class="text-start">
-              <li>Loss of soil fertility and lower crop yields. [web:88]</li>
-              <li>Greater risk of floods, dust storms and drought. [web:9][web:80]</li>
-              <li>Loss of habitats and biodiversity on land. [web:1][web:11]</li>
-              <li>Economic losses and pressure to migrate from affected areas. [web:9][web:80]</li>
-            </ul>
+        <div class="col-md-6 col-lg-3 fadeInUp delay-3">
+          <div class="contentCard p-4 h-100 text-center shadow-sm">
+            <i class="bi bi-exclamation-triangle icon-animate"></i>
+            <h5>Why It Matters</h5>
+            <p>Threatens food security, biodiversity, and the livelihoods of millions worldwide.</p>
           </div>
         </div>
-      </section>
-		      <!-- Solutions & interaction -->
-      <section class="pageContent my-4">
-        <div class="row align-items-center">
-          <div class="col-md-7 mb-3">
-            <h2 class="mb-3">How can land be restored?</h2>
-            <ul class="text-start">
-              <li>Use sustainable land management such as crop rotation, cover crops and agroforestry. [web:80][web:88]</li>
-              <li>Protect and restore forests, grasslands and wetlands to keep soil and water in balance. [web:1][web:82]</li>
-              <li>Support policies and global efforts like the UN Convention to Combat Desertification (UNCCD). [web:72][web:74][web:89]</li>
-              <li>Raise awareness and involve local communities and farmers in restoration projects. [web:83][web:86]</li>
-            </ul>
-          </div>
-          <div class="col-md-5 text-center mb-3">
-            <h3 class="h5 mb-3">Try the interaction</h3>
-            <p>
-              Explore how everyday choices and land-use decisions can affect soil health and ecosystems.
-            </p>
-            <a href="interaction_land.html" class="btn btn-success btn-lg mt-2">
-              Go to the interaction
-            </a>
+      </div>
+    </section>
+
+    <!-- Causes and impacts with animated fade and icons -->
+    <section class="pageContent mb-5">
+      <h2 class="mb-4 text-center">Causes &amp; Impacts</h2>
+      <div class="row">
+        <div class="col-md-6 fadeInUp delay-1">
+          <h5><i class="bi bi-gear-fill me-2"></i>Causes</h5>
+          <ul>
+            <li>Deforestation &amp; vegetation loss</li>
+            <li>Overgrazing, farming intensification</li>
+            <li>Urban sprawl and infrastructure</li>
+            <li>Climate change and droughts</li>
+          </ul>
+        </div>
+        <div class="col-md-6 fadeInUp delay-2">
+          <h5><i class="bi bi-exclamation-circle-fill me-2"></i>Impacts</h5>
+          <ul>
+            <li>Soil infertility, lower yields</li>
+            <li>More dust storms &amp; floods</li>
+            <li>Loss of critical habitats</li>
+            <li>Economic hardship &amp; migration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions and interaction callout -->
+    <section class="pageContent mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-7 fadeInUp delay-1">
+          <h2>Solutions &amp; Restorations</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Adopt sustainable land practices like agroforestry &amp; crop rotation.</li>
+            <li class="list-group-item">Protect forests, wetlands, and grasslands.</li>
+            <li class="list-group-item">Support UNCCD policies &amp; global restoration efforts.</li>
+            <li class="list-group-item">Engage local communities in restoration projects.</li>
+          </ul>
+        </div>
+        <div class="col-md-5 text-center fadeInUp delay-2">
+          <div class="p-4 bg-success bg-opacity-25 rounded shadow">
+            <h5 class="mb-3">Interactive Learning</h5>
+            <p>Discover how your actions impact land health through an engaging activity.</p>
+            <a href="interaction_land.html" class="btn btn-success btn-lg">Start the Interaction</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
-		
-		<!-- Add Footer with JS -->
-		<footer id="footerAdd"></footer>
-		
-	</div> <!-- END Container -->
-	
-	
+    <!-- Footer -->
+    <footer id="footerAdd"></footer>
+
+  </div>
+
+  <!-- Optional: add scroll animation trigger -->
+  <script>
+    // Reveal fadeInUp elements when scrolling
+    const faders = document.querySelectorAll('.fadeInUp');
+    const appearOptions = {
+      threshold: 0.3,
+      rootMargin: "0px 0px -100px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.style.animationPlayState = 'running';
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      fader.style.animationPlayState = 'paused';
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
 </body>
 
 </html>
