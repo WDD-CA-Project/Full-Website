@@ -127,7 +127,7 @@ a.linkButtonMenu {
 	padding-top: 3%;
 }
 
-.contentText:hover{
+.col-md-6 text-center mb-4 contentCard:hover{
 	background-color: white;
 }
 
