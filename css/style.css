@@ -246,7 +246,7 @@ ul.footerMenu{
 
 /* Tittle */
 div.sectionTittle{
-	margin-top: 5%;
+	margin-top: 6%;
 }
 
 .sectionLifeTittle {
@@ -294,4 +294,28 @@ p.sectionPresText{
 
 
 /* //////////////// RESPONSIVE ///////////// */
+/*
+BOOTSTRAP: 
+Mobile <576px max-width: 575px
+Small ≥576px min-width: 576px
+Medium ≥768px min-width: 768px
+Large (hamburger → full navbar) ≥992px min-width: 992px
+X-Large ≥1200px min-width: 1200px
+*/
 
+
+/* LARGE 992px */
+/*Bootstrap Breapoint to Hambuger Menu */
+@media (max-width: 991px){
+	
+	
+div.sectionMainPres {
+	width: 80%;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+}
+	
+	
+}
