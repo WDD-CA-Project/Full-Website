@@ -127,6 +127,9 @@ a.linkButtonMenu {
 	padding-top: 3%;
 }
 
+.col-md-6 text-center mb-4 contentCard:hover{
+	background-color: white;
+}
 
 /* -- Footer -- */
 /* Style the footer to sit at the bottom, with top margin auto */
