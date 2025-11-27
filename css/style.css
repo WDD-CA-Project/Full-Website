@@ -436,13 +436,18 @@ p.sectionPresText{
 
 .wireframe-img-box {
 	width: 100%;
+	height: 100px;
 	max-width: 200px;
 	background-color:#e9ecef; /* color to be checked */
+	background-size: cover;
+	background-position: center;
 	border: 2px solid #333;
 	margin: 0 auto; /* To center the box */
 	position: absolute;
-	border-radius: 4px; /* To check if maintain this border, more rounder or... */
+	border-radius: 50%; /* To check if maintain this border, more rounder or... */
 }
+
+/* picture in circle */
 
 .wireframe-img-box::before {
 	transform: translate(-50%, -50%) rotate(45deg);
@@ -451,7 +456,6 @@ p.sectionPresText{
 .wireframe-img-box::after{
 	transform: translate(-50%, -50%) rotate(45deg);
 }
-
 
 
 /*---------------------- END ECOSYSTEM -----------------------*/
@@ -512,7 +516,7 @@ div.sectionMainPres {
 /*Bootstrap Breapoint to Hambuger Menu */
 
 @media (max-width: 575px){
-	
+
 .sectionMainTittle{
     font-size: 2.3rem;
 }
