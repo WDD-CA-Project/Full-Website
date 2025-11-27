@@ -10,66 +10,54 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet" />
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #e6f0d9;
+      font-family: 'Public Sans', sans-serif;
+      background: #f0fff0;
       padding: 20px;
     }
 
-    h1 {
-      color: darkgreen;
-      text-align: center;
-      animation: fadeIn 1.5s ease forwards;
+    /* Animated heading */
+    h1, h2 {
+      animation: fadeInDown 1s ease forwards;
       opacity: 0;
     }
 
-    .content-section {
-      background-color: white;
-      padding: 10px 20px;
-      margin-top: 20px;
-      border: 1px solid #aaa;
-      border-radius: 5px;
-      box-shadow: 1px 1px 3px #999;
+    h1 {
+      animation-delay: 0.3s;
+    }
+
+    h2 {
+      animation-delay: 0.6s;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Fade in for paragraphs and lists */
+    p, ul {
       animation: fadeInUp 1s ease forwards;
       opacity: 0;
+      animation-delay: 0.9s;
     }
 
-    .content-section:hover {
-      background-color: #cde9c7;
-      box-shadow: 2px 2px 6px #555;
-      transition: background-color 0.3s, box-shadow 0.3s;
-      cursor: pointer;
-    }
+    /* Simple fadeInDown */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
 
-    ul {
-      margin-top: 10px;
-    }
-
-    a.interact-btn {
-      display: block;
-      max-width: 250px;
-      margin: 30px auto 0 auto;
-      background-color: darkgreen;
-      color: white;
-      padding: 10px 15px;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-
-    a.interact-btn:hover {
-      background-color: #2d6b2d;
-    }
-
-    @keyframes fadeIn {
       to {
         opacity: 1;
+        transform: translateY(0);
       }
     }
 
+    /* Simple fadeInUp */
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -81,51 +69,101 @@
         transform: translateY(0);
       }
     }
+
+    /* Card container */
+    .card {
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      background: white;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Hover effect */
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      background-color: #d4edda;
+    }
+
+    /* Interactive button */
+    .btn-interact {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: white;
+      background: #28a745;
+      border: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-interact:hover {
+      background: #218838;
+      text-decoration: none;
+      color: white;
+    }
   </style>
+
 </head>
 
 <body>
 
-  <div>
-    <h1>Land Degradation & Desertification</h1>
+  <header>
+    <div id="navbarAdd"></div>
+    <div id="submenuAdd"></div>
+  </header>
 
-    <div class="content-section">
-      <h3>What is land degradation?</h3>
-      <p>When soil and land lose their ability to support plants and animals, usually because of human actions or climate.</p>
+  <main>
+    <h1>Land Degradation &amp; Desertification</h1>
+
+    <p>
+      Land degradation is the decline in the land’s ability to support life, often caused by deforestation, overuse,
+      and climate effects. SDG 15.3 aims to combat and reverse this by 2030.
+    </p>
+
+    <h2>Key Concepts</h2>
+
+    <div class="card">
+      <h3>Land Degradation</h3>
+      <p>The long-term reduction in soil health and productivity impacting ecosystems and agriculture.</p>
     </div>
 
-    <div class="content-section">
-      <h3>What is desertification?</h3>
-      <p>Dry places becoming even dryer and less useful for farming or wildlife due to bad land use and weather changes.</p>
+    <div class="card">
+      <h3>Desertification</h3>
+      <p>The degradation of drylands resulting from unsustainable use and climate impacts.</p>
     </div>
 
-    <div class="content-section">
-      <h3>Why it is important</h3>
-      <p>This causes less food, harm to plants and animals, and problems for people who live on the land.</p>
+    <div class="card">
+      <h3>Why it Matters</h3>
+      <p>It threatens food security, biodiversity, water resources, and livelihoods worldwide.</p>
     </div>
 
-    <div class="content-section">
-      <h3>How does it happen?</h3>
-      <ul>
-        <li>Cutting down too many trees</li>
-        <li>Using land too much for farming or raising animals</li>
-        <li>Building cities on fertile land</li>
-        <li>Less rain or more droughts</li>
-      </ul>
-    </div>
+    <h2>Causes</h2>
+    <ul>
+      <li>Deforestation and vegetation loss</li>
+      <li>Overgrazing and unsustainable farming</li>
+      <li>Urbanization and infrastructure growth</li>
+      <li>Climate change and drought</li>
+    </ul>
 
-    <div class="content-section">
-      <h3>How to help</h3>
-      <ul>
-        <li>Farm and use land in a smarter way</li>
-        <li>Plant trees and save forests</li>
-        <li>Support projects that fix land</li>
-        <li>Learn and teach others</li>
-      </ul>
-    </div>
+    <h2>How You Can Help</h2>
+    <ul>
+      <li>Adopt sustainable farming and land practices</li>
+      <li>Support forest and wetland restoration projects</li>
+      <li>Learn more and spread awareness</li>
+    </ul>
 
-    <a href="interaction_land.html" class="interact-btn">Try the Interaction</a>
-  </div>
+    <a href="interaction_land.html" class="btn-interact">Try the Interactive Activity</a>
+  </main>
+
+  <footer id="footerAdd"></footer>
 
 </body>
+
 </html>
