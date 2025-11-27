@@ -452,6 +452,8 @@ p.sectionPresText{
 	transform: translate(-50%, -50%) rotate(45deg);
 }
 
+
+
 /*---------------------- END ECOSYSTEM -----------------------*/
 
 
@@ -473,7 +475,7 @@ X-Large ≥1200px min-width: 1200px
 /*Home Page*/
 .introDes{
 	width: 70%;
-	margin-left:15%;
+	margin-left: 15%;
 	margin-right: 15%;
 }	
 
@@ -487,12 +489,30 @@ div.sectionMainPres {
 }
 	
 
-
-
 }/*END Media 991px */ 
 
+/* MEDIUM < 768px */
+/*Bootstrap Breapoint to Hambuger Menu*/
+
+@media (max-width: 767px) {
+
+.fact-container .text-start,
+.fact-container .text-end {
+	text-align: center ;
+}
+
+} /*END Media 768px */ 
+
+.wireframe-img-box {
+	margin-top: 15px;
+	max-width: 150px;
+}
+
+/* SMALL < 576px */
+/*Bootstrap Breapoint to Hambuger Menu */
 
 @media (max-width: 575px){
+	
 .sectionMainTittle{
     font-size: 2.3rem;
 }
@@ -502,4 +522,4 @@ div.sectionMainPres {
 }
 	
 	
-}
+}/*END Media 575px */ 
