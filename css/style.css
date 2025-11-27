@@ -279,8 +279,8 @@ p.sectionPresText{
 	
 }
 
-/*
-/* Animated hero background 
+
+/* Animated hero background */
 .hero-section {
   background: linear-gradient(-45deg, #4caf5080, #81c78480, #a5d6a780, #4db6ac80);
   background-size: 400% 400%;
@@ -311,7 +311,7 @@ p.sectionPresText{
   }
 }
 
-/* Card motion on hover 
+/* Card motion on hover */
 .contentCard {
   border-radius: 15px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -328,7 +328,7 @@ p.sectionPresText{
   position: relative;
 }
 
-/* Animated icons 
+/* Animated icons */
 .icon-animate {
   font-size: 3rem;
   color: #4caf50;
@@ -347,7 +347,7 @@ p.sectionPresText{
   }
 }
 
-/* Scroll fade-in 
+/* Scroll fade-in */
 .fadeInUp {
   opacity: 0;
   transform: translateY(30px);
@@ -375,7 +375,7 @@ p.sectionPresText{
 	transform: none;
   }
 }
-*/
+
 
 .sectionBTittle{
 	border-top-left-radius: 0;
