@@ -234,21 +234,44 @@ ul.footerMenu{
 
 /* COMMUN TO ALL SECTIONS */
 
+/* Tittle */
+div.sectionTittle{
+	margin-top: 5%;
+}
+
 .sectionLifeTittle {
 	font-family: "Public Sans", sans-serif;
     font-size: 1.2rem;
-    color: red;
     margin-bottom: 0;
 	font-weight: 200;
 }
 
+.sectionMainTittle{
+	font-family: "Public Sans", sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+	font-weight: 500;
+}
 
+/* Main Description */
+div.sectionMainPres {
+	width: 60%;
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5%;
+}
+
+p.sectionPresText{
+	
+}
 
 
 /*---------------------- FOREST -----------------------*/
 
 .factsImg{
   clip-path: circle(30%);
+  width: 20%;
 }
 
 
