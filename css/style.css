@@ -413,7 +413,18 @@ p.sectionPresText{
 /*---------------------- END FOREST -----------------------*/
 
 
+/*---------------------- ECOSYSTEM -----------------------*/
 
+	.fact-container
+		background-color: #fffff /*/ color to be checked /*/
+		border: 1px solid: #f0fff0 /*/ color to be checked /*/
+		padding: 1rem
+		border-radius: 80px
+		margin-bottom: 2rem
+
+		/*/ BOX SHADOW ? /*/ 
+
+/*---------------------- END ECOSYSTEM -----------------------*/
 
 
 /* //////////////// RESPONSIVE ///////////// */
