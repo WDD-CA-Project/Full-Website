@@ -13,7 +13,6 @@
   <!-- Bootstrap CSS + Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
 	crossorigin="anonymous"></script>
@@ -21,16 +20,16 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- JS -->
-  <script defer src="js/include.js"></script>
-  <script src="https://kit.fontawesome.com/57a310552d.js" crossorigin="anonymous"></script>
+  <!-- JS Conections-->
+	<script defer src="js/include.js"></script>
+	<script defer src="js/slides.js"></script>
+	<script src="https://kit.fontawesome.com/57a310552d.js" crossorigin="anonymous"></script> 
 
   <style>
     /* Animated hero background */
@@ -132,7 +131,7 @@
 </head>
 
 <body>
-  <div id="container" class="container my-4">
+  <div id="container">
 
     <!-- Navbar + submenu -->
     <header>
@@ -141,16 +140,12 @@
     </header>
 
     <!-- Hero with gradient animation -->
-    <section class="hero-section mb-5">
+    <div class="hero-section mb-5">
       <h1 class="display-4 fw-bold">Land Degradation &amp; Desertification</h1>
-      <p class="lead mt-3 mx-auto" style="max-width: 700px;">
-        Tackling the loss of productive land globally to safeguard ecosystems, food security, and livelihoods. Join
-        us in restoring a healthier planet.
-      </p>
-    </section>
+    </div>
 
     <!-- Key cards with bounce icons and fade-in -->
-    <section class="pageContent mb-5">
+    <div class="pageContent mb-5">
       <h2 class="mb-4 text-center">Key Concepts</h2>
       <div class="row g-4 justify-content-center">
         <div class="col-md-6 col-lg-3 fadeInUp delay-1">
@@ -175,10 +170,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Causes and impacts with animated fade and icons -->
-    <section class="pageContent mb-5">
+    <div class="pageContent mb-5">
       <h2 class="mb-4 text-center">Causes &amp; Impacts</h2>
       <div class="row">
         <div class="col-md-6 fadeInUp delay-1">
@@ -200,10 +195,10 @@
           </ul>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Solutions and interaction callout -->
-    <section class="pageContent mb-5">
+    <div class="pageContent mb-5">
       <div class="row align-items-center">
         <div class="col-md-7 fadeInUp delay-1">
           <h2>Solutions &amp; Restorations</h2>
@@ -222,7 +217,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer id="footerAdd"></footer>
