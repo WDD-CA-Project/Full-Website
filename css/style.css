@@ -293,11 +293,9 @@ ul.footerMenu{
 
 /* Tittle */
 .sectionTittle{
-	border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+
 }
+
 
 .sectionLifeTittle {
 	font-family: "Public Sans", sans-serif;
@@ -329,48 +327,51 @@ p.sectionPresText{
 
 /* Animated hero background */
 .hero-section {
-  background: linear-gradient(-45deg, #4caf5080, #81c78480, #a5d6a780, #4db6ac80);
-  background-size: 400% 400%;
-  animation: gradientBG 20s ease infinite;
-  min-height: 36vh;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 3rem 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	background: linear-gradient(-45deg, #4caf5080, #81c78480, #a5d6a780, #4db6ac80);
+	background-size: 400% 400%;
+	animation: gradientBG 20s ease infinite;
+	min-height: 36vh;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	align-items: center;
+	text-align: center;
+	padding: 3rem 1rem;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 
 /* Card motion on hover */
 .contentCard {
-  border-radius: 15px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  background-color: #fafafa;
-  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+	border-radius: 15px;
+	transition: transform 0.4s ease, box-shadow 0.4s ease;
+	background-color: #fafafa;
+	box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
 }
 
 
 /* Animated icons */
 .icon-animate {
-  font-size: 3rem;
-  color: #4caf50;
-  animation: bounce 2s infinite;
-  margin-bottom: 1rem;
+	font-size: 3rem;
+	color: #4caf50;
+	animation: bounce 2s infinite;
+	margin-bottom: 1rem;
 }
 
 
 /* Scroll fade-in */
 .fadeInUp {
-  opacity: 0;
-  transform: translateY(30px);
-  animation-fill-mode: forwards;
-  animation-name: fadeInUpAnim;
-  animation-duration: 1s;
-  animation-timing-function: ease;
+	opacity: 0;
+	transform: translateY(30px);
+	animation-fill-mode: forwards;
+	animation-name: fadeInUpAnim;
+	animation-duration: 1s;
+	animation-timing-function: ease;
 }
 
 .fadeInUp.delay-1 {
@@ -391,9 +392,6 @@ p.sectionPresText{
 	transform: none;
   }
 }
-
-
-
 
 .sectionBDes{
 	max-width: 700px;
