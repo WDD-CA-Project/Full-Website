@@ -169,7 +169,7 @@ a:focus, a:active {
       text-align: center;
 
       /* image inside text effect */
-      background: url('forest_cover.jpg') no-repeat center center;
+      background: url('img/forest_cover.jpg') no-repeat center center;
       background-size: cover;
       -webkit-background-clip: text;
       background-clip: text;
@@ -179,7 +179,7 @@ a:focus, a:active {
     }
 
     .hoverBox:hover {
-      background: url('forest_cover.jpg') no-repeat center center;
+      background: url('img/forest_cover.jpg') no-repeat center center;
       background-size: cover;
     }
 
