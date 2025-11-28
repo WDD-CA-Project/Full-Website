@@ -139,6 +139,54 @@ a.linkButtonMenu {
 .contentCard:hover {
   background-color: #f0fff0; /* light green/white on hover */
 }
+/*four box hover*/
+.hoverBox {
+      width: 600px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: black; /* black background at start */
+      transition: background 0.6s ease;
+    }
+	
+	/* Remove underline and blue color from all links */
+a {
+  text-decoration: none;
+  color: inherit;   /* makes link text use the parent color */
+}
+
+/* Remove blue outline when link is clicked/focused */
+a:focus, a:active {
+  outline: none;
+  box-shadow: none;
+}
+
+
+    .hoverBox h1	{
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+
+      /* image inside text effect */
+      background: url('forest_cover.jpg') no-repeat center center;
+      background-size: cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+
+      transition: color 0.6s ease, background 0.6s ease;
+    }
+
+    .hoverBox:hover {
+      background: url('forest_cover.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .hoverBox:hover h1	{
+      color: white;        /* text turns solid white */
+      background: none;    /* remove image fill from text */
+    }
 
 /* -- Footer -- */
 /* Style the footer to sit at the bottom, with top margin auto */
@@ -365,7 +413,52 @@ p.sectionPresText{
 /*---------------------- END FOREST -----------------------*/
 
 
+/*---------------------- ECOSYSTEM -----------------------*/
 
+.fact-container {
+	background-color: #ffffff; /* color to be checked */
+	border: 1px solid: #f0fff0; /*/olor to be checked */
+	padding: 1rem;
+	border-radius: 80px;
+	margin-bottom: 2rem;
+	/*/ BOX SHADOW ? /*/ 
+	}
+
+.fact-title {
+	font-family: "Public Sans", sans-serif;
+	font-weight: 700;
+	color: #108245;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+
+/* Square box on wireframe for each fact */
+
+.wireframe-img-box {
+	width: 100%;
+	height: 100px;
+	max-width: 200px;
+	background-color:#e9ecef; /* color to be checked */
+	background-size: cover;
+	background-position: center;
+	border: 2px solid #333;
+	margin: 0 auto; /* To center the box */
+	position: absolute;
+	border-radius: 50%; /* To check if maintain this border, more rounder or... */
+}
+
+/* picture in circle */
+
+.wireframe-img-box::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.wireframe-img-box::after{
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+/*---------------------- END ECOSYSTEM -----------------------*/
 
 
 /* //////////////// RESPONSIVE ///////////// */
@@ -386,7 +479,7 @@ X-Large ≥1200px min-width: 1200px
 /*Home Page*/
 .introDes{
 	width: 70%;
-	margin-left:15%;
+	margin-left: 15%;
 	margin-right: 15%;
 }	
 
@@ -400,12 +493,30 @@ div.sectionMainPres {
 }
 	
 
-
-
 }/*END Media 991px */ 
 
+/* MEDIUM < 768px */
+/*Bootstrap Breapoint to Hambuger Menu*/
+
+@media (max-width: 767px) {
+
+.fact-container .text-start,
+.fact-container .text-end {
+	text-align: center ;
+}
+
+} /*END Media 768px */ 
+
+.wireframe-img-box {
+	margin-top: 15px;
+	max-width: 150px;
+}
+
+/* SMALL < 576px */
+/*Bootstrap Breapoint to Hambuger Menu */
 
 @media (max-width: 575px){
+
 .sectionMainTittle{
     font-size: 2.3rem;
 }
@@ -415,4 +526,4 @@ div.sectionMainPres {
 }
 	
 	
-}
+}/*END Media 575px */ 
