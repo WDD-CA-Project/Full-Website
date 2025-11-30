@@ -14,9 +14,11 @@ Public Sans
 
 /*---- All pages elements ----*/
 
+
 body{
-	background-color:lightgreen;
+	background-color: #cce4cd;
 }
+
 
 /*-- Navbar --*/
 .navbar-brand{
@@ -127,21 +129,21 @@ a.linkButtonMenu {
 }
 
 .contentCard {
-  width: 40%;
-  margin-right: 2%;
-  margin-left: 2%;
-  border: 1px solid red;
-  overflow: hidden;
-  margin-bottom: 5%;
-  transition: background-color 0.3s ease;
+  width: 100%;
+  margin: 0;
+  border: none;
 }
 
+/*
 .contentCard:hover {
-  background-color: #f0fff0; /* light green/white on hover */
+  background-color: #f0fff0; /* light green/white on hover 
 }
+*/
+
+
 /*four box hover*/
 .hoverBox {
-      width: 600px;
+      width: 100%;
       height: 300px;
       display: flex;
       align-items: center;
@@ -162,31 +164,33 @@ a:focus, a:active {
   box-shadow: none;
 }
 
+.hoverBox h1	{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
 
-    .hoverBox h1	{
-      font-size: 50px;
-      font-weight: bold;
-      text-align: center;
+  /* image inside text effect */
+  background: url('../img/forest_cover.jpg') no-repeat center center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 
-      /* image inside text effect */
-      background: url('img/forest_cover.jpg') no-repeat center center;
-      background-size: cover;
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+  transition: color 0.6s ease, background 0.6s ease;
+}
 
-      transition: color 0.6s ease, background 0.6s ease;
-    }
+.hoverBox:hover {
+  background: url('img/forest_cover.jpg') no-repeat center center;
+  background-size: cover;
+}
 
-    .hoverBox:hover {
-      background: url('img/forest_cover.jpg') no-repeat center center;
-      background-size: cover;
-    }
+.hoverBox:hover h1	{
+  color: white;        /* text turns solid white */
+  background: none;    /* remove image fill from text */
+}
 
-    .hoverBox:hover h1	{
-      color: white;        /* text turns solid white */
-      background: none;    /* remove image fill from text */
-    }
+
+
 
 /* -- Footer -- */
 /* Style the footer to sit at the bottom, with top margin auto */
@@ -245,9 +249,6 @@ ul.footerMenu{
 	padding: 10%;
 }
 
-#mainTitleStyle{
-
-}
 
 /* Text in Home page */
 .introDes{
@@ -292,10 +293,6 @@ ul.footerMenu{
 /* COMMUN TO ALL SECTIONS */
 
 /* Tittle */
-.sectionTittle{
-
-}
-
 
 .sectionLifeTittle {
 	font-family: "Public Sans", sans-serif;
@@ -310,6 +307,7 @@ ul.footerMenu{
     margin-bottom: 0;
     font-weight: 700;
 }
+
 
 /* Main Description */
 div.sectionMainPres {
@@ -525,3 +523,4 @@ div.sectionMainPres {
 	
 	
 }/*END Media 575px */ 
+
