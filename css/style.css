@@ -394,6 +394,7 @@ p.sectionPresText{
 .sectionBDes{
 	max-width: 700px;
 }
+/* END COMMUN TO ALL SECTIONS */
 
 
 /*---------------------- FOREST -----------------------*/
@@ -403,10 +404,9 @@ p.sectionPresText{
   width: 20%;
 }
 
-
-
-
 /*---------------------- END FOREST -----------------------*/
+
+
 
 
 /*---------------------- ECOSYSTEM -----------------------*/
@@ -452,9 +452,18 @@ p.sectionPresText{
 .wireframe-img-box::after{
 	transform: translate(-50%, -50%) rotate(45deg);
 }
-
-
 /*---------------------- END ECOSYSTEM -----------------------*/
+
+
+
+/*---------------------- CONTACT -----------------------*/
+
+
+
+/*---------------------- END CONTACT -----------------------*/
+
+
+
 
 
 /* //////////////// RESPONSIVE ///////////// */
@@ -466,6 +475,7 @@ Medium ≥768px min-width: 768px
 Large (hamburger → full navbar) ≥992px min-width: 992px
 X-Large ≥1200px min-width: 1200px
 */
+
 
 
 /* LARGE 992px */
@@ -489,11 +499,11 @@ div.sectionMainPres {
 }
 	
 
-}/*END Media 991px */ 
+}
+/*END Media Large 991px */ 
+
 
 /* MEDIUM < 768px */
-/*Bootstrap Breapoint to Hambuger Menu*/
-
 @media (max-width: 767px) {
 
 .fact-container .text-start,
@@ -501,16 +511,16 @@ div.sectionMainPres {
 	text-align: center ;
 }
 
-} /*END Media 768px */ 
+}
 
 .wireframe-img-box {
 	margin-top: 15px;
 	max-width: 150px;
 }
-
+/*END Media Medium 768px */ 
+ 
+ 
 /* SMALL < 576px */
-/*Bootstrap Breapoint to Hambuger Menu */
-
 @media (max-width: 575px){
 
 .sectionMainTittle{
@@ -520,7 +530,7 @@ div.sectionMainPres {
 .sectionLifeTittle {
     font-size: 1rem;
 }
-	
-	
-}/*END Media 575px */ 
+	 
+}
+/*END Media Small 575px */ 
 
