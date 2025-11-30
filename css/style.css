@@ -124,72 +124,59 @@ a.linkButtonMenu {
 	text-align: center;
 	float: clear;
 	width: 80%;
+	padding-top: 5%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
 
-.contentCard {
-  width: 100%;
-  margin: 0;
-  border: none;
-}
-
-/*
-.contentCard:hover {
-  background-color: #f0fff0; /* light green/white on hover 
-}
-*/
-
-
+/* --- Cards in Home --- */
 /*four box hover*/
 .hoverBox {
-      width: 100%;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: black; /* black background at start */
-      transition: background 0.6s ease;
-    }
+	width: 100%;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: black; /* black background at start */
+	transition: background 0.6s ease;
+}
 	
-	/* Remove underline and blue color from all links */
+/* Remove underline and blue color from all links */
 a {
-  text-decoration: none;
-  color: inherit;   /* makes link text use the parent color */
+	text-decoration: none;
+	color: inherit;   /* makes link text use the parent color */
 }
 
 /* Remove blue outline when link is clicked/focused */
 a:focus, a:active {
-  outline: none;
-  box-shadow: none;
+	outline: none;
+	box-shadow: none;
 }
 
-.hoverBox h1	{
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-
-  /* image inside text effect */
-  background: url('../img/forest_cover.jpg') no-repeat center center;
-  background-size: cover;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-
-  transition: color 0.6s ease, background 0.6s ease;
+.hoverBox h1{
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	/* image inside text effect */
+	background: url('../img/forest_cover.jpg') no-repeat center center;
+	background-size: cover;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	transition: color 0.6s ease, background 0.6s ease;
 }
 
 .hoverBox:hover {
-  background: url('../img/forest_cover.jpg') no-repeat center center;
-  background-size: cover;
+	background: url('../img/forest_cover.jpg') no-repeat center center;
+	background-size: cover;
 }
 
 .hoverBox:hover h1	{
-  color: white;        /* text turns solid white */
-  background: none;    /* remove image fill from text */
+	color: white;        /* text turns solid white */
+	background: none;    /* remove image fill from text */
 }
 
-
+/* END Main container */
 
 
 /* -- Footer -- */
@@ -268,25 +255,16 @@ ul.footerMenu{
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
-	border: 1px solid green;
+	border: 1px solid green; /* IMPORTANT GUIDE LINE ONLY */
 	padding-top: 5vh;
 	padding-bottom: 5vh;
 }
-
 
 .pageContent img{
 	object-fit: cover;
 }
 
 
-.contentCard{
-	width: 40%;	
-	margin-right: 2%;
-	margin-left: 2%;
-	border: 1px solid red;
-	overflow: hidden;
-	margin-bottom: 5%;
-}
 /*---------------------- END HOME -----------------------*/
 
 
@@ -344,24 +322,6 @@ p.sectionPresText{
 }
 
 
-/* Card motion on hover */
-.contentCard {
-	border-radius: 15px;
-	transition: transform 0.4s ease, box-shadow 0.4s ease;
-	background-color: #fafafa;
-	box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
-}
-
-
-/* Animated icons */
-.icon-animate {
-	font-size: 3rem;
-	color: #4caf50;
-	animation: bounce 2s infinite;
-	margin-bottom: 1rem;
-}
-
-
 /* Scroll fade-in */
 .fadeInUp {
 	opacity: 0;
@@ -391,9 +351,26 @@ p.sectionPresText{
   }
 }
 
-.sectionBDes{
-	max-width: 700px;
+
+/* Fact Boxes */
+.fact-container {
+	background-color: #ffffff; /* color to be checked */
+	border: 1px solid: #f0fff0; /*/olor to be checked */
+	padding: 1rem;
+	border-radius: 2.5rem;
+	margin-bottom: 2rem;
+	/*/ BOX SHADOW ? /*/ 
+	}
+
+.fact-title {
+	font-family: "Public Sans", sans-serif;
+	font-weight: 700;
+	color: #108245;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
 }
+
+
 /* END COMMUN TO ALL SECTIONS */
 
 
@@ -411,22 +388,6 @@ p.sectionPresText{
 
 /*---------------------- ECOSYSTEM -----------------------*/
 
-.fact-container {
-	background-color: #ffffff; /* color to be checked */
-	border: 1px solid: #f0fff0; /*/olor to be checked */
-	padding: 1rem;
-	border-radius: 2.5rem;
-	margin-bottom: 2rem;
-	/*/ BOX SHADOW ? /*/ 
-	}
-
-.fact-title {
-	font-family: "Public Sans", sans-serif;
-	font-weight: 700;
-	color: #108245;
-	text-transform: uppercase;
-	margin-bottom: 0.5rem;
-}
 
 /* Square box on wireframe for each fact */
 
@@ -453,6 +414,8 @@ p.sectionPresText{
 	transform: translate(-50%, -50%) rotate(45deg);
 }
 /*---------------------- END ECOSYSTEM -----------------------*/
+
+
 
 
 
@@ -518,6 +481,7 @@ div.sectionMainPres {
 	max-width: 150px;
 }
 /*END Media Medium 768px */ 
+ 
  
  
 /* SMALL < 576px */
