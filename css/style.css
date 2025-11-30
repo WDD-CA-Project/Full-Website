@@ -17,6 +17,7 @@ Public Sans
 
 body{
 	background-color: #cce4cd;
+	font-family: "Public Sans", sans-serif;
 }
 
 
@@ -356,17 +357,25 @@ p.sectionPresText{
 	background-color: #ffffff; /* color to be checked */
 	border: 1px solid: #f0fff0; /*/olor to be checked */
 	padding: 1rem;
-	border-radius: 2.5rem;
+	border-radius: 2rem;
 	margin-bottom: 2rem;
 	/*/ BOX SHADOW ? /*/ 
-	}
+}
 
 .fact-title {
 	font-family: "Public Sans", sans-serif;
-	font-weight: 700;
+	font-weight: 800;
 	color: #108245;
 	text-transform: uppercase;
 	margin-bottom: 0.5rem;
+}
+
+.des-container{
+	background-color: #ffffff;
+    border: 1px solid: #f0fff0;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 
