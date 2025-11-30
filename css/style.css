@@ -249,10 +249,19 @@ ul.footerMenu{
 	border: 1px solid green;
 	margin-left: 22.5%;
 	margin-right: 22.5%;
-	background-color: #f8f9fade;
-	padding: 2%;
+	/* background-color: #f8f9fade; 
+	padding: 2%; 
 	border-top-right-radius: 0.5rem;
-	border-top-left-radius: 0.5rem;
+	border-top-left-radius: 0.5rem; */
+	padding-bottom: 1%;
+}
+
+.introDes p{
+	background-color: #f8f9fade;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 3%;
+	border-radius: 0.5rem;
 }
 
 
