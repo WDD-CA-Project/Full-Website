@@ -379,9 +379,10 @@ p.sectionPresText{
 	margin-bottom: 0.5rem;
 }
 
-.factsImg{
-  clip-path: circle(30%);
-  width: 20%;
+.fact-img{
+	max-width: 100%;
+    clip-path: circle(34%);
+    margin-top: 0;
 }
 
 
