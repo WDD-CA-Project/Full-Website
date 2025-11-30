@@ -351,6 +351,15 @@ p.sectionPresText{
   }
 }
 
+.des-container{
+	background-color: #ffffff;
+    border: 1px solid: #f0fff0;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+	font-size: 1.1rem;
+}
+
 
 /* Fact Boxes */
 .fact-container {
@@ -370,13 +379,14 @@ p.sectionPresText{
 	margin-bottom: 0.5rem;
 }
 
-.des-container{
-	background-color: #ffffff;
-    border: 1px solid: #f0fff0;
-    padding: 2rem;
-    border-radius: 1.5rem;
-    margin-bottom: 2rem;
+.factsImg{
+  clip-path: circle(30%);
+  width: 20%;
 }
+
+
+
+
 
 
 /* END COMMUN TO ALL SECTIONS */
