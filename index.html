@@ -37,12 +37,12 @@
 
 <body>
 	<div id="container"> <!-- Wraps around all content-->
-		<header>
+		<header id="mainNavbar" class="sticky-top">
 			<nav class="navbar navbar-expand-lg bg-body-tertiary">
 				<div class="container-fluid navbarStyle"> 
 				<!-- navbarStyle is a created class -->
 					<!-- Logo -->
-					<a class="navbar-brand" href="index.html"><img width=200px src="img/logo.png" alt="Logo created by Malavika" /></a>
+					<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo created by Malavika" /></a>
 
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -82,6 +82,22 @@
 								</ul>
 							</li> -->
 						
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="forest.html">Forest and Deforestation</a>
+							</li>
+							
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="biodiversity.html">Biodiversity and Wildlife</a>
+							</li>
+
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="land.html">Land Degradation and Desertification</a>
+							</li>
+							
+							<li class="nav-item d-lg-none">
+								<a class="nav-link" href="ecosystem.html">Ecosystem Governance</a>
+							</li>
+
 
 							<li class="nav-item">
 								<a class="nav-link" href="contact.html">CONTACT US</a>
@@ -93,7 +109,7 @@
 			</nav>
 			
 			
-			<div id="subMenu"> 
+			<div id="subMenu" class="d-none d-lg-block"> 
 				
 				<ul id="listMenu">			
 					<li class="buttonMenu"> 
@@ -244,6 +260,18 @@
 		</footer>
 
 	</div> <!-- END of Container -->
+	
+<script>
+window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("mainNavbar");
+
+    if (window.scrollY > 10) {
+        navbar.classList.add("nav-shrink");
+    } else {
+        navbar.classList.remove("nav-shrink");
+    }
+});
+</script>
 
 </body>
 
