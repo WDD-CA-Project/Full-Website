@@ -28,7 +28,7 @@ p, h1, h2, h3, span, a, button, label{
 /* -- Scroll Animation -- */
 /* original code from https://prismic.io/blog/css-scroll-effects scroll n20 and improved with AI help */
 
-/* Texto que aparece suave al hacer scroll
+/* Text
 Add this class to animate the element
  */
 .scroll-text {
@@ -38,7 +38,7 @@ Add this class to animate the element
   animation-range: entry 0% 45%;
 }
 
-/* Imágenes 
+/* Images 
 Add this class to animate the images 
 */
 .scroll-image {
