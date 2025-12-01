@@ -27,9 +27,8 @@ p, h1, h2, h3, span, a{
 
 /*-- Navbar --*/
 .navbar-brand{
-	max-width:300px;
+    width: 25%;
 }
-
 
 .navbarStyle{
 	text-align: center;
@@ -59,6 +58,12 @@ p, h1, h2, h3, span, a{
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show
 {
     color: white !important;
+}
+
+header img{
+	width: 35%;
+    padding: 1%;
+    margin: 7%;
 }
 
 
@@ -501,6 +506,9 @@ div.sectionMainPres {
 	/*margin-top: 5%;*/
 }
 	
+.navbarCenter {
+	margin-top: 4%;
+}
 
 }
 /*END Media Large 991px */ 
