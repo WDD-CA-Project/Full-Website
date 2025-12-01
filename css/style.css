@@ -20,9 +20,80 @@ body{
 	
 }
 
-p, h1, h2, h3, span, a{
-	font-family: "Public Sans", sans-serif;
+p, h1, h2, h3, span, a, button, label{
+	font-family: "Public Sans", sans-serif !important; 
 }
+
+
+/* -- Scroll Animation -- */
+/* original code from https://prismic.io/blog/css-scroll-effects scroll n20 and improved with AI help */
+
+/* Texto que aparece suave al hacer scroll
+Add this class to animate the element
+ */
+.scroll-text {
+  animation: text-appear 0.7s ease-out both;
+  animation-timeline: view();
+  /* Se anima cuando entra al viewport del 0% al 40% */
+  animation-range: entry 0% 45%;
+}
+
+/* Imágenes 
+Add this class to animate the images 
+*/
+.scroll-image {
+  animation: image-appear 0.7s ease-out both;
+  animation-timeline: view();
+  animation-range: entry 0% 50%;
+}
+
+/* Keyframes simplificados: menos movimiento = menos “raro” */
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes image-appear {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+    /* blur effect */
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* First fade-in */
+.fadeInUp {
+	opacity: 0;
+	transform: translateY(30px);
+	animation-fill-mode: forwards;
+	animation-name: fadeInUpAnim;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+@keyframes fadeInUpAnim {
+  to {
+	opacity: 1;
+	transform: none;
+  }
+}
+
+/* -- END Scroll Animation -- */
+
+
+
 
 
 /*-- Navbar --*/
@@ -348,35 +419,6 @@ p.sectionPresText{
 }
 
 
-/* Scroll fade-in */
-.fadeInUp {
-	opacity: 0;
-	transform: translateY(30px);
-	animation-fill-mode: forwards;
-	animation-name: fadeInUpAnim;
-	animation-duration: 1s;
-	animation-timing-function: ease;
-}
-
-.fadeInUp.delay-1 {
-  animation-delay: 0.3s;
-}
-
-.fadeInUp.delay-2 {
-  animation-delay: 0.6s;
-}
-
-.fadeInUp.delay-3 {
-  animation-delay: 0.9s;
-}
-
-@keyframes fadeInUpAnim {
-  to {
-	opacity: 1;
-	transform: none;
-  }
-}
-
 .des-container{
 	background-color: #ffffff;
     border: 1px solid: #f0fff0;
@@ -425,6 +467,19 @@ p.sectionPresText{
   clip-path: circle(30%);
   width: 20%;
 }
+
+img.forestGreen{
+	width: 58%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #198754;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
 
 /*---------------------- END FOREST -----------------------*/
 
