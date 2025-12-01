@@ -498,6 +498,14 @@ img.forestGreen{
 	border-radius: 50%; /* To check if maintain this border, more rounder or... */
 }
 
+.key-principles-title { 
+	font-size: 2rem; 
+}
+
+.key-principles-list { 
+	max-width: 600px; 
+}
+
 /* picture in circle */
 
 .wireframe-img-box::before {
