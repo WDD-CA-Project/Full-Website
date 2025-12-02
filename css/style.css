@@ -212,7 +212,9 @@ a.linkButtonMenu {
 /* --- Cards in Home --- */
 /*four box hover*/
 
-.hoverBox {
+/*----- start of Forest box-----*/
+
+.hoverBoxForest {
       width: 100%;
       height: 300px;
       display: flex;/*this is used to arrange the content perfectly*/
@@ -228,7 +230,7 @@ a {
   color: inherit;   /* makes link text use the background color */
 }
 
-   .hoverBox h1	{
+   .hoverBoxForest h1	{
       font-size: 50px;
       font-weight: bold;
       text-align: center;
@@ -241,15 +243,144 @@ a {
 	  transition: color 0.6s ease, background 0.6s ease;
     }
 
-    .hoverBox:hover {
+    .hoverBoxForest:hover {
       background: url('../img/forest_cover.jpg') no-repeat center center;
       background-size: cover;
     }
 
-    .hoverBox:hover h1	{
+    .hoverBoxForest:hover h1	{
       color: white;        /* text turns solid white */
       background: none;    /* remove image fill from text */
     }
+/*-----------end of Forest box---------*/
+
+
+/*----- start of Biodiversity box-----*/
+
+.hoverBoxBio {
+      width: 100%;
+      height: 300px;
+      display: flex;/*this is used to arrange the content perfectly*/
+      align-items: center;/*vertical arrangement*/
+      justify-content: center;/*horizontal equal spacing and arrangement*/
+      background: black; /* black background at start */
+      transition: background 0.6s ease;
+    }
+	
+	/* Remove underline and blue color from all links */
+a {
+  text-decoration: none;
+  color: inherit;   /* makes link text use the background color */
+}
+
+   .hoverBoxBio h1	{
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+
+      /* image inside text effect */
+      background: url('../img/forest_cover.jpg') no-repeat center center;
+      background-size: cover;
+      background-clip: text;
+      color: transparent;
+	  transition: color 0.6s ease, background 0.6s ease;
+    }
+
+    .hoverBoxBio:hover {
+      background: url('../img/forest_cover.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .hoverBoxBio:hover h1	{
+      color: white;        /* text turns solid white */
+      background: none;    /* remove image fill from text */
+    }
+/*-----------end of Biodiversity box---------*/
+
+/*-----------start of Land box---------*/
+
+.hoverBoxLand {
+      width: 100%;
+      height: 300px;
+      display: flex;/*this is used to arrange the content perfectly*/
+      align-items: center;/*vertical arrangement*/
+      justify-content: center;/*horizontal equal spacing and arrangement*/
+      background: black; /* black background at start */
+      transition: background 0.6s ease;
+    }
+	
+	/* Remove underline and blue color from all links */
+a {
+  text-decoration: none;
+  color: inherit;   /* makes link text use the background color */
+}
+
+   .hoverBoxLand h1	{
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+
+      /* image inside text effect */
+      background: url('../img/forest_cover.jpg') no-repeat center center;
+      background-size: cover;
+      background-clip: text;
+      color: transparent;
+	  transition: color 0.6s ease, background 0.6s ease;
+    }
+
+    .hoverBoxLand:hover {
+      background: url('../img/forest_cover.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .hoverBoxLand:hover h1	{
+      color: white;        /* text turns solid white */
+      background: none;    /* remove image fill from text */
+    }
+/*-----------end of Land box---------*/
+
+/*-----------start of Ecosystem box---------*/
+
+.hoverBoxEcosystem {
+      width: 100%;
+      height: 300px;
+      display: flex;/*this is used to arrange the content perfectly*/
+      align-items: center;/*vertical arrangement*/
+      justify-content: center;/*horizontal equal spacing and arrangement*/
+      background: black; /* black background at start */
+      transition: background 0.6s ease;
+    }
+	
+	/* Remove underline and blue color from all links */
+a {
+  text-decoration: none;
+  color: inherit;   /* makes link text use the background color */
+}
+
+   .hoverBoxEcosystem h1	{
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+
+      /* image inside text effect */
+      background: url('../img/forest_cover.jpg') no-repeat center center;
+      background-size: cover;
+      background-clip: text;
+      color: transparent;
+	  transition: color 0.6s ease, background 0.6s ease;
+    }
+
+    .hoverBoxEcosystem:hover {
+      background: url('../img/forest_cover.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .hoverBoxEcosystem:hover h1	{
+      color: white;        /* text turns solid white */
+      background: none;    /* remove image fill from text */
+    }
+/*-----------end of Biodiversity box---------*/
+
 /* END Main container */
 
 
