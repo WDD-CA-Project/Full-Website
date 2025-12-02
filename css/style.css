@@ -601,6 +601,13 @@ p.sectionPresText{
 
 /* END COMMUN TO ALL SECTIONS */
 
+/*---------------------- TAKE ACTION -----------------------*/
+.link{
+	color:blue;
+	text-decoration:underline;
+}
+/*---------------------- END TAKE ACTION -----------------------*/
+
 
 /*---------------------- FOREST -----------------------*/
 
