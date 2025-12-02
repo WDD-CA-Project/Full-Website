@@ -335,7 +335,7 @@ a {
       text-align: center;
 
       /* image inside text effect */
-      background: url('../img/forest_cover.jpg') no-repeat center center;
+      background: url('../img/land_Logo.jpg') no-repeat center center;
       background-size: cover;
       background-clip: text;
       color: transparent;
@@ -343,7 +343,7 @@ a {
     }
 
     .hoverBoxLand:hover {
-      background: url('../img/forest_cover.jpg') no-repeat center center;
+      background: url('../img/land_Logo.jpg') no-repeat center center;
       background-size: cover;
     }
 
