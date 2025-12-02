@@ -730,7 +730,7 @@ img.forestGreen{
 
 .forestBoxC{
     background-color: white;
-    padding: 3%;
+    padding: 5%;
     border-radius: 1rem;
 }
 
@@ -1092,6 +1092,15 @@ div.sectionMainPres {
 	margin-top: 4%;
 }
 
+.vs-wrapper{ /* Forest */
+    grid-template-columns: 1fr;
+}
+
+.vs-center{ /* Forest */
+    margin: 0rem auto;
+}
+
+
 }
 /*END Media Large 991px */ 
 
@@ -1118,23 +1127,24 @@ div.sectionMainPres {
 @media (max-width: 575px){
 
 .sectionMainTittle{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 }
 
 .sectionLifeTittle {
     font-size: 1rem;
 }
 
-.vs-wrapper{
-    grid-template-columns: 1fr;
+.accordion-button { /* Forest */
+    text-align: center;
 }
 
-.vs-center{
-    margin: 0rem auto;
-}
 	 
 }
+
 /*END Media Small 575px */ 
+
+
+
 
 /* Fixing Flip Cards Forest Section */
 @media (min-width: 768px) {
