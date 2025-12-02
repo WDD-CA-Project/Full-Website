@@ -767,41 +767,178 @@ img.forestGreen{
 
 /*---------------------- ECOSYSTEM -----------------------*/
 
+/* key principles */
 
-/* Square box on wireframe for each fact */
-
-.wireframe-img-box {
-	width: 100%;
-	height: 100px;
-	max-width: 200px;
-	background-color:#e9ecef; /* color to be checked */
-	background-size: cover;
-	background-position: center;
-	border: 2px solid #333;
-	margin: 0 auto; /* To center the box */
-	position: absolute;
-	border-radius: 50%; /* To check if maintain this border, more rounder or... */
+}
+.key-principles-title { 
+  font-size: 2.4rem;
+    margin-bottom: 1.5rem;
 }
 
-.key-principles-title { 
-	font-size: 2rem; 
+.kp-animated-text {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.2em;
+  cursor: default;
+}
+
+.kp-animated-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #108245, #4caf50);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.35s ease-out;
+}
+
+.kp-animated-text:hover::after {
+  transform: scaleX(1);
+}
+
+.kp-animated-text:hover {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 .key-principles-list { 
-	max-width: 600px; 
+  max-width: 600px;
+  margin: 0 auto;
+    font-size: 1.05rem;
 }
 
-/* picture in circle */
-
-.wireframe-img-box::before {
-	transform: translate(-50%, -50%) rotate(45deg);
+.key-principles-list li {
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: flex-start;
 }
 
-.wireframe-img-box::after{
-	transform: translate(-50%, -50%) rotate(45deg);
+.kp-icon {
+  color: #108245;
+  margin-right: 0.6rem;
+  margin-top: 0.2rem;
+  font-size: 1rem;
 }
+
+/* end of key principles */
+
+/* fact blocks */
+
+/* ecosystem services image size - start */
+.ecosystem-img {
+  width: 220px;   
+  height: 220px;
+  object-fit: cover;
+  clip-path: circle(50%);
+}
+/* ecosystem services image size - end */
+
+/* end of fact blocks */
+
+
+/*---------------------- ECOSYSTEM INTERACTION BLOCK -----------------------*/
+
+/* interaction section container card - start */
+.interaction-box-eco {
+  background-color: #dbeee0;
+  border-radius: 1.2rem;
+  padding: 2rem 1.8rem 2.2rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.interaction-box-eco:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+/* interaction section container card - end */
+
+
+/* interaction main headline text - start */
+.interaction-text-eco {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  color: #1c1c1c;
+  transition:
+    transform 0.2s ease,
+    text-shadow 0.2s ease,
+    color 0.2s ease;
+}
+
+.interaction-text-eco:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  color: #0d6b37;
+}
+/* interaction main headline text - end */
+
+
+/* interaction secondary description text - start */
+.interaction-subtext-eco {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+/* interaction secondary description text - end */
+
+
+/* interaction button styles - start */
+.interactive-btn-eco {
+  border: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #108245, #4caf50);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  max-width: 260px;
+  width: 100%;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+/* interaction button inner layout - start */
+.interactive-btn-eco div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interactive-btn-eco span {
+  text-transform: none;
+}
+/* interaction button inner layout - end */
+
+/* interaction button hover + active states - start */
+.interactive-btn-eco:hover {
+  background: linear-gradient(90deg, #0d6b37, #3f9144);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.interactive-btn-eco:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+/* interaction button hover + active states - end */
+
+
+/*------------------- END ECOSYSTEM INTERACTION BLOCK ----------------------*/
+
+
 /*---------------------- END ECOSYSTEM -----------------------*/
-
 
 
 
