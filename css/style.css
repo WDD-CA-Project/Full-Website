@@ -693,7 +693,9 @@ img.forestGreen{
     margin-bottom: 0rem;
 }
 
-
+.forestMargin{
+	margin-bottom: 3rem;
+}
 
 /*---------------------- END FOREST -----------------------*/
 
@@ -1091,7 +1093,7 @@ div.sectionMainPres {
 }
 
 .vs-center{
-    margin: 1rem auto;
+    margin: 0rem auto;
 }
 	 
 }
