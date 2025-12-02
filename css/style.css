@@ -228,18 +228,18 @@ a {
   color: inherit;   /* makes link text use the background color */
 }
 
-   .hoverBox h1	{
-      font-size: 50px;
-      font-weight: bold;
-      text-align: center;
-
-      /* image inside text effect */
-      background: url('../img/forest_cover.jpg') no-repeat center center;
-      background-size: cover;
-      background-clip: text;
-      color: transparent;
-	  transition: color 0.6s ease, background 0.6s ease;
-    }
+.hoverBox h1{
+    font-size: 3.5rem;
+	font-weight: 800;
+    text-align: center;
+	-webkit-text-stroke: 3px black;
+	/* image inside text effect */
+	background: url('../img/forest_cover.jpg') no-repeat center center;
+	background-size: cover;
+	background-clip: text;
+	color: transparent;
+	transition: color 0.6s ease, background 0.6s ease;
+}
 
     .hoverBox:hover {
       background: url('../img/forest_cover.jpg') no-repeat center center;
