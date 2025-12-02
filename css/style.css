@@ -477,6 +477,106 @@ img.forestGreen{
 
 /*---------------------- END FOREST -----------------------*/
 
+/*---------------------- BIODIVERSITY----------------------*/
+
+/* About Biodiversity Box */
+.causesAndImpacts {
+	font-family:"Public Sans", sans-serif;
+  background-color: #ffffff;   /* White background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border:2px solid, green;
+  border-radius: 16px;
+}
+
+.causesAndImpacts:hover {
+  transform: translateY(-5px);
+  
+}
+
+.solution {
+	font-family:"Public Sans", sans-serif;
+    background-color: #ffffff;   /* White background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border:2px solid, green;
+    border-radius:12px;
+}
+
+.solution:hover {
+  transform: translateY(-5px);
+}
+
+.hover-card {
+  background-color:#ffffff;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   border:2px solid, green;
+}
+.hover-card:hover {
+  transform: scale(1.05);
+}
+
+/* Statistics */
+.stat-box h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Public Sans", sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+
+}
+
+/* Flip Cards */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+/* Fact Boxes */
+.fact-box {
+  background-color:#ffffff;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border:2px, solid green;
+}
+.fact-box:hover {
+  transform: translateY(-5px);
+}
+.fact-box h5 {
+  font-family:"Public Sans", sans-serif; 
+}
+.fact-box .stat {
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
+.background{
+	background-color:#f8f9fa;
+	border:2px,solid green;
+	border-radius: 12px;
+
+}
+/*---------------------- END BIODIVERSITY-------------------
+
 
 
 
