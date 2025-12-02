@@ -342,13 +342,17 @@ ul.footerMenu{
 
 /*---------------------- HOME -----------------------*/
 /*---HOME Content Section---*/
+.pageIntro{
+	margin-bottom: 2.5%;
+}
+
 .pageContent{
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
 	border: 1px solid green; /* IMPORTANT GUIDE LINE ONLY */
-	padding-top: 5vh;
-	padding-bottom: 5vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
 }
 
 .pageContent img{
@@ -397,7 +401,7 @@ p.sectionPresText{
 	background: linear-gradient(35deg, #19875436, #3488379e, #a5d6a780, #72b49a42);
 	background-size: 400% 400%;
 	animation: gradientBG 20s ease infinite;
-	min-height: 36vh;
+	min-height: 35vh;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -457,9 +461,22 @@ p.sectionPresText{
 
 /*---------------------- FOREST -----------------------*/
 
-.factsImg{
-  clip-path: circle(30%);
-  width: 20%;
+.forestTextFact{
+	font-size: 1.7rem;
+    font-weight: 150;
+    margin: 0;
+    padding: 0;
+    line-height: initial;
+}
+
+.greenF{
+	background-color: #108245;
+	color: white;
+}
+
+.boldFact{
+	font-weight: 600;
+    font-size: 1.8rem;	
 }
 
 img.forestGreen{
