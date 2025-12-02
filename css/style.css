@@ -618,6 +618,26 @@ p.sectionPresText{
     line-height: initial;
 }
 
+p.fText{
+	font-size: 2.3vh;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+.lightF{
+    font-size: 2.5vh;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 7%;
+}
+
+h2.fTitleText{
+	font-size: 4.3vh;
+    font-weight: 700;
+    margin-bottom: 3%;
+    color: #108245;
+}
+
 .greenF{
 	background-color: #108245;
 	color: white;
@@ -629,9 +649,20 @@ p.sectionPresText{
 }
 
 img.forestGreen{
-	width: 58%;
+    max-width: 98%;
     text-align: center;
     margin-top: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.forestSection .des-container {
+    background-color: #ffffff;
+    border: 1px solid: #f0fff0;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.1rem;
+	margin-bottom: 0rem;
 }
 
 .accordion-button:not(.collapsed) {
@@ -695,6 +726,12 @@ img.forestGreen{
 
 .forestMargin{
 	margin-bottom: 3rem;
+}
+
+.forestBoxC{
+    background-color: white;
+    padding: 3%;
+    border-radius: 1rem;
 }
 
 /*---------------------- END FOREST -----------------------*/
@@ -1081,7 +1118,7 @@ div.sectionMainPres {
 @media (max-width: 575px){
 
 .sectionMainTittle{
-    font-size: 2.3rem;
+    font-size: 2.5rem;
 }
 
 .sectionLifeTittle {
