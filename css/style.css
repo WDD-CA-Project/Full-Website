@@ -16,7 +16,7 @@ Public Sans
 
 
 body{
-	background-color: #cce4cd;
+	background-color: #305e451a;
 	
 }
 
@@ -394,7 +394,7 @@ p.sectionPresText{
 
 /* Animated hero background */
 .hero-section {
-	background: linear-gradient(-45deg, #4caf5080, #81c78480, #a5d6a780, #4db6ac80);
+	background: linear-gradient(35deg, #19875436, #3488379e, #a5d6a780, #72b49a42);
 	background-size: 400% 400%;
 	animation: gradientBG 20s ease infinite;
 	min-height: 36vh;
