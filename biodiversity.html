@@ -254,7 +254,7 @@
       const increment = target / 200;
       if (current < target) {
         counter.innerText = Math.ceil(current + increment);
-        setTimeout(update, 10);
+        setTimeout(update, 30);
       } else {
         counter.innerText = target.toLocaleString();
       }
@@ -279,3 +279,4 @@
 </body>
 
 </html>
+
