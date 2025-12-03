@@ -1375,6 +1375,13 @@ div.inputContact label{
     border: 1px solid grey;
 }
 
+/* Error message */
+.formContact span{
+	color: red;
+    font-size: 0.9rem;
+}
+
+
 /*---------------------- END CONTACT -----------------------*/
 
 
