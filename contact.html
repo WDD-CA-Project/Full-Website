@@ -45,22 +45,30 @@
 		<div class="main">
 		
 			<div class="pageContent" > 
-				<form>
+				<form class="formContact" name="ContactForm" onsubmit="return validateForm()" onreset="resetErrors()">
+				
 					<fieldset>
 						
 						<div class="inputContact" ><!-- Name -->
 							<label for="fullname">Name:</label>
-							<input type="text" id="fullname" name="fullname" required />
+							<br/>
+							<input onkeyup="validateData();" class="inputSizeL" type="text" id="fullname" name="fullname" required placeholder="Enter your full name"/>
+							
+							<span id="errorMessage"></span>
 						</div>
 						
 						<div class="inputContact"><!-- Email -->
 							<label for="email">Email:</label>
-							<input type="email" id="email" name="email" required />
+							<br/>
+							<input onkeyup="validateData();" class="inputSizeL" type="email" id="email" name="email" required placeholder="Enter a valid email"/>
+							
+							<span id="errorMessage"></span>
 						</div>
 						
 						<!-- Country (select) List generated from https://www.html-code-generator.com/drop-down/country-names -->
 						<div class="inputContact" >
 							<label for="country">Country:</label>
+							<br/>
 							<!-- Select All countries -->
 							<!-- Code and Name -->
 							<select id="country" name="country" required >
@@ -319,17 +327,39 @@
 								<option value="ZW">Zimbabwe</option>
 							</select>
 							<!-- total - 252 -->
+							
+							<span id="errorMessage"></span>
+						</div>
+						
+						<div class="inputContact">
+							<label for="reason">Choose a categorie for your message:</label>
+							<br/>
+							<select id="reason" class="" size="3" required>
+								<option>Question</option>
+								<option>Feedback</option>
+								<option>Support</option>
+							</select>
+							
+							<span id="errorMessage"></span>
 						</div>
 						
 						<div class="inputContact">
 							<label for="message">Message:</label>
-							<textarea id="message" name="message" rows="5"required placeholder="Type your message here" ></textarea>
+							<br/>
+							<textarea onkeyup="validateData();" id="message" name="message" rows="5"required placeholder="Type your message here" ></textarea>
+							
+							<span id="errorMessage"></span>
 						</div>
 						
-						<div class="inputContact">
-						
-						
+						<div>
+							<input type="checkbox" id="updates" name="updates" />
+							<label for="updates">I want to receive the newsletter</label>
 						</div>
+						
+						<!--Buttons-->
+						<button type="submit" class="sendButton">Send Message</button>
+						<br/>
+						<button type="submit" class="resetButton">Reset Form</button>
 						
 					</fieldset>
 				</form>
@@ -340,6 +370,28 @@
 		<footer id="footerAdd"></footer>
 		
 	</div> <!-- END Container -->
+	
+	<script>
+		document.getElementById("success").style.display = "none";
+		var myTargetElementBtn = document.getElementById("myBtn");
+		var sUserName, sEmail, sPassword;
+			
+		function validateData(){
+				sUserName = document.getElementById("userName").value;
+				sEmail = document.getElementById("email").value;
+				sPassword = document.getElementById("password").value;
+				
+				//NOT = 0, false, "", undefined, null -> TRUE
+				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
+					myTargetElementBtn.disabled = false;
+				}else{
+					myTargetElementBtn.disabled = true;
+				}
+			}
+	
+	
+	
+	</script>
 </body>
 
 </html>
