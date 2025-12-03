@@ -45,7 +45,7 @@
 		<div class="main">
 		
 			<div class="pageContent" > 
-				<form id="formContact" class="formContact" name="formContact" onsubmit="return validateForm()" onreset="resetErrors()">
+				<form id="formContact" class="formContact" name="formContact" onsubmit="return validateForm(true)" onreset="resetErrors()">
 				
 					<fieldset>
 						
@@ -379,12 +379,12 @@
 		let submitBtn = document.getElementById("submitButton");
 		submitBtn.disabled = true;
 
-		// Inputs
+		// Inputs 
 		const fullname = document.getElementById("fullname");
-		const email = document.getElementById("email").value;
-		const country = document.getElementById("country").value;
-		const reason = document.getElementById("reason").value;
-		const message = document.getElementById("message").value;
+		const email = document.getElementById("email");
+		const country = document.getElementById("country");
+		const reason = document.getElementById("reason");
+		const message = document.getElementById("message");
 
 		// Errors
 		const fullnameError = document.getElementById("fullnameError");
@@ -393,36 +393,81 @@
 		const reasonError = document.getElementById("reasonError");
 		const messageError = document.getElementById("messageError");
 		
+		
+		//Reset all the variables, accion called by the Reset Button
 		function resetErrors() {
 			fullnameError.textContent = "";
 			emailError.textContent   = "";
 			countryError.textContent = "";
 			reasonError.textContent  = "";
-			messageError.textContent = "";
+			messageError.textContent = "";	
+					
+			touched.fullname = false;
+			touched.email    = false;
+			touched.country  = false;
+			touched.reason   = false;
+			touched.message  = false;
+
+			submitBtn.disabled = true;	
 		}
+		
+		const touched = {
+			fullname: false,
+			email: false,
+			country: false,
+			reason: false,
+			message: false
+		};
+		
 		
 		let bValid;
 		
-		function validateForm(){
+		// bSubmit is a parameter. 
+		// bSubmit and touched variables make possible the validation once the user has started typing on one field.
 		
-			resetErrors();
+		function validateForm(bSubmit = false){
+		
 			bValid = true;
 			
-	
 			// Full Name
-			if (fullname.value === "" || fullname.value.length < 3) {
-				fullnameError.textContent = "Please enter your full name (min. 3 characters).";
+			let fullErr = "";
+			if (fullname.value.length < 2) {
+				fullErr = "Please enter your full name (min. 2 characters).";
 				bValid = false;
 			}
+			if (bSubmit || touched.fullname) {
+				fullnameError.textContent = fullErr;
+			}
+			
 
+			// --- Email ---
+			let emailErr = "";
+			const emailValue = email.value.trim();
+			if (emailValue == "" ||
+				!emailValue.includes("@") ||
+				!emailValue.includes(".")
+			){
+				emailErr = "Please enter a valid email.";
+				bValid = false;
+			}
+			if (bSubmit || touched.email) {
+				emailError.textContent = emailErr;
+			}
+				
 		
-			submitBtn.disabled = !bValid;
-		
+			// If everything has been verified, the button is available
+			submitBtn.disabled = !bValid; // not bValid should be false because it has been declared as true. 
+			
+			return bSubmit ? bValid : true;
 		}
 		
-		[fullname].forEach(input => {input.addEventListener("input", validateForm);
+		// Checking the input in realtime
+		[fullname, email].forEach(input => {
+			input.addEventListener("input", () => {
+				touched[input.id] = true;
+				validateForm(false);
+			});
 		});
-		
 		
 		
 	</script>
