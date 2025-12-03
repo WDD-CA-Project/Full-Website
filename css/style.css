@@ -20,7 +20,7 @@ body{
 	
 }
 
-p, h1, h2, h3, span, a, button, label, h5, li{
+p, h1, h2, h3, span, a, button, label, h5, li, input, select{
 	font-family: "Public Sans", sans-serif !important; 
 }
 
@@ -1047,8 +1047,71 @@ img.forestGreen{
 
 
 /*---------------------- CONTACT -----------------------*/
+.formContact{
+    width: 60%;
+    padding: 3%;
+    background-color: white;
+    border-radius: 1rem;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: 8%;
+}
+
+div.inputContact{
+    margin-top: 4%;
+
+}
 
 
+div.inputContact label{
+	width: 100%;
+	margin-bottom: 1%;
+	
+}
+
+
+.formContact input.inputSizeL{
+	width: 100%;
+    text-align: center;
+    height: 4.5vh;
+}
+
+.formContact select{
+	width: 100%;
+    text-align: center;
+	height: 4.5vh;
+}
+
+#reason::-webkit-scrollbar {
+	width: 0;
+}
+#reason{
+	scrollbar-width: none;
+	height: 100%;
+}
+
+.formContact textarea{
+	width: 100%;
+	text-align: center;
+    height: 8rem;
+}
+
+
+.formContact button.sendButton{
+    margin: 5%;
+	padding-top: 2%;
+    padding-right: 6%;
+    padding-bottom: 2%;
+    padding-left: 6%;
+}
+
+.formContact button.resetButton{
+	margin: 1%;
+    padding: 0.3%;
+    border: 1px solid grey;
+}
 
 /*---------------------- END CONTACT -----------------------*/
 
@@ -1079,6 +1142,12 @@ X-Large ≥1200px min-width: 1200px
 	margin-right: 15%;
 }	
 
+.pageContent{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 /*Sections*/
 div.sectionMainPres {
 	width: 80%;
@@ -1101,6 +1170,13 @@ div.sectionMainPres {
 }
 
 
+/*Contact*/
+.formContact {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
 }
 /*END Media Large 991px */ 
 
@@ -1113,11 +1189,12 @@ div.sectionMainPres {
 	text-align: center ;
 }
 
-}
+
 
 .wireframe-img-box {
 	margin-top: 15px;
 	max-width: 150px;
+}
 }
 /*END Media Medium 768px */ 
  
