@@ -878,7 +878,7 @@ img.forestGreen{
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
-/*---------------------- END BIODIVERSITY-------------------
+/*---------------------- END BIODIVERSITY-------------------*/
 
 
 
@@ -1319,6 +1319,46 @@ img.forestGreen{
 
 
 /*---------------------- END ECOSYSTEM -----------------------*/
+
+/*----------------------About page--------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+.bigCarousel, .lifeOnLand, .sustainability {
+  background: #ffffff;
+  border-radius: 12px;
+  transition: transform 0.3s;
+  border:2px, solid green;
+  font-size:20px;
+}
+  
+  .btn-outline-success {
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  border: none;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-success:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+/*---------------------- end About page--------------------------*/
 
 
 
