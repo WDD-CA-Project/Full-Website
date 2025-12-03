@@ -749,8 +749,8 @@ img.forestGreen{
 /* About Biodiversity Box */
 .causesAndImpacts {
 	font-family:"Public Sans", sans-serif;
-	background-color: #ffffff;   /* White background */
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background-color: #ffffff;  
+	transition: transform 0.3s ease;
 	border:2px solid, green;
 	border-radius: 16px;
 }
@@ -762,8 +762,8 @@ img.forestGreen{
 
 .solution {
 	font-family:"Public Sans", sans-serif;
-    background-color: #ffffff;   /* White background */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;   
+    transition: transform 0.3s ease;
     border:2px solid, green;
     border-radius:12px;
 }
@@ -775,7 +775,7 @@ img.forestGreen{
 .hover-card {
   background-color:#ffffff;
   border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
    border:2px solid, green;
 }
 .hover-card:hover {
@@ -787,7 +787,7 @@ img.forestGreen{
   font-size: 2rem;
   font-weight: bold;
   font-family: "Public Sans", sans-serif;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
   
 
 }
@@ -832,7 +832,7 @@ img.forestGreen{
 .fact-box {
   background-color:#ffffff;
   border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
   height: 100%;
   border:2px, solid green;
 }
