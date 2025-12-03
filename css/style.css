@@ -822,6 +822,13 @@ img.forestGreen{
   transform: rotateY(180deg);
 }
 /* Fact Boxes */
+.globe-icon {
+  font-size: 80px;            
+  background: linear-gradient(135deg, #2196f3 40%, #4caf50 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .fact-box {
   background-color:#ffffff;
   border-radius: 12px;
@@ -862,7 +869,7 @@ img.forestGreen{
   text-decoration: none;
   border-radius: 30px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  
 }
 
 .btn-click:hover {
