@@ -45,16 +45,16 @@
 		<div class="main">
 		
 			<div class="pageContent" > 
-				<form class="formContact" name="ContactForm" onsubmit="return validateForm()" onreset="resetErrors()">
+				<form id="formContact" class="formContact" name="formContact" onsubmit="return validateForm()" onreset="resetErrors()">
 				
 					<fieldset>
 						
 						<div class="inputContact" ><!-- Name -->
 							<label for="fullname">Name:</label>
 							<br/>
-							<input onkeyup="validateData();" class="inputSizeL" type="text" id="fullname" name="fullname" required placeholder="Enter your full name"/>
+							<input class="inputSizeL" type="text" id="fullname" name="fullname" required placeholder="Enter your full name"/>
 							
-							<span id="errorMessage"></span>
+							<span id="fullnameError" class="error-m"></span>
 						</div>
 						
 						<div class="inputContact"><!-- Email -->
@@ -62,7 +62,7 @@
 							<br/>
 							<input onkeyup="validateData();" class="inputSizeL" type="email" id="email" name="email" required placeholder="Enter a valid email"/>
 							
-							<span id="errorMessage"></span>
+							<span id="emailError" class="error-m"></span>
 						</div>
 						
 						<!-- Country (select) List generated from https://www.html-code-generator.com/drop-down/country-names -->
@@ -328,7 +328,7 @@
 							</select>
 							<!-- total - 252 -->
 							
-							<span id="errorMessage"></span>
+							<span id="countryError" class="error-m"></span>
 						</div>
 						
 						<div class="inputContact">
@@ -340,7 +340,7 @@
 								<option>Support</option>
 							</select>
 							
-							<span id="errorMessage"></span>
+							<span id="reasonError" class="error-m"></span>
 						</div>
 						
 						<div class="inputContact">
@@ -348,7 +348,7 @@
 							<br/>
 							<textarea onkeyup="validateData();" id="message" name="message" rows="5"required placeholder="Type your message here" ></textarea>
 							
-							<span id="errorMessage"></span>
+							<span id="messageError" class="error-m"></span>
 						</div>
 						
 						<div>
@@ -357,9 +357,9 @@
 						</div>
 						
 						<!--Buttons-->
-						<button type="submit" class="sendButton">Send Message</button>
+						<button id="submitButton" type="submit" class="sendButton">Send Message</button>
 						<br/>
-						<button type="submit" class="resetButton">Reset Form</button>
+						<button type="reset" class="resetButton">Reset Form</button>
 						
 					</fieldset>
 				</form>
@@ -372,25 +372,59 @@
 	</div> <!-- END Container -->
 	
 	<script>
-		document.getElementById("success").style.display = "none";
-		var myTargetElementBtn = document.getElementById("myBtn");
-		var sUserName, sEmail, sPassword;
+		const form = document.getElementById("formContact");
+		//const success = document.getElementById("formSuccess");
+		
+		//Button - Not available to submit until validate
+		let submitBtn = document.getElementById("submitButton");
+		submitBtn.disabled = true;
+
+		// Inputs
+		const fullname = document.getElementById("fullname");
+		const email = document.getElementById("email").value;
+		const country = document.getElementById("country").value;
+		const reason = document.getElementById("reason").value;
+		const message = document.getElementById("message").value;
+
+		// Errors
+		const fullnameError = document.getElementById("fullnameError");
+		const emailError = document.getElementById("emailError");
+		const countryError = document.getElementById("countryError");
+		const reasonError = document.getElementById("reasonError");
+		const messageError = document.getElementById("messageError");
+		
+		function resetErrors() {
+			fullnameError.textContent = "";
+			emailError.textContent   = "";
+			countryError.textContent = "";
+			reasonError.textContent  = "";
+			messageError.textContent = "";
+		}
+		
+		let bValid;
+		
+		function validateForm(){
+		
+			resetErrors();
+			bValid = true;
 			
-		function validateData(){
-				sUserName = document.getElementById("userName").value;
-				sEmail = document.getElementById("email").value;
-				sPassword = document.getElementById("password").value;
-				
-				//NOT = 0, false, "", undefined, null -> TRUE
-				if(sUserName.length > 2 && sEmail.length > 2 && sPassword.length > 2){
-					myTargetElementBtn.disabled = false;
-				}else{
-					myTargetElementBtn.disabled = true;
-				}
+	
+			// Full Name
+			if (fullname.value === "" || fullname.value.length < 3) {
+				fullnameError.textContent = "Please enter your full name (min. 3 characters).";
+				bValid = false;
 			}
-	
-	
-	
+
+		
+			submitBtn.disabled = !bValid;
+		
+		}
+		
+		[fullname].forEach(input => {input.addEventListener("input", validateForm);
+		});
+		
+		
+		
 	</script>
 </body>
 
