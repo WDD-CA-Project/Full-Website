@@ -47,7 +47,7 @@
 			<div class="pageContent" > 
 				<form id="formContact" class="formContact" name="formContact" onsubmit="return validateForm(true)" onreset="resetErrors()">
 				
-					<fieldset>
+					<fieldset id="contactFieldset">
 						
 						<div class="inputContact" ><!-- Name -->
 							<label for="fullname">Name:</label>
@@ -362,6 +362,8 @@
 						<button type="reset" class="resetButton">Reset Form</button>
 						
 					</fieldset>
+					
+					<p id="formSuccess" class="success-m"></p>
 				</form>
 			</div>
 		</div>
@@ -494,19 +496,21 @@
 			return bSubmit ? bValid : true;
 		}
 		
+		
 		form.addEventListener("submit", function(e) {
 		e.preventDefault(); // evita que refresque la página
 
 		if (validateForm(true)) {
-			const msg = document.getElementById("formSuccess");
-			msg.textContent = "✔️ Thank you! We will get back to you within 48 hours.";
+			let msg = document.getElementById("formSuccess");
+			msg.textContent = "Thank you! We will get back to you within 48 hours.";
+
+			document.getElementById("contactFieldset").classList.add("hiddenFieldset");
 
 			form.reset();
 			submitBtn.disabled = true;
 
 			// limpiar errores visuales
 			resetErrors();
-
 		}
 		});
 		
