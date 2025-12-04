@@ -1365,15 +1365,16 @@ html {
 
 /*---------------------- CONTACT -----------------------*/
 .formContact{
-    width: 60%;
+	width: 65%;
     padding: 3%;
     background-color: white;
     border-radius: 1rem;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 17.5%;
+    margin-left: 17.5%;
     text-align: center;
     margin-bottom: 10%;
-    margin-top: 8%;
+    margin-top: 5%;
+	min-height: 12rem;
 }
 
 div.inputContact{
@@ -1440,6 +1441,21 @@ div.inputContact label{
 	display: none;
 }
 
+.sectionTContact{
+	font-size: 2.7rem;
+    margin-bottom: 0;
+    font-weight: 700;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.success-m{
+    margin-top: 6%;
+    font-size: 2.5vh;
+    font-weight: 300;
+}
+
+
 
 /*---------------------- END CONTACT -----------------------*/
 
@@ -1471,9 +1487,9 @@ X-Large ≥1200px min-width: 1200px
 }	
 
 .pageContent{
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
 
 /*Sections*/
@@ -1523,6 +1539,14 @@ div.sectionMainPres {
 	margin-top: 15px;
 	max-width: 150px;
 }
+
+
+.main{
+	width: 95%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
 }
 /*END Media Medium 768px */ 
  
