@@ -34,19 +34,216 @@
 	<div id="container"> <!-- Container (Bootstrap) -->
 	
 		<!-- Add Navbar and Submenu with JS -->
-		<header>
+		<header id="mainNavbar" class="sticky-top" >
 			<div id="navbarAdd"></div>
 			<div id="submenuAdd"></div>
 		</header>
 		
+		<!--Tittle of the topic -->
+		<section class="sectionTittle hero-section">
+			<span class="sectionLifeTittle">LIFE ON LAND</span>
+			<h1 class="sectionMainTittle display-4">Forest &amp; Deforestation</h1>
+			<!-- <p class="sectionBDes lead mt-3 mx-auto" >
+			Tackling the loss of productive land globally to safeguard ecosystems, food security, and livelihoods. Join
+			us in restoring a healthier planet.
+			</p> -->
+		</section>
+		
+		
 		<div class="main">
+			
+			<!-- Interaction created working with ChatGPT --> 
+		
+			<div class="pageContent" id="forestInteraction">
+				<div class="step-card">
+					<p class="step-badge">Question <span id="stepNumber">1</span> of 5</p>
+
+
+					<h2 id="stepTitle">How much forest is lost each year?</h2>
+					
+					<!-- Instructions -->
+					<p id="stepText">Instructions </p>
+
+					<!-- Options to select -->
+					<div id="stepOptions" class="options-grid">
+						<button class="option-btn" data-correct="false">1 million hectares</button>
+						<button class="option-btn" data-correct="true">10 million hectares</button>
+						<button class="option-btn" data-correct="false">100 million hectares</button>
+					</div>
+
+					<!-- Information about the answer -->
+					<p id="feedbackText" class="feedbackText"></p>
+
+					<!-- Next Question or Finish Button -->
+					<button id="nextStepBtn" class="step-main-btn" disabled>Next</button>
+					
+					<!-- Dots for each question -->
+					<div class="step-progress">
+						<span class="dot active"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+				</div>
+			</div>
+		
 		
 
 		</div>
 		
 		<!-- Add Footer with JS -->
 		<footer id="footerAdd"></footer>
-		
+	
 	</div> <!-- END Container -->
+	
+	<script>
+	
+		//Questions information
+		let steps = [
+			//Question 1
+			{
+				title: "How much forest is lost each year?",
+				text: "Forests are shrinking fast. Pick the closest number.",
+				options: [
+					{ text: "1 million hectares", correct: false },
+					{ text: "10 million hectares", correct: true },
+					{ text: "100 million hectares", correct: false }
+				],
+				feedbackCorrect: "Yes! Around 10 million hectares are lost every year.",
+				feedbackWrong: "Not quite. It's around 10 million hectares per year."
+			},
+			
+			//Question 2
+			{
+				title: "Main driver of deforestation",
+				text: "Which activity is the largest driver globally?",
+				options: [
+					{ text: "Agriculture", correct: true },
+					{ text: "Tourism", correct: false },
+					{ text: "Public transport", correct: false }
+				],
+				feedbackCorrect: "Correct. Agriculture is the main driver.",
+				feedbackWrong: "The biggest driver is agriculture."
+			},
+
+			//Question 3
+			{
+				title: "What can help protect forests?",
+				text: "Choose the best option.",
+				options: [
+					{ text: "Sustainable land use & restoration", correct: true },
+					{ text: "Cutting more trees", correct: false },
+					{ text: "Doing nothing", correct: false }
+				],
+				feedbackCorrect: "Exactly. Sustainable management and restoration are key.",
+				feedbackWrong: "We need sustainable land use and restoration."
+			},
+
+
+			//Question 4
+			{
+				title: "Main driver of deforestation",
+				text: "Which activity is the largest driver globally?",
+				options: [
+					{ text: "Agriculture", correct: true },
+					{ text: "Tourism", correct: false },
+					{ text: "Public transport", correct: false }
+				],
+				feedbackCorrect: "Correct. Agriculture is the main driver.",
+				feedbackWrong: "The biggest driver is agriculture."
+			},
+
+			//Question 5
+			{
+				title: "Main driver of deforestation",
+				text: "Which activity is the largest driver globally?",
+				options: [
+					{ text: "Agriculture", correct: true },
+					{ text: "Tourism", correct: false },
+					{ text: "Public transport", correct: false }
+				],
+				feedbackCorrect: "Correct. Agriculture is the main driver.",
+				feedbackWrong: "The biggest driver is agriculture."
+			}
+		  
+		];
+
+		let currentStep = 0;
+		let answered = false;
+
+		//Getting the elements from html
+		let stepNumber = document.getElementById("stepNumber");
+		let stepTitle  = document.getElementById("stepTitle");
+		let stepText   = document.getElementById("stepText");
+		let stepOptions = document.getElementById("stepOptions");
+		let feedbackText = document.getElementById("feedbackText");
+		let nextStepBtn  = document.getElementById("nextStepBtn");
+		let dots = document.querySelectorAll(".step-progress .dot");
+
+		function renderStep() {
+		
+			//Moving to the next question
+			let step = steps[currentStep];
+			stepNumber.textContent = currentStep + 1;
+			stepTitle.textContent  = step.title;
+			stepText.textContent   = step.text;
+			feedbackText.textContent = "";
+			nextStepBtn.textContent = currentStep === steps.length - 1 ? "Finish" : "Next";
+			nextStepBtn.disabled = true;
+			answered = false;
+		  
+
+		  // update dots
+		  dots.forEach((dot, i) => {
+			dot.classList.toggle("active", i === currentStep);
+		  });
+
+		  // build options
+		  stepOptions.innerHTML = "";
+		  step.options.forEach(opt => {
+			let btn = document.createElement("button");
+			btn.className = "option-btn";
+			btn.textContent = opt.text;
+			btn.addEventListener("click", () => handleOptionClick(btn, opt.correct));
+			stepOptions.appendChild(btn);
+		  });
+		}
+
+		function handleOptionClick(btn, isCorrect) {
+		  if (answered) return;
+		  answered = true;
+
+		  // desactivar demás botones
+		  document.querySelectorAll(".option-btn").forEach(b => {
+			b.disabled = true;
+			if (b === btn) {
+			  b.classList.add(isCorrect ? "correct" : "wrong");
+			}
+		  });
+
+		  let step = steps[currentStep];
+		  feedbackText.textContent = isCorrect ? step.feedbackCorrect : step.feedbackWrong;
+		  nextStepBtn.disabled = false;
+		}
+
+		nextStepBtn.addEventListener("click", () => {
+		  if (currentStep < steps.length - 1) {
+			currentStep++;
+			renderStep();
+		  } else {
+			// End of the game
+			document.querySelector(".step-card").innerHTML = `
+			  <h2>Great job!</h2>
+			  <p>You’ve explored how forests are lost and what can help protect them </p>
+			  <p>Now see how SDG 15 connects with your daily choices on this page.</p>
+			`;
+		  }
+		});
+
+		renderStep();
+</script>
+	
+	
 </body>
 </html>
