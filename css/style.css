@@ -250,6 +250,7 @@ a {
   font-size: 50px;
   font-weight: bold;
   text-align: center;
+  text-stroke:2px, black;
 
   /* image inside text effect */
   background: url('../img/forest_cover.jpg') no-repeat center center;
@@ -267,7 +268,23 @@ a {
 .hoverBoxForest:hover h1	{
   color: white;        /* text turns solid white */
   background: none;    /* remove image fill from text */
+  text-stroke:2px, black;
 }
+
+/*///////////responsive//////////////*/
+	@media (max-width: 576px) {
+  .hoverBoxForest {
+    background: url('../img/forest_cover.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  .hoverBoxForest h1 {
+    color: white;
+    background: none;
+	text-stroke:2px, black;
+  }
+}
+/*///////////responsive//////////////*/
+
 /*-----------end of Forest box---------*/
 
 
@@ -295,6 +312,7 @@ a {
       font-size: 50px;
       font-weight: bold;
       text-align: center;
+	  text-stroke:2px, black;
 
       /* image inside text effect */
       background: url('../img/biodiversity.jpg') no-repeat center center;
@@ -312,7 +330,23 @@ a {
     .hoverBoxBio:hover h1	{
       color: white;        /* text turns solid white */
       background: none;    /* remove image fill from text */
+	  text-stroke:2px, black;
     }
+
+/*///////////responsive//////////////*/
+	@media (max-width: 576px) {
+  .hoverBoxBio {
+    background: url('../img/biodiversity.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  .hoverBoxBio h1 {
+    color: white;
+    background: none;
+	text-stroke:2px, black;
+  }
+}
+/*///////////responsive//////////////*/
+
 /*-----------end of Biodiversity box---------*/
 
 /*-----------start of Land box---------*/
@@ -339,6 +373,7 @@ a {
       font-size: 50px;
       font-weight: bold;
       text-align: center;
+	  text-stroke:2px, black;
 
       /* image inside text effect */
       background: url('../img/land_Logo.jpg') no-repeat center center;
@@ -357,6 +392,21 @@ a {
       color: white;        /* text turns solid white */
       background: none;    /* remove image fill from text */
     }
+
+/*///////////responsive//////////////*/
+	@media (max-width: 576px) {
+  .hoverBoxLand {
+    background: url('../img/land_Logo.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  .hoverBoxLand h1 {
+    color: white;
+    background: none;
+	text-stroke:2px, black;
+  }
+}
+/*///////////responsive//////////////*/
+
 /*-----------end of Land box---------*/
 
 /*-----------start of Ecosystem box---------*/
@@ -383,6 +433,7 @@ a {
       font-size: 50px;
       font-weight: bold;
       text-align: center;
+	  text-stroke:2px, black;
 
       /* image inside text effect */
       background: url('../img/ecosystemHome.jpg') no-repeat center center;
@@ -399,8 +450,24 @@ a {
 
     .hoverBoxEcosystem:hover h1	{
       color: white;        /* text turns solid white */
-      background: none;    /* remove image fill from text */
+      background: none;/* remove image fill from text */
+	  text-stroke:2px, black;
     }
+
+/*///////////responsive//////////////*/
+	@media (max-width: 576px) {
+  .hoverBoxEcosystem {
+    background: url('../img/ecosystemHome.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  .hoverBoxEcosystem h1 {
+    color: white;
+    background: none;
+	text-stroke:2px, black;
+  }
+}
+/*///////////responsive//////////////*/
+
 /*-----------end of Ecosystem box---------*/
 
 /* END Main container */
