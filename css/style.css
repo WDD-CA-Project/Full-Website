@@ -613,6 +613,20 @@ p.sectionPresText{
 	color:blue;
 	text-decoration:underline;
 }
+
+.exampleContainer{
+	margin-left: 1%;
+    width: 98%;
+    margin-right: 1%;
+}
+
+.example-box{
+	margin-top: 3%;
+	padding: 2%;
+}
+
+
+
 /*---------------------- END TAKE ACTION -----------------------*/
 
 
