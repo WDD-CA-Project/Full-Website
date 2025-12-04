@@ -31,6 +31,7 @@
 
 	<!-- JS Conections-->
 	<script defer src="js/include.js"></script>
+	<script defer src="js/pledge.js"></script>
 	<script src="https://kit.fontawesome.com/57a310552d.js" crossorigin="anonymous"></script> <!--Icons-->
 
 
@@ -94,15 +95,15 @@
 				<h2 class="fw-semibold">Make Your Pledge</h2>
 				
 					<div>
-						<input type="checkbox" id="pledge1">
+						<input type="checkbox" id="pledge1" onchange="authenticateMe()">
 						<label for="pledge1" class="fw-semibold">Reduce meat consumption</label>
 					</div>
 					<div>
-						<input type="checkbox" id="pledge2">
+						<input type="checkbox" id="pledge2" onchange="authenticateMe()" >
 						<label for="pledge2" class="fw-semibold">Plant 5 trees this year</label>
 					</div>
 					<div>
-						<input type="checkbox" id="pledge3">
+						<input type="checkbox" id="pledge3" onchange="authenticateMe()" >
 						<label for="pledge3" class="fw-semibold">Conserve water at home</label>
 					</div>
 					<button type="submit" class="btn btn-success mt-3" class="fw-semibold" id="myBTN" onclick="authenticateUser();">Submit Pledge</button>
