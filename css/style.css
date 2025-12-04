@@ -1719,6 +1719,10 @@ X-Large ≥1200px min-width: 1200px
 	margin-right: 2.5%;
 }
 
+.navbarCenter{
+    margin-left: 0;
+}
+
 /*Sections*/
 div.sectionMainPres {
 	width: 80%;
@@ -1726,10 +1730,6 @@ div.sectionMainPres {
 	margin-left: 10%;
 	margin-right: 10%;
 	/*margin-top: 5%;*/
-}
-	
-.navbarCenter {
-	margin-top: 4%;
 }
 
 .vs-wrapper{ /* Forest */
