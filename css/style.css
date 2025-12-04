@@ -255,7 +255,7 @@ a {
   font-size: 50px;
   font-weight: bold;
   text-align: center;
-  text-stroke:2px, black;
+  -webkit-text-stroke:2px black;
 
   /* image inside text effect */
   background: url('../img/forest_cover.jpg') no-repeat center center;
@@ -273,7 +273,7 @@ a {
 .hoverBoxForest:hover h1	{
   color: white;        /* text turns solid white */
   background: none;    /* remove image fill from text */
-  text-stroke:2px, black;
+  -webkit-text-stroke:2px black;
 }
 
 /*///////////responsive//////////////*/
@@ -285,7 +285,7 @@ a {
   .hoverBoxForest h1 {
     color: white;
     background: none;
-	text-stroke:2px, black;
+	-webkit-text-stroke:2px black;
   }
 }
 /*///////////responsive//////////////*/
@@ -317,7 +317,7 @@ a {
       font-size: 50px;
       font-weight: bold;
       text-align: center;
-	  text-stroke:2px, black;
+	 -webkit-text-stroke:2px black;
 
       /* image inside text effect */
       background: url('../img/biodiversity.jpg') no-repeat center center;
@@ -335,7 +335,7 @@ a {
     .hoverBoxBio:hover h1	{
       color: white;        /* text turns solid white */
       background: none;    /* remove image fill from text */
-	  text-stroke:2px, black;
+	  -webkit-text-stroke:2px black;
     }
 
 /*///////////responsive//////////////*/
@@ -347,7 +347,7 @@ a {
   .hoverBoxBio h1 {
     color: white;
     background: none;
-	text-stroke:2px, black;
+	-webkit-text-stroke:2px black;
   }
 }
 /*///////////responsive//////////////*/
@@ -378,7 +378,7 @@ a {
       font-size: 50px;
       font-weight: bold;
       text-align: center;
-	  text-stroke:2px, black;
+	  -webkit-text-stroke:2px black;
 
       /* image inside text effect */
       background: url('../img/land_Logo.jpg') no-repeat center center;
@@ -407,7 +407,7 @@ a {
   .hoverBoxLand h1 {
     color: white;
     background: none;
-	text-stroke:2px, black;
+	-webkit-text-stroke:2px black;
   }
 }
 /*///////////responsive//////////////*/
@@ -438,7 +438,7 @@ a {
       font-size: 50px;
       font-weight: bold;
       text-align: center;
-	  text-stroke:2px, black;
+	  -webkit-text-stroke:2px black;
 
       /* image inside text effect */
       background: url('../img/ecosystemHome.jpg') no-repeat center center;
@@ -456,7 +456,7 @@ a {
     .hoverBoxEcosystem:hover h1	{
       color: white;        /* text turns solid white */
       background: none;/* remove image fill from text */
-	  text-stroke:2px, black;
+	 -webkit-text-stroke:2px black;
     }
 
 /*///////////responsive//////////////*/
@@ -468,7 +468,7 @@ a {
   .hoverBoxEcosystem h1 {
     color: white;
     background: none;
-	text-stroke:2px, black;
+	-webkit-text-stroke:2px black;
   }
 }
 /*///////////responsive//////////////*/
