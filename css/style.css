@@ -1019,7 +1019,6 @@ img.forestGreen{
 	border:2px,solid green;
 }
 
-/* Creative Button */
 .btn-click {
   display: inline-block;
   padding: 12px 24px;
@@ -1035,25 +1034,25 @@ img.forestGreen{
 .btn-click:hover {
   background: linear-gradient(135deg, #388e3c, #66bb6a);
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 /*----------------responsive----------------*/
 @media (max-width: 576px) {
-  /* Remove hover animations */
+
+	/*!important is used to overide the code from the above*/ 
   .fact-box:hover,
   .stat-box:hover,
   .btn-click:hover {
-    transform: none !important;
+    transform: none !important  ;
     box-shadow: none !important;
-    background: inherit !important;
+    background: inherit !important ;
   }
 
-  /* Flip card: show back face directly */
+
   .flip-card-inner {
-    transform: rotateY(180deg) !important; /* Always show back */
+    transform: rotateY(180deg) !important; /* this is used to show the inner side of the card */ 
   }
   .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg) !important; /* Prevent hover flip */
+    transform: rotateY(180deg) !important; 
   }
 }
 /*----------------responsive----------------*/
