@@ -1,9 +1,9 @@
 /* Fonts 
 
 Public Sans
-// <weight>: Use a value from 100 to 900
-// <uniquifier>: Use a unique and descriptive class name
-.public-sans-<uniquifier> {
+// weight: Use a value from 100 to 900
+// uniquifier: Use a unique and descriptive class name
+.public-sans- uniquifier {
   font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
