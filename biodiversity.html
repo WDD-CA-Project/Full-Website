@@ -97,7 +97,7 @@
 
 <!-- Facts-->
 <section id="facts" class="container py-5"><!-- container py-5 this is taken from bootstrap py-5 is used for spacing-->
-  <h2>🌍Facts</h2>
+  <h2><i class="fas fa-globe globe-icon"></i>Facts</h2>
   <div class="row g-4">
     <!-- Fact 1 -->
     <div class="col-md-6">
@@ -237,7 +237,7 @@
   <div class="interaction p-4 text-center">
     <h5>want More fun then!</h5>
     <a href="interaction_biodiversity.html" class="btn-click">
-      🌍 Click Me
+      <i class="fas fa-globe globe-icon"></i> Click Me
     </a>
   </div>
 </section>
@@ -254,7 +254,7 @@
       const increment = target / 200;
       if (current < target) {
         counter.innerText = Math.ceil(current + increment);
-        setTimeout(update, 10);
+        setTimeout(update, 30);
       } else {
         counter.innerText = target.toLocaleString();
       }
@@ -279,3 +279,6 @@
 </body>
 
 </html>
+
+
+
