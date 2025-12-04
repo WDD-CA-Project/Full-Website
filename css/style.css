@@ -878,6 +878,19 @@ img.forestGreen{
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
+/*-----------------biodiversity interaction--------------------*/
+.bioInteraction{
+	background-color:white;
+	border:2px,solid green;
+	border-radius:12px;
+}
+
+
+
+
+/*-----------------biodiversity interaction--------------------*/
+
+
 /*---------------------- END BIODIVERSITY-------------------*/
 
 
