@@ -1035,7 +1035,7 @@ img.forestGreen{
   background: linear-gradient(135deg, #388e3c, #66bb6a);
   transform: scale(1.05);
 }
-/*----------------responsive----------------*/
+/*//////////// start of responsive/////////*/
 @media (max-width: 576px) {
 
 	/*!important is used to overide the code from the above*/ 
@@ -1055,7 +1055,7 @@ img.forestGreen{
     transform: rotateY(180deg) !important; 
   }
 }
-/*----------------responsive----------------*/
+/*///////////end of responsive/////////*/
 
 
 /*-----------------biodiversity interaction--------------------*/
@@ -1065,8 +1065,30 @@ img.forestGreen{
 	border-radius:12px;
 }
 
+/*//////////// start of responsive/////////*/
+.scratch {
+  width: 100%;         
+  max-width: 600px;     
+  height: 400px;       
+  border: none;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .scratch {
+    height: 300px;
+  }
+}
+
+/* Phone */
+@media (max-width: 576px) {
+  .scratch {
+    height: 200px;
+  }
+}
 
 
+/*///////////end of responsive/////////*/
 
 /*-----------------biodiversity interaction--------------------*/
 
