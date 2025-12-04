@@ -744,6 +744,122 @@ img.forestGreen{
 
 /*---------------------- END FOREST -----------------------*/
 
+
+/* Interaction Design */
+.step-card {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.step-badge {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #4a7c59;
+  margin-bottom: 0.5rem;
+}
+
+.options-grid {
+  margin: 1.5rem 0 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.option-btn {
+  border-radius: 999px;
+  padding: 0.7rem 1.2rem;
+  border: 2px solid #dbe9dd;
+  background: #f5fbf6;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option-btn:hover {
+  border-color: #4a7c59;
+}
+
+.option-btn.selected {
+  border-color: #4a7c59;
+  background: #4a7c59;
+  color: #fff;
+}
+
+.option-btn.correct {
+  border-color: #2e7d32;
+  background: #2e7d32;
+  color: #fff;
+}
+
+.option-btn.wrong {
+  border-color: #c62828;
+  background: #c62828;
+  color: #fff;
+}
+
+.step-main-btn {
+  margin-top: 0.5rem;
+  padding: 0.9rem 2.4rem;
+  border-radius: 999px;
+  border: none;
+  background: #4a7c59;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+}
+
+.step-main-btn:disabled {
+  background: #b7c9bb;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.step-main-btn:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.step-progress {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.step-progress .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #d0dfd3;
+  transition: width 0.2s, background 0.2s;
+}
+
+.step-progress .dot.active {
+  width: 26px;
+  background: #4a7c59;
+}
+
+.feedbackText {
+  min-height: 1.4rem;
+  font-size: 0.95rem;
+  color: #23472f;
+}
+
+/*---------------------- END Interaction FOREST -----------------------*/
+
+
+
+
+
+
+
+
+
 /*---------------------- BIODIVERSITY----------------------*/
 
 /* About Biodiversity Box */
@@ -1467,8 +1583,6 @@ div.inputContact label{
     font-size: 2.5vh;
     font-weight: 300;
 }
-
-
 
 /*---------------------- END CONTACT -----------------------*/
 
