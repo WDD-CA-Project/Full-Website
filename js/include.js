@@ -76,5 +76,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+//--------------------------------------Pledge-Section-------------------------------------
+			
+			// Hide the thank-you section initially
+			document.getElementById("pledged").style.display = "none";
+			var myTargetElementBtn = document.getElementById("myBTN");
+			// Get references to checkbox elements
+			  var pledge1 = document.getElementById("pledge1");
+			  var pledge2 = document.getElementById("pledge2");
+			  var pledge3 = document.getElementById("pledge3");
+			  var myTargetElementBtn = document.getElementById("myBTN");
+				
+			function authenticateMe(){
+				
+				if(pledge1.checked || pledge2.checked || pledge3.checked){
+					myTargetElementBtn.disabled = false;																		
+				}else{
+					myTargetElementBtn.disabled = true;
+				}
+				
+			}
+			
+			function authenticateUser(){
+				document.getElementById("pledging").style.display = "none";
+				document.getElementById("pledged").style.display = "block";
+			}
 
+//--------------------------------------END-Pledge-Section-------------------------------------
 
