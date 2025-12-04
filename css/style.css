@@ -1755,6 +1755,11 @@ div.sectionMainPres {
 /* MEDIUM < 768px */
 @media (max-width: 767px) {
 
+
+.submenuAdd{
+	display: none;
+}
+
 .fact-container .text-start,
 .fact-container .text-end {
 	text-align: center ;
