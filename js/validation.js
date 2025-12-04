@@ -121,8 +121,10 @@ function validateForm(bSubmit = false){
 }
 
 
+// Function to stay in the same page, and do not get refresh after submit. 
 form.addEventListener("submit", function(e) {
-e.preventDefault(); // evita que refresque la página
+e.preventDefault(); 
+
 
 if (validateForm(true)) {
 	let msg = document.getElementById("formSuccess");
@@ -133,7 +135,7 @@ if (validateForm(true)) {
 	form.reset();
 	submitBtn.disabled = true;
 
-	// limpiar errores visuales
+	// Reset
 	resetErrors();
 }
 });
