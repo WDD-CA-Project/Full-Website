@@ -1436,6 +1436,10 @@ div.inputContact label{
     font-size: 0.9rem;
 }
 
+.hiddenFieldset{
+	display: none;
+}
+
 
 /*---------------------- END CONTACT -----------------------*/
 
