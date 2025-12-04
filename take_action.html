@@ -25,9 +25,6 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css" />
-	
-	<!-- Favicon -->
-	<link rel="icon" href="img/favicon.ico?v=2">
 
 	<!-- JS Conections-->
 	<script defer src="js/include.js"></script>
@@ -89,10 +86,10 @@
 			</section>
 
 			<!-- Pledge Section -->
-			<section class="scroll-text pageContent fact-container row align-items-center">
+			<section class="scroll-text pageContent fact-container row align-items-center" id="pledging">
 				<!--fades the end of the website and white container-->
 				<h2 class="fw-semibold">Make Your Pledge</h2>
-				<form>
+				
 					<div>
 						<input type="checkbox" id="pledge1">
 						<label for="pledge1" class="fw-semibold">Reduce meat consumption</label>
@@ -105,8 +102,13 @@
 						<input type="checkbox" id="pledge3">
 						<label for="pledge3" class="fw-semibold">Conserve water at home</label>
 					</div>
-					<button type="submit" class="btn btn-success mt-3" class="fw-semibold">Submit Pledge</button>
-				</form>
+					<button type="submit" class="btn btn-success mt-3" class="fw-semibold" id="myBTN" onclick="authenticateUser();">Submit Pledge</button>
+				
+			</section>
+			
+			<section class="scroll-text pageContent fact-container row align-items-center" id="pledged">
+			<!--fades the end of the website and white container-->
+			<h2 class="fw-semibold" id="pledged">Thank you for pledging make sure you stick with it</h2>
 			</section>
 
 			<!-- Impact Stories -->
@@ -149,7 +151,6 @@
 
 			</section>
 		</div>	
-
 		<!-- Add Footer with JS -->
 		<footer id="footerAdd"></footer>
 
