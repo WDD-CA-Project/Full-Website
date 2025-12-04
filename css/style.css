@@ -304,7 +304,7 @@ a {
       background: black; /* black background at start */
       transition: background 0.6s ease;
 	  border-radius:12px;
-	  border:2px,solid green;
+	  border:2px solid green;
     }
 	
 	/* Remove underline and blue color from all links */
@@ -365,7 +365,7 @@ a {
       background: black; /* black background at start */
       transition: background 0.6s ease;
 	  border-radius:12px;
-	  border:2px,solid green;
+	  border:2px solid green;
     }
 	
 	/* Remove underline and blue color from all links */
@@ -425,7 +425,7 @@ a {
       background: black; /* black background at start */
       transition: background 0.6s ease;
 	  border-radius:12px;
-	  border:2px,solid green;
+	  border:2px solid green;
     }
 	
 	/* Remove underline and blue color from all links */
@@ -644,7 +644,7 @@ p.sectionPresText{
 
 .des-container{
 	background-color: #ffffff;
-    border: 1px solid: #f0fff0;
+    border: 1px solid #f0fff0;
     padding: 2rem;
     border-radius: 1.5rem;
     margin-bottom: 2rem;
@@ -655,7 +655,7 @@ p.sectionPresText{
 /* Fact Boxes */
 .fact-container {
 	background-color: #ffffff; /* color to be checked */
-	border: 1px solid: #f0fff0; /*/olor to be checked */
+	border: 1px solid #f0fff0; /*/olor to be checked */
 	padding: 1rem;
 	border-radius: 2rem;
 	margin-bottom: 1rem;
@@ -754,7 +754,7 @@ img.forestGreen{
 
 .forestSection .des-container {
     background-color: #ffffff;
-    border: 1px solid: #f0fff0;
+    border: 1px solid #f0fff0;
     padding: 2rem;
     border-radius: 1.5rem;
     font-size: 1.1rem;
@@ -999,7 +999,7 @@ img.forestGreen{
 	font-family:"Public Sans", sans-serif;
 	background-color: #ffffff;  
 	transition: transform 0.3s ease;
-	border:2px solid, green;
+	border:2px solid green;
 	border-radius: 16px;
 }
 
@@ -1012,19 +1012,19 @@ img.forestGreen{
 	font-family:"Public Sans", sans-serif;
     background-color: #ffffff;   
     transition: transform 0.3s ease;
-    border:2px solid, green;
+    border: 2px solid green;
     border-radius:12px;
 }
 
 .solution:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .hover-card {
-  background-color:#ffffff;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-   border:2px solid, green;
+	background-color:#ffffff;
+	border-radius: 12px;
+	transition: transform 0.3s ease;
+	border: 2px solid green;
 }
 .hover-card:hover {
   transform: scale(1.05);
@@ -1032,28 +1032,26 @@ img.forestGreen{
 
 /* Statistics */
 .stat-box h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: "Public Sans", sans-serif;
-  transition: transform 0.3s ease;
-  
-
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: "Public Sans", sans-serif;
+	transition: transform 0.3s ease;
 }
 
 /* Flip Cards */
 .flip-card {
-  background-color: transparent;
-  perspective: 1000px;
+	background-color: transparent;
+	perspective: 1000px;
 }
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+	position: relative;
+	width: 100%;
+	height: 200px;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
 }
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 .flip-card-front, .flip-card-back {
 	position: absolute;
@@ -1067,22 +1065,22 @@ img.forestGreen{
 	align-items: center;   
 }
 .flip-card-back {
-  transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 /* Fact Boxes */
 .globe-icon {
-  font-size: 50px;            
-  background: linear-gradient(135deg, #2196f3 40%, #4caf50 60%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	font-size: 50px;            
+	background: linear-gradient(135deg, #2196f3 40%, #4caf50 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .fact-box {
-  background-color:#ffffff;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-  height: 100%;
-  border:2px, solid green;
+	background-color:#ffffff;
+	border-radius: 12px;
+	transition: transform 0.3s ease;
+	height: 100%;
+	border:2px solid green;
 }
 .fact-box:hover {
   transform: translateY(-5px);
@@ -1091,31 +1089,31 @@ img.forestGreen{
   font-family:"Public Sans", sans-serif; 
 }
 .fact-box .stat {
-  font-weight: 600;
-  margin-top: 10px;
-  color: #333;
+	font-weight: 600;
+	margin-top: 10px;
+	color: #333;
 }
 .background{
 	background-color:#f8f9fa;
-	border:2px,solid green;
+	border: 2px solid green;
 	border-radius: 12px;
 }
 
 .interaction{
 	border-radius:12px;
 	background-color:#ffffff;
-	border:2px,solid green;
+	border: 2px solid green;
 }
 
 .btn-click {
-  display: inline-block;
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #4caf50, #81c784);
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: all 0.3s ease;
+	display: inline-block;
+	padding: 12px 24px;
+	background: linear-gradient(135deg, #4caf50, #81c784);
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: all 0.3s ease;
   
 }
 
@@ -1129,7 +1127,7 @@ img.forestGreen{
 /*-----------------biodiversity interaction--------------------*/
 .bioInteraction{
 	background-color:white;
-	border:2px,solid green;
+	border: 2px solid green;
 	border-radius:12px;
 }
 
