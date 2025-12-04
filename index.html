@@ -37,106 +37,21 @@
 
 <body>
 	<div id="container"> <!-- Wraps around all content-->
-		<header id="mainNavbar" class="sticky-top">
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
-				<div class="container-fluid navbarStyle"> 
-				<!-- navbarStyle is a created class -->
-					<!-- Logo -->
-					<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo created by Malavika" /></a>
-
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbarCenter navbar-nav me-auto mb-2 mb-lg-0">
-						<!-- navbarCenter is a created class -->
-							<li class="nav-item">
-								<a  class="nav-link" aria-current="page" href="index.html">HOME</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="goals.html">ABOUT 17 GOALS</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="take_action.html">TAKE ACTION</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="global.html">GLOBAL INTIATIVES</a>
-							</li>
-
-							<!-- Dropdown Menu 
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> LIFE ON LAND </a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="forest.html">Forest</a></li>
-									
-									<li><a class="dropdown-item" href="biodiversity.html">Biodiversity</a></li>
-									
-									<!-- <li><hr class="dropdown-divider"></li> 
-									
-									<li><a class="dropdown-item" href="land.html">Land</a></li>
-									
-									<li><a class="dropdown-item" href="ecosystem.html">Ecosystem</a></li>
-								</ul>
-							</li> -->
-						
-							<li class="nav-item d-lg-none">
-								<a class="nav-link" href="forest.html">Forest and Deforestation</a>
-							</li>
-							
-							<li class="nav-item d-lg-none">
-								<a class="nav-link" href="biodiversity.html">Biodiversity and Wildlife</a>
-							</li>
-
-							<li class="nav-item d-lg-none">
-								<a class="nav-link" href="land.html">Land Degradation and Desertification</a>
-							</li>
-							
-							<li class="nav-item d-lg-none">
-								<a class="nav-link" href="ecosystem.html">Ecosystem Governance</a>
-							</li>
-
-
-							<li class="nav-item">
-								<a class="nav-link" href="contact.html">CONTACT US</a>
-							</li>
-						</ul>
-
-					</div>
-				</div>
-			</nav>
-			
-			
-			<div id="subMenu" class="d-none d-lg-block"> 
-				
-				<ul id="listMenu">			
-					<li class="buttonMenu"> 
-						<a class="linkButtonMenu" href="forest.html">Forest</a> 
-					</li>
-					<li class="buttonMenu"> 
-						<a class="linkButtonMenu" href="biodiversity.html">Biodiversity</a> 
-					</li>
-					<li class="buttonMenu"> 
-						<a class="linkButtonMenu" href="land.html">Land</a> 
-					</li>
-					<li class="buttonMenu"> 
-						<a class="linkButtonMenu" href="ecosystem.html">Ecosystem</a> 
-					</li>
-				</ul>
-
-			</div>
-				
+		
+		<!-- Add Navbar and Submenu with JS -->
+		<header id="mainNavbar" class="sticky-top" >
+			<div id="navbarAdd"></div>
 		</header>
-
+			<div id="submenuAdd"></div>
+			<!-- In this case, in HomePage the submenu is not stick on the top, just the main menu -->
+			
+			
 <!-- Page Intro -->
 		<div class="pageIntro">
 
 			<div class="introText">
 
 				<div class="introTitle">
-					<!-- <h1 id="mainTitleStyle">LIFE ON LAND</h1> -->
 					<img src="img/title.png" alt="Title Life On Land"/>
 				</div>
 		
