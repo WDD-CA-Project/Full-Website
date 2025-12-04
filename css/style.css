@@ -1124,27 +1124,6 @@ img.forestGreen{
   transform: scale(1.05);
 }
 
-/*//////////// start of responsive/////////*/
-@media (max-width: 576px) {
-
-	/*!important is used to overide the code from the above*/ 
-  .fact-box:hover,
-  .stat-box:hover,
-  .btn-click:hover {
-    transform: none !important  ;
-    box-shadow: none !important;
-    background: inherit !important ;
-  }
-
-
-  .flip-card-inner {
-    transform: rotateY(180deg) !important; /* this is used to show the inner side of the card */ 
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg) !important; 
-  }
-}
-/*///////////end of responsive/////////*/
 
 
 /*-----------------biodiversity interaction--------------------*/
