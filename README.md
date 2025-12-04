@@ -1,0 +1,1 @@
+This website was created by us, students of NCI, as our final project for the first semester of our first year. We have chosen to focus on the 15th topic of the Sustainable Development Goals (SDG), which addresses life on land.
