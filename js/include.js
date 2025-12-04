@@ -22,24 +22,24 @@ document.addEventListener("DOMContentLoaded", () => {
 	fetch("components/submenu.html")
 		.then(response => response.text())
 		.then(data => {
-		  // Insert Submenu
-		  document.getElementById("submenuAdd").innerHTML = data;
+			// Insert Submenu
+			document.getElementById("submenuAdd").innerHTML = data;
 		  
-		document.querySelectorAll('.buttonMenu a').forEach(link => {
-			if (link.pathname === window.location.pathname) {
-			  // the tag a receives: for white font
-			  link.parentElement.classList.add("buttonMenuActive");
-			}
-      });
+			document.querySelectorAll('.buttonMenu a').forEach(link => {
+				if (link.pathname === window.location.pathname) {
+				  // the tag a receives: for white font
+				  link.parentElement.classList.add("buttonMenuActive");
+				}
+			});
+		  
+			document.querySelectorAll('.buttonMenu li').forEach(link => {
+				if (link.pathname === window.location.pathname) {
+				  // the tag li receives: little arrow on top
+				  link.parentElement.classList.add("buttonMenuActive");
+				}
+			});
 	  
-	  	document.querySelectorAll('.buttonMenu li').forEach(link => {
-        if (link.pathname === window.location.pathname) {
-          // the tag li receives: little arrow on top
-          link.parentElement.classList.add("buttonMenuActive");
-        }
-      });
-	  
-    })
+		})
 	
 	
 	
@@ -67,14 +67,14 @@ document.addEventListener("DOMContentLoaded", () => {
           // the tag a recibes: 
           link.parentElement.classList.add("buttonMenuActive");
         }
-      });
+    });
 	  
 	document.querySelectorAll('.buttonMenu li').forEach(link => {
         if (link.pathname === window.location.pathname) {
           // the tag li recibes: 
           link.parentElement.classList.add("buttonMenuActive");
         }
-      });
+    });
 
 
 
