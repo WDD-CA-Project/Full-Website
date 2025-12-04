@@ -57,7 +57,7 @@
 		
 			<div class="pageContent" id="forestInteraction">
 				<div class="step-card">
-					<p class="step-badge">Question <span id="stepNumber">1</span> of 5</p>
+					<p class="step-number">Question <span id="stepNumber">1</span> of 5</p>
 
 
 					<h2 id="stepTitle">How much forest is lost each year?</h2>
@@ -104,68 +104,68 @@
 		let steps = [
 			//Question 1
 			{
-				title: "How much forest is lost each year?",
+				title: "What is deforestation?",
 				text: "Forests are shrinking fast. Pick the closest number.",
 				options: [
-					{ text: "1 million hectares", correct: false },
-					{ text: "10 million hectares", correct: true },
-					{ text: "100 million hectares", correct: false }
+					{ text: "Trees losing their leaves naturally", correct: false },
+					{ text: "Removing forests and converting the land to another use", correct: true },
+					{ text: "Forests growing after rainfall", correct: false }
 				],
-				feedbackCorrect: "Yes! Around 10 million hectares are lost every year.",
-				feedbackWrong: "Not quite. It's around 10 million hectares per year."
+				feedbackCorrect: "Correct. Deforestation means removing forests and changing how the land is used.",
+				feedbackWrong: "No. Deforestation is when forests are removed and the land is converted to another use."
 			},
 			
 			//Question 2
 			{
-				title: "Main driver of deforestation",
-				text: "Which activity is the largest driver globally?",
+				title: "Main cause of global forest loss",
+				text: "Which human activity causes most deforestation worldwide?",
 				options: [
 					{ text: "Agriculture", correct: true },
 					{ text: "Tourism", correct: false },
 					{ text: "Public transport", correct: false }
 				],
-				feedbackCorrect: "Correct. Agriculture is the main driver.",
-				feedbackWrong: "The biggest driver is agriculture."
+				feedbackCorrect: "Correct. Agriculture is the main cause of global forest loss.",
+				feedbackWrong: "No. Agriculture is the activity that causes most deforestation worldwide."
 			},
 
 			//Question 3
 			{
-				title: "What can help protect forests?",
-				text: "Choose the best option.",
+				title: "Forest degradation",
+				text: "What is forest degradation?",
 				options: [
-					{ text: "Sustainable land use & restoration", correct: true },
-					{ text: "Cutting more trees", correct: false },
-					{ text: "Doing nothing", correct: false }
+					{ text: "When new trees are planted", correct: false },
+					{ text: "When a forest grows faster than normal", correct: false },
+					{ text: "When a forest becomes damaged but is not completely removed", correct: true }
 				],
-				feedbackCorrect: "Exactly. Sustainable management and restoration are key.",
-				feedbackWrong: "We need sustainable land use and restoration."
+				feedbackCorrect: "Exactly. Degradation means the forest remains, but its quality declines.",
+				feedbackWrong: "Not quite. Forest degradation happens when a forest is damaged but not completely removed."
 			},
 
 
 			//Question 4
 			{
-				title: "Main driver of deforestation",
-				text: "Which activity is the largest driver globally?",
+				title: "Forests and climate",
+				text: "How do forests help the climate?",
 				options: [
-					{ text: "Agriculture", correct: true },
-					{ text: "Tourism", correct: false },
-					{ text: "Public transport", correct: false }
+					{ text: "They absorb carbon dioxide from the atmosphere", correct: true },
+					{ text: "They create fossil fuels naturally", correct: false },
+					{ text: "They stop all storms from forming", correct: false }
 				],
-				feedbackCorrect: "Correct. Agriculture is the main driver.",
-				feedbackWrong: "The biggest driver is agriculture."
+				feedbackCorrect: "Yes. Forests store carbon and help regulate the climate.",
+				feedbackWrong: "Not right. Forests help the climate by absorbing carbon dioxide."
 			},
 
 			//Question 5
 			{
-				title: "Main driver of deforestation",
-				text: "Which activity is the largest driver globally?",
+				title: "Forest importance",
+				text: "Why are forests essential for life on Earth?",
 				options: [
-					{ text: "Agriculture", correct: true },
-					{ text: "Tourism", correct: false },
-					{ text: "Public transport", correct: false }
+					{ text: "They stop volcanoes from erupting", correct: false },
+					{ text: "They produce electricity naturally", correct: false },
+					{ text: "They support biodiversity and help regulate the climate", correct: true }
 				],
-				feedbackCorrect: "Correct. Agriculture is the main driver.",
-				feedbackWrong: "The biggest driver is agriculture."
+				feedbackCorrect: "Right! Forests protect biodiversity and play a key role in stabilizing the climate.",
+				feedbackWrong: "No. Forests are essential because they support biodiversity and regulate the climate."
 			}
 		  
 		];
@@ -195,39 +195,41 @@
 			answered = false;
 		  
 
-		  // update dots
-		  dots.forEach((dot, i) => {
-			dot.classList.toggle("active", i === currentStep);
-		  });
+			// update dots
+			dots.forEach((dot, i) => {
+				dot.classList.toggle("active", i === currentStep);
+			});
 
-		  // build options
-		  stepOptions.innerHTML = "";
-		  step.options.forEach(opt => {
-			let btn = document.createElement("button");
-			btn.className = "option-btn";
-			btn.textContent = opt.text;
-			btn.addEventListener("click", () => handleOptionClick(btn, opt.correct));
-			stepOptions.appendChild(btn);
-		  });
+			// build options
+			stepOptions.innerHTML = "";
+			step.options.forEach(opt => {
+				let btn = document.createElement("button");
+				btn.className = "option-btn";
+				btn.textContent = opt.text;
+				btn.addEventListener("click", () => handleOptionClick(btn, opt.correct));
+				stepOptions.appendChild(btn);
+			});
 		}
 
 		function handleOptionClick(btn, isCorrect) {
-		  if (answered) return;
-		  answered = true;
+			if (answered) return;
+			answered = true;
 
-		  // desactivar demás botones
-		  document.querySelectorAll(".option-btn").forEach(b => {
-			b.disabled = true;
-			if (b === btn) {
-			  b.classList.add(isCorrect ? "correct" : "wrong");
-			}
-		  });
+			// desactivar demás botones
+			document.querySelectorAll(".option-btn").forEach(b => {
+				b.disabled = true;
+				if (b === btn) {
+					b.classList.add(isCorrect ? "correct" : "wrong");
+				}
+			});
 
-		  let step = steps[currentStep];
-		  feedbackText.textContent = isCorrect ? step.feedbackCorrect : step.feedbackWrong;
-		  nextStepBtn.disabled = false;
+			let step = steps[currentStep];
+			feedbackText.textContent = isCorrect ? step.feedbackCorrect : step.feedbackWrong;
+			nextStepBtn.disabled = false;
 		}
 
+
+		// Check if the questionarie is finished and show the end of the game
 		nextStepBtn.addEventListener("click", () => {
 		  if (currentStep < steps.length - 1) {
 			currentStep++;
