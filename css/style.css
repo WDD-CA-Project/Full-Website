@@ -447,7 +447,8 @@ ul.footerMenu{
 
 /* Home background image */
 .introText{
-	background-image: url("../img/mountain.jpg");
+	background-image: url("../img/home.jpg");
+	/* IMG Credits: https://pixabay.com/photos/mountain-sunset-forest-trees-hills-6827881/ */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-position: top;
