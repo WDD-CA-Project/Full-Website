@@ -1,4 +1,8 @@
 //Questions information
+// Interaction developed working with ChatGPT for the correct implementation and fixing errors. 
+
+
+//An array with all the information of the questions
 let steps = [
 	//Question 1
 	{
@@ -70,7 +74,7 @@ let steps = [
 
 let currentStep = 0;
 let answered = false;
-let score = 0;
+let score = 0; // to make the result at the end, based on this
 
 //Getting the elements from html
 let stepNumber = document.getElementById("stepNumber");
@@ -105,11 +109,12 @@ function renderStep() {
 			btn.className   = "option-btn";
 			btn.textContent = opt.text;
 
-			// ahora pasamos el objeto opt completo
+			// send the object with all the information, so the next funtion can read if the answer was correct or not.
 			btn.addEventListener("click", () => handleOptionClick(btn, opt));
 			stepOptions.appendChild(btn);
 		});
 }
+
 
 function handleOptionClick(btn, opt) {
 	if (answered) return;
@@ -120,7 +125,7 @@ function handleOptionClick(btn, opt) {
 	score += opt.value;   // value is 1 or 0 
 }
 
-// desactivar demás botones y marcar correcto/incorrecto
+// disable buttons and and indicated correct or not.
 document.querySelectorAll(".option-btn").forEach(b => {
 b.disabled = true;
 if (b === btn) {
@@ -147,12 +152,13 @@ nextStepBtn.addEventListener("click", () => {
 	}
 });
 
+//Running the fuction declared above
 renderStep();
 
 
-
+//Final step once the quiz is done
 function showResult() {
-	const quizQuestions = document.getElementById("quizQuestions"); // o el id que tengas
+	const quizQuestions = document.getElementById("quizQuestions"); 
 	const quizResult = document.getElementById("quizResult");
 	const resultTitle = document.getElementById("resultTitle");
 	const resultText = document.getElementById("resultText");
