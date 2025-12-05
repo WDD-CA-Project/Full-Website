@@ -221,44 +221,13 @@ a {
   color: inherit; /* makes link text use the background color */
 }
 
-/*----- start of Forest box-----*/
-
-.hoverBoxForest {
-	width: 100%;
-	height: 300px;
-	display: flex;/*this is used to arrange the content perfectly*/
-	align-items: center;/*vertical arrangement*/
-	justify-content: center;/*horizontal equal spacing and arrangement*/
-	background: black; /* black background at start */
-	transition: background 0.6s ease;
-	border-radius:12px;
-	border:2px solid green;
-}
-	
-
-/* this style it s no necesary if you do one for each, even tho is better to use just one for all */
-.hoverBox h1{
-    font-size: 3.5rem;
-	font-weight: 800;
-    text-align: center;
-	-webkit-text-stroke: 3px black;
-	/* image inside text effect */
-	background: url('../img/forest_cover.jpg') no-repeat center center;
-	background-size: cover;
-	background-clip: text;
-	color: transparent;
-	transition: color 0.6s ease, background 0.6s ease;
-}
-
-
-
-.hoverBoxForest {
+.hoverBox {
     width: 100%;
     height: 300px;
     display: block;
-    align-items: center;
+    align-items: center; /*vertical arrangement*/
     text-align: center;
-    justify-content: center;
+    justify-content: center; /*horizontal equal spacing and arrangement*/
     background: #bed2be;
     transition: background 0.6s ease;
     box-shadow: 0 8px 20px rgb(0 0 0 / 14%);
@@ -266,7 +235,7 @@ a {
     border: none;
 }
 
-.hoverBoxForest i{
+.hoverBox i{
     font-size: 6rem;
     padding: 1%;
     margin-top: 11%;
@@ -274,10 +243,33 @@ a {
     width: 100%;
     font-weight: bold;
     text-align: center;
+	color: transparent;
+}
+
+.hoverBox h2{
+	width: 80%;
+    margin-left: 10%;
+    padding: 1%;
+    font-weight: 800;
+    font-size: 1.9rem;
+    color: #4c782e;
+}
+
+.hoverBox:hover i{
+	color: white;        /* text turns solid white */
+	background: none;    /* remove image fill from text */
+}
+
+.hoverBox:hover h2{
+	color: white;        /* text turns solid white */  
+}
+
+/*----- start of Forest box-----*/
+
+.hoverBoxForest i{
     background: url('../img/forest/forest_card.jpg') no-repeat center center;
     background-size: cover;
     background-clip: text;
-    color: transparent;
     transition: color 0.6s ease, background 0.6s ease;
 }
 
@@ -287,14 +279,6 @@ a {
 	background-size: cover;
 }
 
-.hoverBoxForest:hover i{
-	color: white;        /* text turns solid white */
-	background: none;    /* remove image fill from text */
-}
-
-.hoverBoxForest:hover h2{
-	color: white;        /* text turns solid white */  
-}
 
 .hoverBoxForest h2{
 	width: 80%;
@@ -305,198 +289,89 @@ a {
     color: #4c782e;
 }
 
-/*///////////responsive//////////////*/
-@media (max-width: 576px) {
-/* If there is nothing different, you don't need to do a media */
-}
-/*///////////responsive//////////////*/
-
 /*-----------end of Forest box---------*/
 
 
 /*----- start of Biodiversity box-----*/
 
 .hoverBoxBio {
-      width: 100%;
-      height: 300px;
-      display: flex;/*this is used to arrange the content perfectly*/
-      align-items: center;/*vertical arrangement*/
-      justify-content: center;/*horizontal equal spacing and arrangement*/
-      background: black; /* black background at start */
-      transition: background 0.6s ease;
-	  border-radius:12px;
-	  border:2px solid green;
-    }
-	
-	/* Remove underline and blue color from all links */
-a {
-  text-decoration: none;
-  color: inherit;   /* makes link text use the background color */
+	transition: background 0.6s ease;
 }
-
-.hoverBoxBio h1	{
-	font-size: 50px;
-	font-weight: bold;
-	text-align: center;
-	-webkit-text-stroke:2px black;
-
+	
+.hoverBoxBio i	{
 	/* image inside text effect */
 	background: url('../img/biodiversity.jpg') no-repeat center center;
 	background-size: cover;
 	background-clip: text;
 	color: transparent;
 	transition: color 0.6s ease, background 0.6s ease;
+	
+	/* especific size for this icon */
+	font-size: 8rem;
+    padding: 1%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    width: 100%;
 }
 
-.hoverBoxBio:hover{
+.hoverBoxBio:hover {
 	background: url('../img/biodiversity.jpg') no-repeat center center;
 	background-size: cover;
 }
-
-.hoverBoxBio:hover h1{
-	color: white;        /* text turns solid white */
-	background: none;    /* remove image fill from text */
-	-webkit-text-stroke:2px black;
-}
-
-/*///////////responsive//////////////*/
-	@media (max-width: 576px) {
-  .hoverBoxBio {
-    background: url('../img/biodiversity.jpg') no-repeat center center;
-    background-size: cover;
-  }
-  .hoverBoxBio h1 {
-    color: white;
-    background: none;
-	-webkit-text-stroke:2px black;
-  }
-}
-/*///////////responsive//////////////*/
-
 /*-----------end of Biodiversity box---------*/
 
+
 /*-----------start of Land box---------*/
-
-.hoverBoxLand {
-      width: 100%;
-      height: 300px;
-      display: flex;/*this is used to arrange the content perfectly*/
-      align-items: center;/*vertical arrangement*/
-      justify-content: center;/*horizontal equal spacing and arrangement*/
-      background: black; /* black background at start */
-      transition: background 0.6s ease;
-	  border-radius:12px;
-	  border:2px solid green;
-    }
 	
-	/* Remove underline and blue color from all links */
-a {
-  text-decoration: none;
-  color: inherit;   /* makes link text use the background color */
+.hoverBoxLand i{
+	/* image inside text effect */
+	background: url('../img/land_Logo.jpg') no-repeat center center;
+	background-size: cover;
+	background-clip: text;
+	color: transparent;
+	transition: color 0.6s ease, background 0.6s ease;
+	
+	/* especific size for this icon */
+	font-size: 7.5rem;
+    padding: 1%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    width: 100%;
 }
 
-   .hoverBoxLand h1	{
-      font-size: 50px;
-      font-weight: bold;
-      text-align: center;
-	  -webkit-text-stroke:2px black;
-
-      /* image inside text effect */
-      background: url('../img/land_Logo.jpg') no-repeat center center;
-      background-size: cover;
-      background-clip: text;
-      color: transparent;
-	  transition: color 0.6s ease, background 0.6s ease;
-    }
-
-    .hoverBoxLand:hover {
-      background: url('../img/land_Logo.jpg') no-repeat center center;
-      background-size: cover;
-    }
-
-    .hoverBoxLand:hover h1	{
-      color: white;        /* text turns solid white */
-      background: none;    /* remove image fill from text */
-    }
-
-/*///////////responsive//////////////*/
-	@media (max-width: 576px) {
-  .hoverBoxLand {
-    background: url('../img/land_Logo.jpg') no-repeat center center;
-    background-size: cover;
-  }
-  .hoverBoxLand h1 {
-    color: white;
-    background: none;
-	-webkit-text-stroke:2px black;
-  }
+.hoverBoxLand:hover {
+	background: url('../img/land_Logo.jpg') no-repeat center center;
+	background-size: cover;
 }
-/*///////////responsive//////////////*/
 
 /*-----------end of Land box---------*/
 
 /*-----------start of Ecosystem box---------*/
 
-.hoverBoxEcosystem {
-      width: 100%;
-      height: 300px;
-      display: flex;/*this is used to arrange the content perfectly*/
-      align-items: center;/*vertical arrangement*/
-      justify-content: center;/*horizontal equal spacing and arrangement*/
-      background: black; /* black background at start */
-      transition: background 0.6s ease;
-	  border-radius:12px;
-	  border:2px solid green;
-    }
+.hoverBoxEcosystem i{
+	/* image inside text effect */
+	background: url('../img/ecosystemHome.jpg') no-repeat center center;
+	background-size: cover;
+	background-clip: text;
+	color: transparent;
+	transition: color 0.6s ease, background 0.6s ease;
 	
-	/* Remove underline and blue color from all links */
-a {
-  text-decoration: none;
-  color: inherit;   /* makes link text use the background color */
+	/* especific size for this icon */
+	font-size: 7.5rem;
+    padding: 1%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    width: 100%;
 }
 
-   .hoverBoxEcosystem h1	{
-      font-size: 50px;
-      font-weight: bold;
-      text-align: center;
-	  -webkit-text-stroke:2px black;
-
-      /* image inside text effect */
-      background: url('../img/ecosystemHome.jpg') no-repeat center center;
-      background-size: cover;
-      background-clip: text;
-      color: transparent;
-	  transition: color 0.6s ease, background 0.6s ease;
-    }
-
-    .hoverBoxEcosystem:hover {
-      background: url('../img/ecosystemHome.jpg') no-repeat center center;
-      background-size: cover;
-    }
-
-    .hoverBoxEcosystem:hover h1	{
-      color: white;        /* text turns solid white */
-      background: none;/* remove image fill from text */
-	 -webkit-text-stroke:2px black;
-    }
-
-/*///////////responsive//////////////*/
-	@media (max-width: 576px) {
-  .hoverBoxEcosystem {
-    background: url('../img/ecosystemHome.jpg') no-repeat center center;
-    background-size: cover;
-  }
-  .hoverBoxEcosystem h1 {
-    color: white;
-    background: none;
-	-webkit-text-stroke:2px black;
-  }
+.hoverBoxEcosystem:hover {
+	background: url('../img/ecosystemHome.jpg') no-repeat center center;
+	background-size: cover;
 }
-/*///////////responsive//////////////*/
-
 /*-----------end of Ecosystem box---------*/
 
 /* END Main container */
+
 
 
 /* -- Footer -- */
