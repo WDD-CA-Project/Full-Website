@@ -237,7 +237,7 @@ a {
   color: inherit;   /* makes link text use the background color */
 }
 
-
+/* this style it s no necesary if you do one for each, even tho is better to use just one for all */
 .hoverBox h1{
     font-size: 3.5rem;
 	font-weight: 800;
@@ -251,19 +251,35 @@ a {
 	transition: color 0.6s ease, background 0.6s ease;
 }
 
-.hoverBoxForest i	{
-	font-size: 50px;
-	font-weight: bold;
-	text-align: center;
-	-webkit-text-stroke:2px black;
 
-	/* image inside text effect */
-	background: url('../img/forest/forest_card.jpg') no-repeat center center;
-	/*IMG Credits: https://pixabay.com/photos/bamboo-trees-green-growth-1283976/ */
-	background-size: cover;
-	background-clip: text;
-	color: transparent;
-	transition: color 0.6s ease, background 0.6s ease;
+
+.hoverBoxForest {
+    width: 100%;
+    height: 300px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #bed2be;
+    transition: background 0.6s ease;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 14%);
+    border-radius: 12px;
+    border: none;
+}
+
+.hoverBoxForest i{
+    font-size: 6rem;
+    padding: 1%;
+    margin-top: 11%;
+    margin-bottom: 8%;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    background: url('../img/forest/forest_card.jpg') no-repeat center center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    transition: color 0.6s ease, background 0.6s ease;
 }
 
 .hoverBoxForest:hover {
@@ -272,23 +288,27 @@ a {
 	background-size: cover;
 }
 
-.hoverBoxForest:hover h1	{
-  color: white;        /* text turns solid white */
-  background: none;    /* remove image fill from text */
-  -webkit-text-stroke:2px black;
+.hoverBoxForest:hover i{
+	color: white;        /* text turns solid white */
+	background: none;    /* remove image fill from text */
+}
+
+.hoverBoxForest:hover h2{
+	color: white;        /* text turns solid white */  
+}
+
+.hoverBoxForest h2{
+	width: 80%;
+    margin-left: 10%;
+    padding: 1%;
+    font-weight: 800;
+    font-size: 1.9rem;
+    color: #4c782e;
 }
 
 /*///////////responsive//////////////*/
-	@media (max-width: 576px) {
-  .hoverBoxForest {
-    background: url('../img/forest_cover.jpg') no-repeat center center;
-    background-size: cover;
-  }
-  .hoverBoxForest h1 {
-    color: white;
-    background: none;
-	-webkit-text-stroke:2px black;
-  }
+@media (max-width: 576px) {
+/* If there is nothing different, you don't need to do a media */
 }
 /*///////////responsive//////////////*/
 
@@ -315,30 +335,30 @@ a {
   color: inherit;   /* makes link text use the background color */
 }
 
-   .hoverBoxBio h1	{
-      font-size: 50px;
-      font-weight: bold;
-      text-align: center;
-	 -webkit-text-stroke:2px black;
+.hoverBoxBio h1	{
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	-webkit-text-stroke:2px black;
 
-      /* image inside text effect */
-      background: url('../img/biodiversity.jpg') no-repeat center center;
-      background-size: cover;
-      background-clip: text;
-      color: transparent;
-	  transition: color 0.6s ease, background 0.6s ease;
-    }
+	/* image inside text effect */
+	background: url('../img/biodiversity.jpg') no-repeat center center;
+	background-size: cover;
+	background-clip: text;
+	color: transparent;
+	transition: color 0.6s ease, background 0.6s ease;
+}
 
-    .hoverBoxBio:hover {
-      background: url('../img/biodiversity.jpg') no-repeat center center;
-      background-size: cover;
-    }
+.hoverBoxBio:hover{
+	background: url('../img/biodiversity.jpg') no-repeat center center;
+	background-size: cover;
+}
 
-    .hoverBoxBio:hover h1	{
-      color: white;        /* text turns solid white */
-      background: none;    /* remove image fill from text */
-	  -webkit-text-stroke:2px black;
-    }
+.hoverBoxBio:hover h1{
+	color: white;        /* text turns solid white */
+	background: none;    /* remove image fill from text */
+	-webkit-text-stroke:2px black;
+}
 
 /*///////////responsive//////////////*/
 	@media (max-width: 576px) {
