@@ -228,7 +228,6 @@ a {
     align-items: center; /*vertical arrangement*/
     text-align: center;
     justify-content: center; /*horizontal equal spacing and arrangement*/
-    background: #bed2be;
     transition: background 0.6s ease;
     box-shadow: 0 8px 20px rgb(0 0 0 / 14%);
     border-radius: 12px;
@@ -264,13 +263,21 @@ a {
 	color: white;        /* text turns solid white */  
 }
 
+
+
+
+
 /*----- start of Forest box-----*/
+
+.hoverBoxForest{
+	background: #bed2be;
+}
 
 .hoverBoxForest i{
     background: url('../img/forest/forest_card.jpg') no-repeat center center;
-    background-size: cover;
-    background-clip: text;
     transition: color 0.6s ease, background 0.6s ease;
+	background-size: cover;
+    background-clip: text;
 }
 
 .hoverBoxForest:hover {
@@ -279,13 +286,7 @@ a {
 	background-size: cover;
 }
 
-
 .hoverBoxForest h2{
-	width: 80%;
-    margin-left: 10%;
-    padding: 1%;
-    font-weight: 800;
-    font-size: 1.9rem;
     color: #4c782e;
 }
 
@@ -293,11 +294,10 @@ a {
 
 
 /*----- start of Biodiversity box-----*/
-
-.hoverBoxBio {
-	transition: background 0.6s ease;
+.hoverBoxBio{
+	background: #b1a28d4f;
 }
-	
+
 .hoverBoxBio i	{
 	/* image inside text effect */
 	background: url('../img/biodiversity.jpg') no-repeat center center;
@@ -318,10 +318,19 @@ a {
 	background: url('../img/biodiversity.jpg') no-repeat center center;
 	background-size: cover;
 }
+
+.hoverBoxBio h2{
+    color: #443e33;
+}
+
 /*-----------end of Biodiversity box---------*/
 
 
 /*-----------start of Land box---------*/
+
+.hoverBoxLand{
+	background: #b1a28d4f;
+}
 	
 .hoverBoxLand i{
 	/* image inside text effect */
@@ -344,9 +353,17 @@ a {
 	background-size: cover;
 }
 
+.hoverBoxLand h2{
+    color: #443e33;
+}
+
 /*-----------end of Land box---------*/
 
+
 /*-----------start of Ecosystem box---------*/
+.hoverBoxEcosystem{
+	background: #bed2be;
+}
 
 .hoverBoxEcosystem i{
 	/* image inside text effect */
@@ -367,6 +384,10 @@ a {
 .hoverBoxEcosystem:hover {
 	background: url('../img/ecosystemHome.jpg') no-repeat center center;
 	background-size: cover;
+}
+
+.hoverBoxEcosystem h2{
+    color: #4c782e;
 }
 /*-----------end of Ecosystem box---------*/
 
@@ -1070,7 +1091,6 @@ img.forestGreen{
 }
 
 /*-----------------biodiversity interaction--------------------*/
-
 
 /*---------------------- END BIODIVERSITY-------------------*/
 
@@ -1955,6 +1975,15 @@ div.sectionMainPres {
     text-align: center;
 }
 
+/* CARDS presentation from HOME */
+.hoverBox i{
+	margin-top: 16%;
+}
+
+.hoverBox h2{
+	font-size: 1.3rem;
+}	 
+	 
 	 
 }
 
