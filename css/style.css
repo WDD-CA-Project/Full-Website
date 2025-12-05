@@ -655,7 +655,7 @@ div.sectionMainPres {
 .fact-container {
 	background-color: #ffffff; /* color to be checked */
 	border: 1px solid #f0fff0; /*/olor to be checked */
-	padding: 1rem;
+	padding: 0rem;
 	border-radius: 2rem;
 	margin-bottom: 1rem;
 }
@@ -675,7 +675,11 @@ div.sectionMainPres {
 }
 
 
-
+.forestSection img.fact-img{
+    max-width: 70%;
+    clip-path: circle(42%);
+    margin-top: 0;
+}
 
 
 
