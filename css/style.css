@@ -216,6 +216,10 @@ a.linkButtonMenu {
 
 /* --- Cards in Home --- */
 /*four box hover*/
+a {
+  text-decoration: none; /* Remove underline and blue color from all links */
+  color: inherit; /* makes link text use the background color */
+}
 
 /*----- start of Forest box-----*/
 
@@ -231,11 +235,6 @@ a.linkButtonMenu {
 	  border:2px solid green;
     }
 	
-	/* Remove underline and blue color from all links */
-a {
-  text-decoration: none;
-  color: inherit;   /* makes link text use the background color */
-}
 
 /* this style it s no necesary if you do one for each, even tho is better to use just one for all */
 .hoverBox h1{
