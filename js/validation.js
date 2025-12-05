@@ -19,6 +19,14 @@ const countryError = document.getElementById("countryError");
 const reasonError = document.getElementById("reasonError");
 const messageError = document.getElementById("messageError");
 
+const touched = {
+	fullname: false,
+	email: false,
+	country: false,
+	reason: false,
+	message: false
+};
+
 
 //Reset all the variables, accion called by the Reset Button
 function resetErrors() {
@@ -36,14 +44,6 @@ function resetErrors() {
 
 	submitBtn.disabled = true;	
 }
-
-const touched = {
-	fullname: false,
-	email: false,
-	country: false,
-	reason: false,
-	message: false
-};
 
 
 let bValid;
