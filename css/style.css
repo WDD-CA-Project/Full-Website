@@ -735,7 +735,7 @@ img.forestGreen{
 }
 
 .forestSection .flip-card p {
-    margin-bottom: 0rem;
+    margin-bottom: 0rem !important;
 }
 
 .forestMargin{
@@ -745,7 +745,7 @@ img.forestGreen{
 .forestBoxC{
     background-color: white;
     padding: 5%;
-    border-radius: 1rem;
+    border-radius: 1rem; 
 }
 
 /*---------------------- END FOREST -----------------------*/
@@ -902,8 +902,6 @@ img.forestGreen{
 	margin-bottom: 8%;
 	
 }
-
-
 
 /*---------------------- END Interaction FOREST -----------------------*/
 
@@ -1442,14 +1440,14 @@ html {
 
 /*-------------------- GLOBAL INITIATIVES ----------------------*/
 
-.flip-card {
+.globalLabels .flip-card {
   background: transparent;
   perspective: 1000px;
   margin-bottom: 40px;
   cursor: pointer;
 }
 
-.flip-card-inner {
+.globalLabels .flip-card-inner {
   position: relative;
   width: 100%;
   min-height: 350px;
@@ -1458,7 +1456,7 @@ html {
   transform-style: preserve-3d;
 }
 
-.flip-card-front,
+.globalLabels .flip-card-front,
 .flip-card-back {
   position: absolute;
   top: 0;
@@ -1474,7 +1472,7 @@ html {
   overflow-wrap: break-word;
 }
 
-.flip-card-back {
+.globalLabels .flip-card-back {
   transform: rotateY(180deg);
   background: #ffffff;
   border: 2px solid #108245;
@@ -1484,55 +1482,55 @@ html {
   position: relative;
 }
 
-.flip-card.active .flip-card-inner {
+.globalLabels .flip-card.active .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.forest .flip-card-front {
+.globalLabels .forest .flip-card-front {
   background: #e1f4ea;
   color: #0b4d2b;
 }
-.forest .flip-card-back {
+.globalLabels .forest .flip-card-back {
   border-color: #108245;
 }
-.forest .kp-icon {
+.globalLabels .forest .kp-icon {
   color: #108245;
 }
 
-.biodiversity .flip-card-front {
+.globalLabels .biodiversity .flip-card-front {
   background: #e0ebf7;
   color: #21466f;
 }
-.biodiversity .flip-card-back {
+.globalLabels .biodiversity .flip-card-back {
   border-color: #3b6ba5;
 }
-.biodiversity .kp-icon {
+.globalLabels .biodiversity .kp-icon {
   color: #3b6ba5;
 }
 
-.land .flip-card-front {
+.globalLabels .land .flip-card-front {
   background: #f0e3db;
   color: #5b3a2a;
 }
-.land .flip-card-back {
+.globalLabels .land .flip-card-back {
   border-color: #795548;
 }
-.land .kp-icon {
+.globalLabels .land .kp-icon {
   color: #795548;
 }
 
-.ecosystem .flip-card-front {
+.globalLabels .ecosystem .flip-card-front {
   background: #fbe8d6;
   color: #8c4b11;
 }
-.ecosystem .flip-card-back {
+.globalLabels .ecosystem .flip-card-back {
   border-color: #d97822;
 }
-.ecosystem .kp-icon {
+.globalLabels .ecosystem .kp-icon {
   color: #d97822;
 }
 
-.flip-card-front h2 {
+.globalLabels .flip-card-front h2 {
   font-size: 1rem;
   font-weight: 700;
   margin: 0 0 10px 0;
@@ -1543,54 +1541,54 @@ html {
   text-transform: uppercase;
 }
 
-.flip-card-front h1 {
+.globalLabels .flip-card-front h1 {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 8px 0 16px 0;
   text-transform: uppercase;
 }
 
-.flip-card-front p {
+.globalLabels .flip-card-front p {
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0 0 12px 0;
 }
 
-.flip-card-back h3 {
+.globalLabels .flip-card-back h3 {
   font-size: 1.2rem;
   font-weight: 700;
   margin: 0 0 12px 0;
   color: #333;
 }
 
-.kp-icon {
+.globalLabels .kp-icon {
   font-size: 1.1em;
   vertical-align: middle;
 }
 
-.flip-card-back ul {
+.globalLabels .flip-card-back ul {
   list-style: disc;
   padding-left: 18px;
   margin: 0 0 18px 0;    
 }
 
-.flip-card-back li {
+.globalLabels .flip-card-back li {
   margin-bottom: 8px;
   font-size: 0.9rem;
   line-height: 1.3;
   color: #2c2c2c;
 }
 
-.flip-card-back li strong {
+.globalLabels .flip-card-back li strong {
   color: #222;
   font-weight: 700;
 }
 
-.biodiversity .flip-card-back {
+.globalLabels .biodiversity .flip-card-back {
   padding: 40px 30px 80px 30px;
 }
-.biodiversity .flip-card-back li {
-  margin-bottom: 10px;
+.globalLabels .biodiversity .flip-card-back li {
+  margin-bottom: 2px;
   line-height: 1.5;
 }
 
