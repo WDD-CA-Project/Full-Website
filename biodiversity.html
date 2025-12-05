@@ -30,6 +30,7 @@
 	
 	<!-- JS Conections-->
 	<script defer src="js/include.js"></script>
+	<script defer src="js/counterEffect.js"></script>
 	<script src="https://kit.fontawesome.com/57a310552d.js" crossorigin="anonymous"></script> <!--Icons-->
 
 </head>
@@ -216,7 +217,7 @@
         <div class="flip-card-inner">
           <div class="flip-card-front p-3 text-center">
             <i class="fas fa-leaf fa-2x text-success mb-2"></i>
-            <h5>Agroforestry</h5>
+            <h5><strong>Agroforestry</strong></h5>
           </div>
           <div class="flip-card-back p-3 text-center bg-success text-white">
             <p>Combines trees and crops to restore soil and biodiversity.</p>
@@ -276,28 +277,7 @@
       <i class="fas fa-globe globe-icon"></i> Click Me
     </a>
   </div>
-</section>
-
-
-       
-<script>
-  const counters = document.querySelectorAll('.counter');
-  counters.forEach(counter => {
-    counter.innerText = '0';
-    const update = () => {
-      const target = +counter.getAttribute('data-target');
-      const current = +counter.innerText;
-      const increment = target / 200;
-      if (current < target) {
-        counter.innerText = Math.ceil(current + increment);
-        setTimeout(update, 30);
-      } else {
-        counter.innerText = target.toLocaleString();
-      }
-    };
-    update();
-  });
-</script>
+  </section>
 
 		
 		</div>
@@ -315,6 +295,7 @@
 </body>
 
 </html>
+
 
 
 
