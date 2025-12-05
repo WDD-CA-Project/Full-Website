@@ -1541,9 +1541,9 @@ html {
 .flip-card-inner {
   position: relative;
   width: 100%;
-  min-height: 300px;
+  min-height: 350px;
   border-radius: 12px;
-  transition: transform 1.0 ease;
+  transition: transform 1s ease;
   transform-style: preserve-3d;
 }
 
@@ -1559,6 +1559,8 @@ html {
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .flip-card-back {
@@ -1566,6 +1568,9 @@ html {
   background: #ffffff;
   border: 2px solid #108245;
   text-align: left;
+  padding: 40px 30px 70px 30px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .flip-card.active .flip-card-inner {
@@ -1576,11 +1581,9 @@ html {
   background: #e1f4ea;
   color: #0b4d2b;
 }
-
 .forest .flip-card-back {
   border-color: #108245;
 }
-
 .forest .kp-icon {
   color: #108245;
 }
@@ -1589,11 +1592,9 @@ html {
   background: #e0ebf7;
   color: #21466f;
 }
-
 .biodiversity .flip-card-back {
   border-color: #3b6ba5;
 }
-
 .biodiversity .kp-icon {
   color: #3b6ba5;
 }
@@ -1602,11 +1603,9 @@ html {
   background: #f0e3db;
   color: #5b3a2a;
 }
-
 .land .flip-card-back {
   border-color: #795548;
 }
-
 .land .kp-icon {
   color: #795548;
 }
@@ -1615,11 +1614,9 @@ html {
   background: #fbe8d6;
   color: #8c4b11;
 }
-
 .ecosystem .flip-card-back {
   border-color: #d97822;
 }
-
 .ecosystem .kp-icon {
   color: #d97822;
 }
@@ -1651,7 +1648,7 @@ html {
 .flip-card-back h3 {
   font-size: 1.2rem;
   font-weight: 700;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   color: #333;
 }
 
@@ -1663,13 +1660,13 @@ html {
 .flip-card-back ul {
   list-style: disc;
   padding-left: 18px;
-  margin: 0 0 16px 0;
+  margin: 0 0 18px 0;    
 }
 
 .flip-card-back li {
   margin-bottom: 8px;
   font-size: 0.9rem;
-  line-height: 1.4;
+  line-height: 1.3;
   color: #2c2c2c;
 }
 
@@ -1678,27 +1675,85 @@ html {
   font-weight: 700;
 }
 
+.biodiversity .flip-card-back {
+  padding: 40px 30px 80px 30px;
+}
+.biodiversity .flip-card-back li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+
+/* visit website button */
+
 .card-link {
+  position: absolute;
   display: inline-block;
-  margin-top: 8px;
-  padding: 8px 16px;
+  margin-top: 0px;
+  bottom: 20px;        
+  padding: 10px 20px;
   border-radius: 20px;
-  background-color: #108245;
-  color: #ffffff;
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.15s ease;
-  align-self: flex-start;
-  letter-spacing: 0.3px; 
+  border: 1px solid transparent;
+  letter-spacing: 0.3px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  align-self: center;        
 }
 
 .card-link:hover {
-  background-color: #0b5a38;
   transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-  .zone-title {
+/* Forest */
+.forest-link {
+  background-color: #108245;
+  color: #ffffff;
+  border-color: #108245;
+}
+.forest-link:hover,
+.forest-link:focus {
+  background-color: #0b5a38;
+}
+
+/* Biodiversity */
+.biodiversity-link {
+  background-color: #3b6ba5;
+  color: #ffffff;
+  border-color: #3b6ba5;
+}
+.biodiversity-link:hover,
+.biodiversity-link:focus {
+  background-color: #274a73;
+}
+
+/* Land */
+.land-link {
+  background-color: #795548;
+  color: #ffffff;
+  border-color: #795548;
+}
+.land-link:hover,
+.land-link:focus {
+  background-color: #5d4037;
+}
+
+/* Ecosystem */
+.ecosystem-link {
+  background-color: #d97822;
+  color: #ffffff;
+  border-color: #d97822;
+}
+.ecosystem-link:hover,
+.ecosystem-link:focus {
+  background-color: #b85f10;
+}
+
+/* titles */
+
+.zone-title {
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1706,61 +1761,92 @@ html {
   text-align: center;
   margin: 24px 0 18px 0;
   position: relative;
-  color: #222;  
-
+  color: #222;
 }
 
-  .zone-title::after {
+.zone-title::after {
   content: "";
   position: absolute;
   left: 50%;
   bottom: -6px;
   transform: translateX(-50%);
-  width: 80px;           
-  height: 3px;            
+  width: 100px;
+  height: 3px;
   border-radius: 999px;
-  background-color: #108245; 
+  background-color: #108245;
 }
 
-  .forest-title::after {
-  background-color: #108245; 
+.forest-title::after {
+  background-color: #108245;
 }
-
 .biodiversity-title::after {
-  background-color: #3b6ba5;   
+  background-color: #3b6ba5;
 }
-
 .land-title::after {
-  background-color: #795548; 
+  background-color: #795548;
+}
+.ecosystem-title::after {
+  background-color: #d97822;
 }
 
-.ecosystem-title::after {
-  background-color: #d97822; 
-}
+/* responsive */
 
 @media (max-width: 768px) {
+  .flip-card-inner {
+    min-height: 380px; 
+  }
+
   .flip-card-front h1 {
     font-size: 1.3rem;
   }
 
+  .flip-card-front h2 {
+    font-size: 1rem;
+  }
+
+  .flip-card-front p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
   .flip-card-back h3 {
     font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 14px 0;
+    padding-top: 16px; 
+    color: #333;
   }
 
   .flip-card-back ul {
     padding-left: 16px;
   }
 
-    .zone-title {
+  .flip-card-back li {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+
+  .zone-title {
     font-size: 1.2rem;
     letter-spacing: 0.12em;
     margin: 20px 0 16px 0;
   }
 
   .zone-title::after {
-    width: 48px;
+    width: 80px;
     height: 2px;
     bottom: -5px;
+  }
+
+  .biodiversity .flip-card-back {
+    padding: 30px 20px 70px 20px; 
+  }
+
+  .biodiversity .card-link {
+    bottom: 16px;
+    padding: 8px 16px;
+    font-size: 0.8rem;
   }
 }
 
