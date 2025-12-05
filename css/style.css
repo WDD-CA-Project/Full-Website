@@ -1259,17 +1259,13 @@ img.forestGreen{
 
 /* end of fact blocks */
 
-/* ============================================
-   ECOSYSTEM GOVERNANCE TIMELINE
-   ============================================ */
+/* ECOSYSTEM GOVERNANCE TIMELINE */
 
-/* Timeline vertical main container */
 .timeline-vertical {
   position: relative;
   padding: 40px 0;
 }
 
-/* Vertical line center */
 .timeline-vertical::before {
   content: '';
   position: absolute;
@@ -1281,7 +1277,6 @@ img.forestGreen{
   top: 0;
 }
 
-/* Timeline item wrapper */
 .timeline-item {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -1290,7 +1285,6 @@ img.forestGreen{
   gap: 20px;
 }
 
-/* Timeline left box with content */
 .timeline-left {
   padding: 25px;
   background: rgba(16, 130, 69, 0.1);
@@ -1299,7 +1293,6 @@ img.forestGreen{
   transition: all 0.3s ease;
 }
 
-/* Timeline left empty box - transparent */
 .timeline-left-empty {
   padding: 25px;
   background: transparent;
@@ -1307,7 +1300,6 @@ img.forestGreen{
   border-radius: 8px;
 }
 
-/* Timeline right box with content */
 .timeline-right {
   padding: 25px;
   background: rgba(16, 130, 69, 0.1);
@@ -1316,7 +1308,6 @@ img.forestGreen{
   transition: all 0.3s ease;
 }
 
-/* Timeline right empty box - transparent */
 .timeline-right-empty {
   padding: 25px;
   background: transparent;
@@ -1324,7 +1315,6 @@ img.forestGreen{
   border-radius: 8px;
 }
 
-/* Hover effect for filled boxes */
 .timeline-item:hover .timeline-left,
 .timeline-item:hover .timeline-right {
   background: rgba(16, 130, 69, 0.15);
@@ -1332,7 +1322,6 @@ img.forestGreen{
   box-shadow: 0 4px 12px rgba(16, 130, 69, 0.1);
 }
 
-/* Timeline date text */
 .timeline-date {
   color: #108245;
   font-weight: 700;
@@ -1340,7 +1329,6 @@ img.forestGreen{
   margin-bottom: 8px;
 }
 
-/* Timeline title text */
 .timeline-item h3 {
   color: #108245;
   font-size: 1.2rem;
@@ -1348,7 +1336,6 @@ img.forestGreen{
   font-weight: 700;
 }
 
-/* Timeline paragraph text */
 .timeline-item p {
   color: #666;
   font-size: 0.95rem;
@@ -1356,7 +1343,6 @@ img.forestGreen{
   line-height: 1.5;
 }
 
-/* Timeline center dot */
 .timeline-center {
   display: flex;
   justify-content: center;
@@ -1365,7 +1351,6 @@ img.forestGreen{
   z-index: 10;
 }
 
-/* Timeline dot element */
 .timeline-dot {
   width: 20px;
   height: 20px;
@@ -1377,14 +1362,12 @@ img.forestGreen{
   transition: all 0.3s ease;
 }
 
-/* Hover effect on dot */
 .timeline-item:hover .timeline-dot {
   width: 28px;
   height: 28px;
   box-shadow: 0 0 0 4px #108245, 0 0 12px rgba(16, 130, 69, 0.4);
 }
 
-/* Info box - hidden by default */
 .timeline-info-box {
   background: #108245;
   color: white;
@@ -1399,13 +1382,11 @@ img.forestGreen{
   line-height: 1.5;
 }
 
-/* Info box show on hover */
 .timeline-item:hover .timeline-info-box {
   max-height: 300px;
   opacity: 1;
 }
 
-/* Info box heading */
 .timeline-info-box h4 {
   margin: 0 0 10px 0;
   font-size: 0.95rem;
@@ -1413,21 +1394,18 @@ img.forestGreen{
   font-weight: 600;
 }
 
-/* Info box list items */
 .timeline-info-box ul {
   margin: 0;
   padding-left: 20px;
   list-style: none;
 }
 
-/* Info box list item styling */
 .timeline-info-box li {
   margin: 5px 0;
   padding-left: 15px;
   position: relative;
 }
 
-/* Info box list item checkmark */
 .timeline-info-box li::before {
   content: '✓';
   position: absolute;
@@ -1436,11 +1414,6 @@ img.forestGreen{
   font-weight: 700;
 }
 
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
-
-/* Large devices - 992px and up */
 @media (max-width: 991px) {
   .timeline-item {
     grid-template-columns: 1fr;
@@ -1471,7 +1444,6 @@ img.forestGreen{
   }
 }
 
-/* Medium devices - 768px and below */
 @media (max-width: 767px) {
   .timeline-item h3 {
     font-size: 1rem;
@@ -1494,7 +1466,6 @@ img.forestGreen{
   }
 }
 
-/* Small devices - 576px and below */
 @media (max-width: 575px) {
   .timeline-item h3 {
     font-size: 0.9rem;
@@ -1516,111 +1487,6 @@ img.forestGreen{
     padding: 12px;
   }
 }
-
-/* ============================================
-   END ECOSYSTEM GOVERNANCE TIMELINE
-   ============================================ */
-
-
-/*---------------------- ECOSYSTEM INTERACTION BLOCK -----------------------*/
-
-/* interaction section container card - start */
-.interaction-box-eco {
-  background-color: #dbeee0;
-  border-radius: 1.2rem;
-  padding: 2rem 1.8rem 2.2rem;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.interaction-box-eco:hover {
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-  transform: translateY(-2px);
-}
-/* interaction section container card - end */
-
-
-/* interaction main headline text - start */
-.interaction-text-eco {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.4;
-  color: #1c1c1c;
-  transition:
-    transform 0.2s ease,
-    text-shadow 0.2s ease,
-    color 0.2s ease;
-}
-
-.interaction-text-eco:hover {
-  transform: translateY(-2px);
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  color: #0d6b37;
-}
-/* interaction main headline text - end */
-
-
-/* interaction secondary description text - start */
-.interaction-subtext-eco {
-  font-size: 1rem;
-  line-height: 1.6;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-}
-/* interaction secondary description text - end */
-
-
-/* interaction button styles - start */
-.interactive-btn-eco {
-  border: none;
-  padding: 0.6rem 1.8rem;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #108245, #4caf50);
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: inline-block;
-  max-width: 260px;
-  width: 100%;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
-  transition:
-    background 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.15s ease;
-}
-
-/* interaction button inner layout - start */
-.interactive-btn-eco div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.interactive-btn-eco span {
-  text-transform: none;
-}
-/* interaction button inner layout - end */
-
-/* interaction button hover + active states - start */
-.interactive-btn-eco:hover {
-  background: linear-gradient(90deg, #0d6b37, #3f9144);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transform: translateY(-1px);
-}
-
-.interactive-btn-eco:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-}
-/* interaction button hover + active states - end */
-
-
-/*------------------- END ECOSYSTEM INTERACTION BLOCK ----------------------*/
-
 
 /*---------------------- END ECOSYSTEM -----------------------*/
 
@@ -1666,7 +1532,238 @@ html {
 
 /*-------------------- GLOBAL INITIATIVES ----------------------*/
 
+.flip-card {
+  background: transparent;
+  perspective: 1000px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  border-radius: 12px;
+  transition: transform 1.0 ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background: #ffffff;
+  border: 2px solid #108245;
+  text-align: left;
+}
+
+.flip-card.active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.forest .flip-card-front {
+  background: #e1f4ea;
+  color: #0b4d2b;
+}
+
+.forest .flip-card-back {
+  border-color: #108245;
+}
+
+.forest .kp-icon {
+  color: #108245;
+}
+
+.biodiversity .flip-card-front {
+  background: #e0ebf7;
+  color: #21466f;
+}
+
+.biodiversity .flip-card-back {
+  border-color: #3b6ba5;
+}
+
+.biodiversity .kp-icon {
+  color: #3b6ba5;
+}
+
+.land .flip-card-front {
+  background: #f0e3db;
+  color: #5b3a2a;
+}
+
+.land .flip-card-back {
+  border-color: #795548;
+}
+
+.land .kp-icon {
+  color: #795548;
+}
+
+.ecosystem .flip-card-front {
+  background: #fbe8d6;
+  color: #8c4b11;
+}
+
+.ecosystem .flip-card-back {
+  border-color: #d97822;
+}
+
+.ecosystem .kp-icon {
+  color: #d97822;
+}
+
+.flip-card-front h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.flip-card-front h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 8px 0 16px 0;
+  text-transform: uppercase;
+}
+
+.flip-card-front p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+}
+
+.flip-card-back h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.kp-icon {
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+
+.flip-card-back ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0 0 16px 0;
+}
+
+.flip-card-back li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #2c2c2c;
+}
+
+.flip-card-back li strong {
+  color: #222;
+  font-weight: 700;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #108245;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+  align-self: flex-start;
+  letter-spacing: 0.3px; 
+}
+
+.card-link:hover {
+  background-color: #0b5a38;
+  transform: translateY(-2px);
+}
+
+  .zone-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin: 24px 0 18px 0;
+  position: relative;
+  color: #222;  
+
+}
+
+  .zone-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 80px;           
+  height: 3px;            
+  border-radius: 999px;
+  background-color: #108245; 
+}
+
+  .forest-title::after {
+  background-color: #108245; 
+}
+
+.biodiversity-title::after {
+  background-color: #3b6ba5;   
+}
+
+.land-title::after {
+  background-color: #795548; 
+}
+
+.ecosystem-title::after {
+  background-color: #d97822; 
+}
+
+@media (max-width: 768px) {
+  .flip-card-front h1 {
+    font-size: 1.3rem;
+  }
+
+  .flip-card-back h3 {
+    font-size: 1.1rem;
+  }
+
+  .flip-card-back ul {
+    padding-left: 16px;
+  }
+
+    .zone-title {
+    font-size: 1.2rem;
+    letter-spacing: 0.12em;
+    margin: 20px 0 16px 0;
+  }
+
+  .zone-title::after {
+    width: 48px;
+    height: 2px;
+    bottom: -5px;
+  }
+}
 
 /*-------------------- END GLOBAL INITIATIVES ----------------------*/
 
