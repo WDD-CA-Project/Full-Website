@@ -1,4 +1,4 @@
-alert("ok");
+/* alert("ok"); Check if the conection is working */ 
 document.addEventListener("DOMContentLoaded", () => {
 
 // The fetch actions work only in GitHub. 
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-//Still not working properly online. 
+//Still not working properly online, this is to test offline. 
 // Button Active in SUBMENU
     document.querySelectorAll('.buttonMenu a').forEach(link => {
         if (link.pathname === window.location.pathname) {
