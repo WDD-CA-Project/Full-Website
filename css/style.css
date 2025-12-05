@@ -357,6 +357,10 @@ a {
     color: #443e33;
 }
 
+.emoji1{
+					font-size:50px;
+}
+
 /*-----------end of Land box---------*/
 
 
@@ -1919,6 +1923,9 @@ div.sectionMainPres {
     margin-left: 5%;
 }
 
+.emoji1{
+	font-size:50px;
+}
 }
 /*END Media Large 991px */ 
 
@@ -1954,7 +1961,10 @@ div.sectionMainPres {
 	padding: 2.5rem 1rem;
 }
 
-
+.emoji1{
+	font-size:50px;
+}
+	
 }
 /*END Media Medium 768px */ 
  
@@ -1985,6 +1995,10 @@ div.sectionMainPres {
 }	 
 	 
 	 
+}
+
+.emoji1{
+	font-size:50px;
 }
 
 /*END Media Small 575px */ 
