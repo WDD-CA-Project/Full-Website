@@ -206,7 +206,7 @@ a.linkButtonMenu {
 
 /* Main container */
 .main{
-	border: 1px solid red;
+	/*border: 1px solid red;*/ /* Margin Guide Line */
 	text-align: center;
 	clear: both;
 	width: 80%;
@@ -255,13 +255,14 @@ a {
 }
 
 .hoverBox:hover i{
-	color: white;        /* text turns solid white */
-	background: none;    /* remove image fill from text */
+	color: white;        /* text turns solid white */   
 }
 
 .hoverBox:hover h2{
 	color: white;        /* text turns solid white */  
 }
+
+/* Media for Home Hover Cards*/
 
 
 
@@ -498,7 +499,7 @@ ul.footerMenu{
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
-	border: 1px solid green; /* IMPORTANT GUIDE LINE ONLY */
+	/*border: 1px solid green;*/ /* IMPORTANT GUIDE LINE ONLY */
 	padding-top: 1vh;
 	padding-bottom: 1vh;
 }
@@ -1926,6 +1927,19 @@ div.sectionMainPres {
 .emoji1{
 	font-size:50px;
 }
+
+
+/* CARDS presentation from HOME */
+/* Fixing font sizes */
+.hoverBox i, .hoverBoxBio i, .hoverBoxEcosystem i, .hoverBoxForest i, .hoverBoxLand i{
+	margin-top: 16%;	/* text turns solid white */   
+}
+
+.hoverBox h2, .hoverBoxBio h2, .hoverBoxEcosystem h2, .hoverBoxForest h2, .hoverBoxLand h2{
+	font-size: 1.5rem;	/* text turns solid white */  
+}
+
+
 }
 /*END Media Large 991px */ 
 
@@ -1964,6 +1978,7 @@ div.sectionMainPres {
 .emoji1{
 	font-size:50px;
 }
+
 	
 }
 /*END Media Medium 768px */ 
@@ -1985,21 +2000,17 @@ div.sectionMainPres {
     text-align: center;
 }
 
-/* CARDS presentation from HOME */
-.hoverBox i{
-	margin-top: 16%;
-}
-
-.hoverBox h2{
-	font-size: 1.3rem;
-}	 
-	 
-	 
-}
-
 .emoji1{
 	font-size:50px;
 }
+
+
+
+
+	 
+}
+
+
 
 /*END Media Small 575px */ 
 
