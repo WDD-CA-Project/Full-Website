@@ -1701,24 +1701,24 @@ html {
 /* responsive */
 
 @media (max-width: 768px) {
-  .flip-card-inner {
+  .globalLabels .flip-card-inner {
     min-height: 380px; 
   }
 
-  .flip-card-front h1 {
+  .globalLabels .flip-card-front h1 {
     font-size: 1.3rem;
   }
 
-  .flip-card-front h2 {
+  .globalLabels .flip-card-front h2 {
     font-size: 1rem;
   }
 
-  .flip-card-front p {
+  .globalLabels .flip-card-front p {
     font-size: 0.9rem;
     line-height: 1.4;
   }
 
-  .flip-card-back h3 {
+  .globalLabels .flip-card-back h3 {
     font-size: 1.1rem;
     font-weight: 700;
     margin: 0 0 14px 0;
@@ -1726,11 +1726,11 @@ html {
     color: #333;
   }
 
-  .flip-card-back ul {
+  .globalLabels .flip-card-back ul {
     padding-left: 16px;
   }
 
-  .flip-card-back li {
+  .globalLabels .flip-card-back li {
     font-size: 0.85rem;
     line-height: 1.3;
     margin-bottom: 6px;
@@ -1757,6 +1757,8 @@ html {
     padding: 8px 16px;
     font-size: 0.8rem;
   }
+  
+  
 }
 
 /*-------------------- END GLOBAL INITIATIVES ----------------------*/
