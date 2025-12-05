@@ -275,14 +275,14 @@ a {
 }
 
 .hoverBoxForest i{
-    background: url('../img/forest/forest_card.jpg') no-repeat center center;
+    background: url('../img/home_forest.jpg') no-repeat center center;
     transition: color 0.6s ease, background 0.6s ease;
 	background-size: cover;
     background-clip: text;
 }
 
 .hoverBoxForest:hover {
-	background: url('../img/forest/forest_card.jpg') no-repeat center center;
+	background: url('../img/home_forest.jpg') no-repeat center center;
 	/*IMG Credits: https://pixabay.com/photos/bamboo-trees-green-growth-1283976/ */
 	background-size: cover;
 }
@@ -301,7 +301,7 @@ a {
 
 .hoverBoxBio i	{
 	/* image inside text effect */
-	background: url('../img/biodiversity.jpg') no-repeat center center;
+	background: url('../img/home_biodiversity.jpg') no-repeat center center;
 	background-size: cover;
 	background-clip: text;
 	color: transparent;
@@ -316,7 +316,7 @@ a {
 }
 
 .hoverBoxBio:hover {
-	background: url('../img/biodiversity.jpg') no-repeat center center;
+	background: url('../img/home_biodiversity.jpg') no-repeat center center;
 	background-size: cover;
 }
 
@@ -335,7 +335,7 @@ a {
 	
 .hoverBoxLand i{
 	/* image inside text effect */
-	background: url('../img/land_Logo.jpg') no-repeat center center;
+	background: url('../img/home_land.jpg') no-repeat center center;
 	background-size: cover;
 	background-clip: text;
 	color: transparent;
@@ -350,7 +350,7 @@ a {
 }
 
 .hoverBoxLand:hover {
-	background: url('../img/land_Logo.jpg') no-repeat center center;
+	background: url('../img/home_land.jpg') no-repeat center center;
 	background-size: cover;
 }
 
@@ -372,7 +372,7 @@ a {
 
 .hoverBoxEcosystem i{
 	/* image inside text effect */
-	background: url('../img/ecosystemHome.jpg') no-repeat center center;
+	background: url('../img/home_ecosystem.jpg') no-repeat center center;
 	background-size: cover;
 	background-clip: text;
 	color: transparent;
@@ -387,7 +387,7 @@ a {
 }
 
 .hoverBoxEcosystem:hover {
-	background: url('../img/ecosystemHome.jpg') no-repeat center center;
+	background: url('../img/home_ecosystem.jpg') no-repeat center center;
 	background-size: cover;
 }
 
