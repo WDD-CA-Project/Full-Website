@@ -1017,6 +1017,47 @@ img.forestGreen{
 /*---------------------- BIODIVERSITY----------------------*/
 
 /* About Biodiversity Box */
+.card {
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  border:2px, solid green;
+}
+
+/* Species Biodiversity: scale + glow */
+.species-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(40,167,69,0.7); /* green glow */
+}
+
+/* Genetic Biodiversity: pulse glow */
+.genetic-card:hover {
+  animation: pulseGlow 1.5s infinite;
+}
+@keyframes pulseGlow {
+  0%   { box-shadow: 0 0 5px rgba(40,167,69,0.4); }
+  50%  { box-shadow: 0 0 25px rgba(40,167,69,0.8); }
+  100% { box-shadow: 0 0 5px rgba(40,167,69,0.4); }
+}
+
+/* Ecosystem Biodiversity: rotate + glow */
+.ecosystem-card:hover {
+  transform: rotate(3deg) scale(1.03);
+  box-shadow: 0 0 20px rgba(40,167,69,0.7);
+}
+
+.genetic-card:hover {
+  transform: rotate(3deg) scale(1.03);
+  box-shadow: 0 0 20px rgba(40,167,69,0.7);
+}
+
+.species-card:hover {
+  transform: rotate(3deg) scale(1.03);
+  box-shadow: 0 0 20px rgba(40,167,69,0.7);
+}
+
+/* got the keyframe from w3schools and chatgpt*/
+
 .causesAndImpacts {
 	font-family:"Public Sans", sans-serif;
 	background-color: #ffffff;  
@@ -1152,31 +1193,6 @@ img.forestGreen{
 	border: 2px solid green;
 	border-radius:12px;
 }
-
-/*//////////// start of responsive/////////*/
-.scratch {
-  width: 100%;         
-  max-width: 600px;     
-  height: 400px;       
-  border: none;
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-  .scratch {
-    height: 300px;
-  }
-}
-
-/* Phone */
-@media (max-width: 576px) {
-  .scratch {
-    height: 200px;
-  }
-}
-
-
-/*///////////end of responsive/////////*/
 
 /*-----------------biodiversity interaction--------------------*/
 
@@ -2079,3 +2095,63 @@ div.sectionMainPres {
         width: 33.2%;
     }
 }
+
+
+/*//////////// biodiversity start of responsive/////////*/
+/* biodiversity page*/
+.card {
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border:2px, solid green;
+}
+
+/* Species Biodiversity: */
+.species-card:active {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(40,167,69,0.7);
+}
+
+/* Genetic Biodivers*/
+.genetic-card:active {
+  animation: pulseGlow 1.5s infinite;
+}
+@keyframes pulseGlow {
+  0%   { box-shadow: 0 0 5px rgba(40,167,69,0.4); }
+  50%  { box-shadow: 0 0 25px rgba(40,167,69,0.8); }
+  100% { box-shadow: 0 0 5px rgba(40,167,69,0.4); }
+}
+/* end of biodiversity page */
+
+/*interaction*/
+.scratch {
+  width: 100%;         
+  max-width: 600px;     
+  height: 400px;       
+  border: none;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .scratch {
+    height: 300px;
+  }
+}
+
+/* Phone */
+@media (max-width: 576px) {
+  .scratch {
+    height: 200px;
+  }
+}
+/*end of interaction*/
+
+
+/* Ecosystem Biodiversity*/
+.ecosystem-card:active {
+  transform: rotate(3deg) scale(1.03);
+  box-shadow: 0 0 20px rgba(40,167,69,0.7);
+}
+
+
+/*///////////end of biodiversity responsive/////////*/
